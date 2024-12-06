@@ -53,7 +53,7 @@ public class DormRoom {
     /**
      * The building in which this dorm room is located.
      */
-    final DormBuilding building;
+    final DormBuilding dormBuilding;
 
     /**
      * Constructs a new {@code DormRoom} with the given attributes.
@@ -79,6 +79,79 @@ public class DormRoom {
         this.hasKitchen = hasKitchen;
         this.isSuite = isSuite;
         this.bathroomType = bathroomType;
-        this.building = new DormBuilding(buildingName);
+        this.dormBuilding = new DormBuilding(buildingName);
+    }
+
+
+    /**
+     * Returns the square footage of this dorm room.
+     *
+     * @return the room's square footage
+     */
+    public int getRoomSize() {
+        return roomSize;
+    }
+
+    /**
+     * Returns the assigned room number. For example, 255.
+     *
+     * @return the room number
+     */
+    public int getRoomNumber() {
+        return roomNumber;
+    }
+
+    /**
+     * Returns the number of occupants this room can house.
+     *
+     * @return the room's capacity
+     */
+    public int getRoomCapacity() {
+        return roomCapacity;
+    }
+
+    /**
+     * Returns the URL of the floor plan that includes this room.
+     *
+     * @return the floor plan URL
+     */
+    public String getFloorPlanLink() {
+        return floorPlanLink;
+    }
+
+    /**
+     * Indicates whether the room is equipped with a kitchen.
+     *
+     * @return {@code true} if the room has a kitchen, {@code false} otherwise
+     */
+    public boolean hasKitchen() {
+        return hasKitchen;
+    }
+
+    /**
+     * Indicates whether the room is considered a suite.
+     *
+     * @return {@code true} if the room is a suite, {@code false} otherwise
+     */
+    public boolean isSuite() {
+        return isSuite;
+    }
+
+    /**
+     * Returns the type of bathroom available to this room.
+     *
+     * @return the bathroom type (Private, SemiPrivate, or Communal)
+     */
+    public BathroomType getBathroomType() {
+        return bathroomType;
+    }
+
+    /**
+     * Returns the {@link DormBuilding} associated with this room.
+     *
+     * @return the building in which the room is located
+     */
+    public DormBuilding getDormBuilding() {
+        return dormBuilding;
     }
 }
