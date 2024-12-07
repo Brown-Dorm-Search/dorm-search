@@ -1,7 +1,7 @@
-package Filtering;
+package src.Filtering;
 
-import DormRoom.BathroomType;
-import DormRoom.DormBuilding;
+import src.DormRoom.BathroomType;
+import src.DormRoom.DormBuilding;
 import java.util.Set;
 
 

@@ -1,9 +1,11 @@
-package Filtering.Node_KDTree;
+package src.Filtering.Node_KDTree;
 
-import DormRoom.DormBuilding;
-import DormRoom.BathroomType;
-import DormRoom.DormRoom;import Filtering.FilteringCriteria;
-import Filtering.IDormFilter;
+import src.DormRoom.DormBuilding;
+import src.DormRoom.BathroomType;
+import src.DormRoom.DormRoom;
+import src.Filtering.FilteringCriteria;
+import src.Filtering.Node_KDTree.KDTreeNode;
+import src.Filtering.IDormFilter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -170,20 +172,4 @@ public class KDTree implements IDormFilter {
   public List<DormRoom> filterDormList(FilteringCriteria filteringCriteria) {
     return null;
   }
-
-  /**
-   * Used to minimize the list of potential rooms until only dorms that fit the specific filtering
-   * criteria are returned. This class implements the actual functionality.
-   *
-   * @param filteringCriteria - the criteria that the user wants to filter all the dorm rooms by.
-   * @return A list of rooms that match the filtering criteria
-   */
-  public List<DormRoom> filterDormListFunctionality(FilteringCriteria filteringCriteria) {
-    return null;
-  }
-
-
-
-
-
 }

@@ -1,4 +1,4 @@
-package DormRoom;
+package src.DormRoom;
 
 /**
  * The {@code DormBuilding} class represents data about a specific dormitory building on campus.

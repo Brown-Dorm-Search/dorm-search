@@ -1,4 +1,4 @@
-package DormRoom;
+package src.DormRoom;
 
 /**
  * The {@code DormRoom} class represents a dormitory room with various attributes such as size,

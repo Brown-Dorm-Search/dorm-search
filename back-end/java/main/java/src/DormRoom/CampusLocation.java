@@ -1,4 +1,4 @@
-package DormRoom;
+package src.DormRoom;
 
 /**
  * An enum representing general campus areas where a dorm room
@@ -18,7 +18,7 @@ public enum CampusLocation {
    */
   SimmonsQuad,
   /**
-   * Graduate Center area.
+   * Graduate Center.
    */
   GradCenter
 }

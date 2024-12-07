@@ -1,4 +1,4 @@
-package DormRoom;
+package src.DormRoom;
 
 /**
  * Enum of possible bathroom types for a dorm room.

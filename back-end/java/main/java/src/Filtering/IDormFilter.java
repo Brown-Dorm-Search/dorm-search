@@ -1,7 +1,7 @@
-package Filtering;
+package src.Filtering;
 
 import java.util.List;
-import DormRoom.DormRoom;
+import src.DormRoom.DormRoom;
 
 /**
  * Interface that unifies the required functionality for different room filters.
