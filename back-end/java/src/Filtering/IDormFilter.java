@@ -14,5 +14,5 @@ public interface IDormFilter {
    * @param filteringCriteria - the criteria that the user wants to filter all the dorm rooms by.
    * @return A list of rooms that match the filtering criteria
    */
-  List<DormRoom> filterDormList(List<Object> filteringCriteria);
+  List<DormRoom> filterDormList(FilteringCriteria filteringCriteria);
 }
