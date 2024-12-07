@@ -110,14 +110,14 @@ public class DormRoom {
         return roomCapacity;
     }
 
-    /**
-     * Returns the URL of the floor plan that includes this room.
-     *
-     * @return the floor plan URL
-     */
-    public String getFloorPlanLink() {
-        return floorPlanLink;
-    }
+//    /**
+//     * Returns the URL of the floor plan that includes this room.
+//     *
+//     * @return the floor plan URL
+//     */
+//    public String getFloorPlanLink() {
+//        return floorPlanLink;
+//    }
 
     /**
      * Indicates whether the room is equipped with a kitchen.

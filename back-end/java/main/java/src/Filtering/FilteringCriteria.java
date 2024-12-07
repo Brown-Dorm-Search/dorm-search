@@ -15,7 +15,6 @@ import java.util.Set;
  * and Chapin house. This would be used to get all the rooms within Goddard, Buxton, and Chapin.
  * The ranges, such as minRoomSizeCriteria and maxRoomSizeCriteria, filter all the rooms where the
  * room's square footage is not within the range.
- *
  * The following are the default filtering criteria
  * <p>
  *   dormBuildingCriteria: Set<"Barbour Hall", "Buxton House", "Caswell Hall", "Chapin House",

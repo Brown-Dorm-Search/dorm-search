@@ -4,7 +4,6 @@ import src.DormRoom.DormBuilding;
 import src.DormRoom.BathroomType;
 import src.DormRoom.DormRoom;
 import src.Filtering.FilteringCriteria;
-import src.Filtering.Node_KDTree.KDTreeNode;
 import src.Filtering.IDormFilter;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -29,7 +28,6 @@ import java.util.List;
  * be integrated with other dorm filtering systems.
  */
 public class KDTree implements IDormFilter {
-
   /**
    * A nested hierarchical data structure:
    * <ul>
@@ -122,8 +120,7 @@ public class KDTree implements IDormFilter {
     HashMap<Boolean, HashMap<BathroomType, KDTreeNode>> hasKitchenMap = isSuiteMap.computeIfAbsent(
         isSuite, k -> new HashMap<>());
 
-    HashMap<BathroomType, KDTreeNode> bathroomTypeMap = hasKitchenMap.computeIfAbsent(hasKitchen,
-        k -> new HashMap<>());
+    hasKitchenMap.computeIfAbsent(hasKitchen, k -> new HashMap<>());
   }
 
   /**
@@ -156,8 +153,7 @@ public class KDTree implements IDormFilter {
     HashMap<BathroomType, List<DormRoom>> bathroomTypeMap = hasKitchenMap.computeIfAbsent(
         hasKitchen, k -> new HashMap<>());
 
-    List<DormRoom> specificRoomList = bathroomTypeMap.computeIfAbsent(bathroomType,
-        k -> new ArrayList<>());
+    bathroomTypeMap.computeIfAbsent(bathroomType, k -> new ArrayList<>());
   }
 
   /**

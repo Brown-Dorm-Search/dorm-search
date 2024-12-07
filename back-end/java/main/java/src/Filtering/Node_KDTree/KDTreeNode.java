@@ -129,30 +129,30 @@ public class KDTreeNode {
   }
 
 
-  /**
-   * Returns the dorm room stored at this node.
-   *
-   * @return the dorm room for this node
-   */
-  public DormRoom getValue() {
-    return value;
-  }
-
-  /**
-   * Returns the left child node.
-   *
-   * @return the left child of this node, or null if none
-   */
-  public KDTreeNode getLeft() {
-    return left;
-  }
-
-  /**
-   * Returns the right child node.
-   *
-   * @return the right child of this node, or null if none
-   */
-  public KDTreeNode getRight() {
-    return right;
-  }
+//  /**
+//   * Returns the dorm room stored at this node.
+//   *
+//   * @return the dorm room for this node
+//   */
+//  public DormRoom getValue() {
+//    return value;
+//  }
+//
+//  /**
+//   * Returns the left child node.
+//   *
+//   * @return the left child of this node, or null if none
+//   */
+//  public KDTreeNode getLeft() {
+//    return left;
+//  }
+//
+//  /**
+//   * Returns the right child node.
+//   *
+//   * @return the right child of this node, or null if none
+//   */
+//  public KDTreeNode getRight() {
+//    return right;
+//  }
 }
