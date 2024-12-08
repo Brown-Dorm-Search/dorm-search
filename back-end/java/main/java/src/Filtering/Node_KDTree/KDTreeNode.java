@@ -3,6 +3,7 @@ package src.Filtering.Node_KDTree;
 import src.DormRoom.DormRoom;
 import java.util.List;
 import java.util.Comparator;
+import src.Filtering.FilteringCriteria;
 
 /**
  * The {@code KDTreeNode} class represents a single node in a 3-dimensional KD-Tree
@@ -128,31 +129,7 @@ public class KDTreeNode {
     };
   }
 
-
-//  /**
-//   * Returns the dorm room stored at this node.
-//   *
-//   * @return the dorm room for this node
-//   */
-//  public DormRoom getValue() {
-//    return value;
-//  }
-//
-//  /**
-//   * Returns the left child node.
-//   *
-//   * @return the left child of this node, or null if none
-//   */
-//  public KDTreeNode getLeft() {
-//    return left;
-//  }
-//
-//  /**
-//   * Returns the right child node.
-//   *
-//   * @return the right child of this node, or null if none
-//   */
-//  public KDTreeNode getRight() {
-//    return right;
-//  }
+  public List<DormRoom> filterDormList(FilteringCriteria filteringCriteria){
+    return null;
+  }
 }

@@ -1,5 +1,6 @@
 package src.Filtering.Node_KDTree;
 
+import java.util.Set;
 import src.DormRoom.DormBuilding;
 import src.DormRoom.BathroomType;
 import src.DormRoom.DormRoom;
@@ -157,15 +158,70 @@ public class KDTree implements IDormFilter {
   }
 
   /**
-   * Used to minimize the list of potential rooms until only dorms that fit the specific filtering
-   * criteria are returned. This class calls the {@code KDTreeCache} which also calls this class'
-   * filterDormListFunctionality method.
+   * Filters the dorm rooms using the provided {@link FilteringCriteria}, returning only those that meet
+   * the specified conditions. The method traverses through the nested hierarchy of dorm rooms
+   * (organized by building, suite, kitchen availability, and bathroom type) to find the matching
+   * {@link KDTreeNode} instances, and then applies quantitative filters through the KD-tree search.
    *
-   * @param filteringCriteria - the criteria that the user wants to filter all the dorm rooms by.
-   * @return A list of rooms that match the filtering criteria
+   * @param filteringCriteria the criteria specifying which dorm rooms should be returned
+   * @return a list of dorm rooms that match all the filtering criteria
    */
   @Override
   public List<DormRoom> filterDormList(FilteringCriteria filteringCriteria) {
-    return null;
+    List<DormRoom> result = new ArrayList<>();
+
+    // The dorm room hierarchy is organized as:
+    // dormBuilding -> isSuite -> hasKitchen -> bathroomType -> KDTreeNode
+    Set<DormBuilding> dormBuildingsInHierarchy = this.dormRoomHierarchy.keySet();
+
+    // Intersect the dorm buildings in the criteria with those actually present in the hierarchy
+    // This step avoids unnecessary looping over buildings not present in the hierarchy.
+    Set<DormBuilding> dormBuildingCriteriaSet = filteringCriteria.dormBuildingCriteria();
+    for (DormBuilding building : dormBuildingCriteriaSet) {
+      if (!dormBuildingsInHierarchy.contains(building)) {
+        continue; // Skip if the building is not in the hierarchy
+      }
+
+      HashMap<Boolean, HashMap<Boolean, HashMap<BathroomType, KDTreeNode>>> isSuiteMap = this.dormRoomHierarchy.get(building);
+      Set<Boolean> suiteSetInHierarchy = isSuiteMap.keySet();
+
+      // Loop through suite criteria
+      for (Boolean suiteCriteria : filteringCriteria.isSuiteCriteria()) {
+        if (!suiteSetInHierarchy.contains(suiteCriteria)) {
+          continue; // Skip if suite criteria is not in hierarchy
+        }
+
+        HashMap<Boolean, HashMap<BathroomType, KDTreeNode>> kitchenMap = isSuiteMap.get(suiteCriteria);
+        Set<Boolean> kitchenSetInHierarchy = kitchenMap.keySet();
+
+        // Loop through kitchen criteria
+        for (Boolean kitchenCriteria : filteringCriteria.hasKitchenCriteria()) {
+          if (!kitchenSetInHierarchy.contains(kitchenCriteria)) {
+            continue; // Skip if kitchen criteria is not in hierarchy
+          }
+
+          HashMap<BathroomType, KDTreeNode> bathroomTypeMap = kitchenMap.get(kitchenCriteria);
+          Set<BathroomType> bathroomTypeSetInHierarchy = bathroomTypeMap.keySet();
+
+          // Loop through bathroom type criteria
+          for (BathroomType bathroomTypeCriteria : filteringCriteria.bathroomTypeCriteria()) {
+            if (!bathroomTypeSetInHierarchy.contains(bathroomTypeCriteria)) {
+              continue; // Skip if bathroom type criteria is not in hierarchy
+            }
+
+            // Retrieve the KDTreeNode for the fully matched criteria and filter its dorm rooms
+            KDTreeNode kdTreeNode = bathroomTypeMap.get(bathroomTypeCriteria);
+            List<DormRoom> filteredRooms = kdTreeNode.filterDormList(filteringCriteria);
+
+            // Only add if there are filtered results
+            if (!filteredRooms.isEmpty()) {
+              result.addAll(filteredRooms);
+            }
+          } // end bathroomType loop
+        } // end hasKitchen loop
+      } // end isSuite loop
+    } // end dormBuilding loop
+
+    return result;
   }
 }
