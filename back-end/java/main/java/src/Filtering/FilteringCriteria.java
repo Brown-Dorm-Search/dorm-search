@@ -56,8 +56,13 @@ import src.DormRoom.RoomCapacity;
  *  *                             capacities of dorm rooms. If {@code roomCapacityCriteria} is
  *                                non-empty, only rooms whose roomCapacity is included in this set
  *                                should pass the filtering criteria.
+ * @param floorNumberCriteria     A set of integer values indicating what floor a dorm room should
+ *                                be on. If this set is non-empty, only rooms whose floor matches
+ *                                one of the values in this set should be considered.
+ *
  */
 public record FilteringCriteria(Set<CampusLocation> campusLocationCriteria,
                                 Set<Boolean> isSuiteCriteria, Set<Boolean> hasKitchenCriteria,
                                 Set<BathroomType> bathroomTypeCriteria, Number minRoomSizeCriteria,
-                                Number maxRoomSizeCriteria, Set<RoomCapacity> roomCapacityCriteria) {}
+                                Number maxRoomSizeCriteria, Set<RoomCapacity> roomCapacityCriteria,
+                                Set<Integer> floorNumberCriteria) {}

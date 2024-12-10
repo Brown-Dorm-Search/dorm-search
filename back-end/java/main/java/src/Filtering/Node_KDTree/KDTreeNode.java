@@ -11,12 +11,13 @@ import src.Filtering.FilteringCriteria;
  * The {@code KDTreeNode} class represents a single node in a 3-dimensional KD-Tree
  * used to organize {@link DormRoom} instances. Each node corresponds to a dorm room,
  * and the node's position in the tree is determined by splitting the dataset along
- * one of three dimensions:
+ * one of four dimensions:
  *
  * <ul>
  *   <li>Dimension 0: {@code roomSize}</li>
  *   <li>Dimension 1: {@code roomCapacity}</li>
  *   <li>Dimension 2: {@code roomNumber}</li>
+ *   <li>Dimension 4: {@code floorNumber}</li>
  * </ul>
  *
  * By recursively splitting the list of dorm rooms into halves at the median room
@@ -51,8 +52,8 @@ public class KDTreeNode {
    */
   private final KDTreeNode right;
 
-  // Since we know the KD-tree is split on three dimensions, we fix K = 3.
-  private static final int K = 3;
+  // Since we know the KD-tree is split on three dimensions, we fix K = 4.
+  private static final int K = 4;
 
 
   /**
@@ -109,6 +110,7 @@ public class KDTreeNode {
    *   <li>0: roomSize</li>
    *   <li>1: roomCapacity</li>
    *   <li>2: roomNumber</li>
+   *   <li>3: floorNumber</li>
    * </ul>
    *
    * @param axis the axis to sort on, must be an integer between 0 and 2 inclusive
@@ -125,9 +127,13 @@ public class KDTreeNode {
           Comparator.comparingInt(IDormRoom::getRoomCapacityInt);
       case 2 ->
         // Compare by roomNumber
-          Comparator.comparing((IDormRoom::getRoomNumber));
+          Comparator.comparing(IDormRoom::getRoomNumber);
+      case 3 ->
+        // Compare by floorNumber
+          Comparator.comparingInt(IDormRoom::getFloorNumber);
       default ->
-          throw new IllegalArgumentException("Invalid axis: " + axis + ". Axis must be in 0,1, or 2.");
+          throw new IllegalArgumentException(
+              "Invalid axis: " + axis + ". Axis must be in 0,1, 2, or 3.");
     };
   }
 
