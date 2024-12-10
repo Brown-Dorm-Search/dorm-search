@@ -1,8 +1,10 @@
 package src.Filtering.Node_KDTree;
 
+import src.DormRoom.DormBuilding;
 import src.DormRoom.DormRoom;
 import java.util.List;
 import java.util.Comparator;
+import src.DormRoom.IDormRoom;
 import src.Filtering.FilteringCriteria;
 
 /**
@@ -28,14 +30,14 @@ import src.Filtering.FilteringCriteria;
  * </ol>
  *
  * <p>This node implementation is immutable once constructed, as it is built from a
- * static list of {@link DormRoom} instances.</p>
+ * static list of {@link DormBuilding} instances.</p>
  */
 public class KDTreeNode {
   /**
    * The dorm room represented by this KD-Tree node. This node acts as a pivot
    * point along one of the three dimensions (roomSize, roomCapacity, or roomNumber).
    */
-  private final DormRoom value;
+  private final IDormRoom value;
 
   /**
    * The left child node, containing dorm rooms that are "less" than this node's room
@@ -54,18 +56,18 @@ public class KDTreeNode {
 
 
   /**
-   * Constructs a {@code KDTreeNode} from a list of {@link DormRoom}s by recursively
+   * Constructs a {@code KDTreeNode} from a list of {@link IDormRoom}s by recursively
    * selecting medians and splitting along the appropriate dimension at each level.
    * This constructor uses a default initial depth of 0.
    *
    * @param dormRoomList the list of dorm rooms to build the KD-tree node from; must not be empty
    * @throws IllegalArgumentException if {@code dormRoomList} is null or empty
    */
-  public KDTreeNode(List<DormRoom> dormRoomList) throws IllegalArgumentException{
+  public KDTreeNode(List<IDormRoom> dormRoomList) throws IllegalArgumentException{
     this(dormRoomList, 0);
   }
 
-  private KDTreeNode(List<DormRoom> rooms, int depth) throws IllegalArgumentException {
+  private KDTreeNode(List<IDormRoom> rooms, int depth) throws IllegalArgumentException {
     // Checks that the dorm list is not empty
     if (rooms == null || rooms.isEmpty()) {
       throw new IllegalArgumentException(
@@ -84,7 +86,7 @@ public class KDTreeNode {
 
     // Build left subtree (rooms before the median)
     if (medianIndex > 0) { // Check that there are rooms left on the medium
-      List<DormRoom> leftRooms = rooms.subList(0, medianIndex);
+      List<IDormRoom> leftRooms = rooms.subList(0, medianIndex);
       this.left = new KDTreeNode(leftRooms, depth + 1);
     } else {
       this.left = null;
@@ -92,7 +94,7 @@ public class KDTreeNode {
 
     // Build right subtree (rooms after the median)
     if (medianIndex < rooms.size() - 1) { // Check that there are rooms right on the medium
-      List<DormRoom> rightRooms = rooms.subList(medianIndex + 1, rooms.size());
+      List<IDormRoom> rightRooms = rooms.subList(medianIndex + 1, rooms.size());
       this.right = new KDTreeNode(rightRooms, depth + 1);
     } else {
       this.right = null;
@@ -113,23 +115,24 @@ public class KDTreeNode {
    * @return a comparator that compares dorm rooms on the specified axis
    * @throws IllegalArgumentException if the axis is out of range
    */
-  private Comparator<DormRoom> getComparatorForAxis(int axis) {
+  private Comparator<IDormRoom> getComparatorForAxis(int axis) {
     return switch (axis) {
       case 0 ->
         // Compare by roomSize
-          Comparator.comparingInt(DormRoom::getRoomSize);
+          Comparator.comparingInt(IDormRoom::getRoomSize);
       case 1 ->
         // Compare by roomCapacity
-          Comparator.comparingInt(DormRoom::getRoomCapacity);
+          Comparator.comparingInt(IDormRoom::getRoomCapacityInt);
       case 2 ->
         // Compare by roomNumber
-          Comparator.comparingInt(DormRoom::getRoomNumber);
+          Comparator.comparing((IDormRoom::getRoomNumber));
       default ->
           throw new IllegalArgumentException("Invalid axis: " + axis + ". Axis must be in 0,1, or 2.");
     };
   }
 
-  public List<DormRoom> filterDormList(FilteringCriteria filteringCriteria){
+  public List<IDormRoom> filterDormList(FilteringCriteria filteringCriteria){
+    // TODO: Implement KD-Tree Searching Logic based on filteringCriteria
     return null;
   }
 }

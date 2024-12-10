@@ -1,9 +1,11 @@
 package src.Filtering.Node_KDTree;
 
 import java.util.Set;
+import java.util.stream.Collectors;
 import src.DormRoom.DormBuilding;
 import src.DormRoom.BathroomType;
 import src.DormRoom.DormRoom;
+import src.DormRoom.IDormRoom;
 import src.Filtering.FilteringCriteria;
 import src.Filtering.IDormFilter;
 import java.util.ArrayList;
@@ -11,8 +13,8 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * The {@code KDTree} class is a hierarchical data structure that organizes
- * {@link DormRoom} instances according to multiple categorical attributes:
+ * The {@code KDTreeWrapper} class is a hierarchical data structure that organizes
+ * {@link IDormRoom} instances according to multiple categorical attributes:
  * {@link DormBuilding}, suite availability, kitchen availability, and
  * {@link BathroomType} respectively.
  *
@@ -28,7 +30,7 @@ import java.util.List;
  * <p>This class implements the {@link IDormFilter} interface, allowing it to
  * be integrated with other dorm filtering systems.
  */
-public class KDTree implements IDormFilter {
+public class KDTreeWrapper implements IDormFilter {
   /**
    * A nested hierarchical data structure:
    * <ul>
@@ -43,7 +45,7 @@ public class KDTree implements IDormFilter {
   private final HashMap<DormBuilding, HashMap<Boolean, HashMap<Boolean, HashMap<BathroomType, KDTreeNode>>>> dormRoomHierarchy;
 
   /**
-   * Constructs a new {@code KDTree} from a provided list of {@link DormRoom}s.
+   * Constructs a new {@code KDTreeWrapper} from a provided list of {@link DormRoom}s.
    * Rooms are first grouped by building, suite status, kitchen availability,
    * and bathroom type. Each group is then managed by a {@link KDTreeNode},
    * which organizes rooms in a KD-tree structure using the specified dimensionality
@@ -52,12 +54,21 @@ public class KDTree implements IDormFilter {
    * @param dormRoomList a list of {@link DormRoom} instances to be integrated into the structure
    * @throws RuntimeException if a dorm room references an invalid or null building or bathroom type
    */
-  public KDTree(List<DormRoom> dormRoomList) throws RuntimeException {
+  public KDTreeWrapper(List<IDormRoom> dormRoomList) throws RuntimeException {
     this.dormRoomHierarchy = new HashMap<>();
 
-    HashMap<DormBuilding, HashMap<Boolean, HashMap<Boolean, HashMap<BathroomType, List<DormRoom>>>>> roomCategorizationMap = new HashMap<>();
+    // This is a map of all the categorical variables to a list of the dormBuildings that satisfy those
+    // categorical variables
+    HashMap<DormBuilding, HashMap<Boolean, HashMap<Boolean, HashMap<BathroomType, List<IDormRoom>>>>> roomCategorizationMap = new HashMap<>();
 
-    for (DormRoom dormRoom : dormRoomList) {
+    /*
+     * This for loops does 2 main things
+     * 1: Prevents NullPointerExceptions by initializing all the nested HashMaps within this for
+     *    this.dormRoomHierarchy and roomCategorizationMap
+     * 2: Places the list of dorm rooms that have specific categorical variables into roomCategorizationMap,
+     *    so those lists can then be used to create a KDTreeNode.
+     */
+    for (IDormRoom dormRoom : dormRoomList) {
       DormBuilding dormBuilding = dormRoom.getDormBuilding();
       if (dormBuilding == null) {
         throw new RuntimeException("Dorm building cannot be null for dorm room: " + dormRoom);
@@ -74,7 +85,8 @@ public class KDTree implements IDormFilter {
       ensureHierarchyStructure(dormBuilding, isSuite, hasKitchen);
       ensureRoomListStructure(roomCategorizationMap, dormBuilding, isSuite, hasKitchen, bathroomType);
 
-      List<DormRoom> specificRoomList = roomCategorizationMap
+      // Adds the dormRoom to the list
+      List<IDormRoom> specificRoomList = roomCategorizationMap
           .get(dormBuilding)
           .get(isSuite)
           .get(hasKitchen)
@@ -84,14 +96,14 @@ public class KDTree implements IDormFilter {
 
     // Create KDTreeNodes for each category and populate them with the respective rooms
     for (DormBuilding dormBuilding : roomCategorizationMap.keySet()) {
-      HashMap<Boolean, HashMap<Boolean, HashMap<BathroomType, List<DormRoom>>>> isSuiteMap =
+      HashMap<Boolean, HashMap<Boolean, HashMap<BathroomType, List<IDormRoom>>>> isSuiteMap =
           roomCategorizationMap.get(dormBuilding);
       for (Boolean isSuite : isSuiteMap.keySet()) {
-        HashMap<Boolean, HashMap<BathroomType, List<DormRoom>>> hasKitchenMap = isSuiteMap.get(isSuite);
+        HashMap<Boolean, HashMap<BathroomType, List<IDormRoom>>> hasKitchenMap = isSuiteMap.get(isSuite);
         for (Boolean hasKitchen : hasKitchenMap.keySet()) {
-          HashMap<BathroomType, List<DormRoom>> bathroomTypeMap = hasKitchenMap.get(hasKitchen);
+          HashMap<BathroomType, List<IDormRoom>> bathroomTypeMap = hasKitchenMap.get(hasKitchen);
           for (BathroomType bathroomType : bathroomTypeMap.keySet()) {
-            List<DormRoom> specificRoomList = bathroomTypeMap.get(bathroomType);
+            List<IDormRoom> specificRoomList = bathroomTypeMap.get(bathroomType);
             // Initialize the KDTreeNode with the list of rooms
             this.dormRoomHierarchy.get(dormBuilding)
                 .get(isSuite)
@@ -114,7 +126,7 @@ public class KDTree implements IDormFilter {
    * @param isSuite whether the dorm room is a suite
    * @param hasKitchen whether the dorm room includes a kitchen
    */
-  public void ensureHierarchyStructure(DormBuilding dormBuilding, boolean isSuite, boolean hasKitchen) {
+  private void ensureHierarchyStructure(DormBuilding dormBuilding, boolean isSuite, boolean hasKitchen) {
     HashMap<Boolean, HashMap<Boolean, HashMap<BathroomType, KDTreeNode>>> isSuiteMap =
         this.dormRoomHierarchy.computeIfAbsent(dormBuilding, k -> new HashMap<>());
 
@@ -128,11 +140,11 @@ public class KDTree implements IDormFilter {
    * Ensures that the intermediate mapping structure for categorizing dorm rooms
    * into lists (prior to creating their {@link KDTreeNode}) is fully initialized.
    * This structure, passed in as {@code roomCategorizationMap}, groups
-   * {@link DormRoom} objects by building, suite status, kitchen availability,
+   * {@link IDormRoom} objects by building, suite status, kitchen availability,
    * and bathroom type.
    *
    * <p>This method guarantees that a {@link HashMap} is in place at each level, so that
-   * {@link List<DormRoom>} instances can be safely created later without encountering null
+   * {@link List<IDormRoom>} instances can be safely created later without encountering null
    * references.
    *
    * @param roomCategorizationMap the nested mapping of rooms being built
@@ -141,17 +153,17 @@ public class KDTree implements IDormFilter {
    * @param hasKitchen whether the dorm room includes a kitchen
    * @param bathroomType the type of bathroom in the dorm room
    */
-  public void ensureRoomListStructure(
-      HashMap<DormBuilding, HashMap<Boolean, HashMap<Boolean, HashMap<BathroomType, List<DormRoom>>>>> roomCategorizationMap,
+  private void ensureRoomListStructure(
+      HashMap<DormBuilding, HashMap<Boolean, HashMap<Boolean, HashMap<BathroomType, List<IDormRoom>>>>> roomCategorizationMap,
       DormBuilding dormBuilding, boolean isSuite, boolean hasKitchen, BathroomType bathroomType) {
 
-    HashMap<Boolean, HashMap<Boolean, HashMap<BathroomType, List<DormRoom>>>> isSuiteMap =
+    HashMap<Boolean, HashMap<Boolean, HashMap<BathroomType, List<IDormRoom>>>> isSuiteMap =
         roomCategorizationMap.computeIfAbsent(dormBuilding, k -> new HashMap<>());
 
-    HashMap<Boolean, HashMap<BathroomType, List<DormRoom>>> hasKitchenMap = isSuiteMap.computeIfAbsent(
+    HashMap<Boolean, HashMap<BathroomType, List<IDormRoom>>> hasKitchenMap = isSuiteMap.computeIfAbsent(
         isSuite, k -> new HashMap<>());
 
-    HashMap<BathroomType, List<DormRoom>> bathroomTypeMap = hasKitchenMap.computeIfAbsent(
+    HashMap<BathroomType, List<IDormRoom>> bathroomTypeMap = hasKitchenMap.computeIfAbsent(
         hasKitchen, k -> new HashMap<>());
 
     bathroomTypeMap.computeIfAbsent(bathroomType, k -> new ArrayList<>());
@@ -167,8 +179,8 @@ public class KDTree implements IDormFilter {
    * @return a list of dorm rooms that match all the filtering criteria
    */
   @Override
-  public List<DormRoom> filterDormList(FilteringCriteria filteringCriteria) {
-    List<DormRoom> result = new ArrayList<>();
+  public List<IDormRoom> filterDormList(FilteringCriteria filteringCriteria) {
+    List<IDormRoom> result = new ArrayList<>();
 
     // The dorm room hierarchy is organized as:
     // dormBuilding -> isSuite -> hasKitchen -> bathroomType -> KDTreeNode
@@ -176,7 +188,9 @@ public class KDTree implements IDormFilter {
 
     // Intersect the dorm buildings in the criteria with those actually present in the hierarchy
     // This step avoids unnecessary looping over buildings not present in the hierarchy.
-    Set<DormBuilding> dormBuildingCriteriaSet = filteringCriteria.dormBuildingCriteria();
+    Set<DormBuilding> dormBuildingCriteriaSet = filteringCriteria.campusLocationCriteria().stream(). // Gets the set of all potential rooms
+        flatMap(campusLocation -> campusLocation.dormBuildingsInCampusLocation().stream()).collect(
+            Collectors.toSet());
     for (DormBuilding building : dormBuildingCriteriaSet) {
       if (!dormBuildingsInHierarchy.contains(building)) {
         continue; // Skip if the building is not in the hierarchy
@@ -211,7 +225,7 @@ public class KDTree implements IDormFilter {
 
             // Retrieve the KDTreeNode for the fully matched criteria and filter its dorm rooms
             KDTreeNode kdTreeNode = bathroomTypeMap.get(bathroomTypeCriteria);
-            List<DormRoom> filteredRooms = kdTreeNode.filterDormList(filteringCriteria);
+            List<IDormRoom> filteredRooms = kdTreeNode.filterDormList(filteringCriteria);
 
             // Only add if there are filtered results
             if (!filteredRooms.isEmpty()) {

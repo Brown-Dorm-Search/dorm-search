@@ -14,7 +14,7 @@ public enum BathroomType {
    */
   SemiPrivate,
   /**
-   * Indicates the dorm room shares a large communal bathroom
+   * Indicates the dorm room shares a large communal bathroom with many other dorms
    */
   Communal
 }

@@ -1,4 +1,4 @@
-package src.DormRoom;
+  package src.DormRoom;
 
 /**
  * The {@code DormRoom} class represents a dormitory room with various attributes such as size,
@@ -13,63 +13,61 @@ package src.DormRoom;
  *    BathroomType.Private, "Barbour Hall");
  * </pre>
  */
-public class DormRoom {
-
+public class DormRoom implements IDormRoom {
     /**
      * The square footage of the room.
      */
-    final int roomSize;
-
+    protected final int roomSize;
     /**
-     * The room number, as assigned by the Office of Residential Life. For example, "Room 255".
+     * The room number, as assigned by the Office of Residential Life. For example, "Room 255". This
+     *   is a string instead of a number because some rooms numbers have non-numeric characters, such
+     *   as "Room 255A"
      */
-    final int roomNumber;
-
+    protected final String roomNumber;
     /**
-     * The number of people that can reside in this dorm room.
+     * The number of people that can reside in this dorm room. 1 for singles, 2 for doubles, etc.
      */
-    final int roomCapacity;
-
+    protected final RoomCapacity roomCapacity;
     /**
      * A link (URL) to the floor plan that includes this room.
      */
-    final String floorPlanLink;
-
+    protected final String floorPlanLink;
     /**
-     * Indicates whether the room has a kitchen.
+     * Indicates whether the room has a kitchen. {@code true} if the dorm has their own private
+     * kitchen. {@code false} if the room does not have their own private kitchen
      */
-    final boolean hasKitchen;
-
+    protected final boolean hasKitchen;
     /**
-     * Indicates whether the room is considered a suite.
+     * Indicates whether the room is considered a suite. {@code true} if the dorm is a suite.
+     * {@code false} if the room is not considered a suite.
      */
-    final boolean isSuite;
-
+    protected final boolean isSuite;
     /**
-     * The type of bathroom available for this room.
+     * The type of bathroom available for this room. The potential types are public, semi-private,
+     * and private.
      */
-    final BathroomType bathroomType;
-
+    protected final BathroomType bathroomType;
     /**
      * The building in which this dorm room is located.
      */
-    final DormBuilding dormBuilding;
+    protected final DormBuilding dormBuilding;
 
     /**
      * Constructs a new {@code DormRoom} with the given attributes.
      *
      * @param roomSize       the square footage of the room
-     * @param roomNumber     the assigned room number (e.g., 255)
+     * @param roomNumber     the assigned room number (e.g., 255A)
      * @param roomCapacity   the number of occupants the room can house
      * @param floorPlanLink  a URL linking to the floor plan containing this room
      * @param hasKitchen     whether the room includes a kitchen
      * @param isSuite        whether the room is considered part of a suite
      * @param bathroomType   the type of bathroom (Private, SemiPrivate, or Communal)
-     * @param buildingName   the name of the building (must match one of the {@link DormBuilding} enum constants)
+     * @param buildingName   the name of the building (must match one of the {@link DormBuilding}
+     *                       constants)
      *
      * @throws RuntimeException if the specified buildingName does not match any known building
      */
-    public DormRoom(int roomSize, int roomNumber, int roomCapacity,
+    public DormRoom(int roomSize, String roomNumber, RoomCapacity roomCapacity,
         String floorPlanLink, boolean hasKitchen, boolean isSuite, BathroomType bathroomType,
         String buildingName) {
         this.roomSize = roomSize;
@@ -93,22 +91,30 @@ public class DormRoom {
     }
 
     /**
-     * Returns the assigned room number. For example, 255.
+     * Returns the assigned room number. For example, 255A.
      *
      * @return the room number
      */
-    public int getRoomNumber() {
+    public String getRoomNumber() {
         return roomNumber;
     }
 
     /**
-     * Returns the number of occupants this room can house.
+     * Returns the number of occupants this room can house as an int.
      *
      * @return the room's capacity
      */
-    public int getRoomCapacity() {
-        return roomCapacity;
+    public int getRoomCapacityInt() {
+        return roomCapacity.toInteger();
     }
+//    /**
+//     * Returns the number of occupants this room can house.
+//     *
+//     * @return the room's capacity
+//     */
+//    public RoomCapacity getRoomCapacity() {
+//        return roomCapacity;
+//    }
 
 //    /**
 //     * Returns the URL of the floor plan that includes this room.
@@ -153,5 +159,13 @@ public class DormRoom {
      */
     public DormBuilding getDormBuilding() {
         return dormBuilding;
+    }
+    /**
+     * Returns the floor number of the dorm room
+     *
+     * @return the floor number of the dorm room
+     */
+    public int getFloorNumber(){
+        return Integer.getInteger(String.valueOf(this.roomNumber.charAt(0)));
     }
 }

@@ -1,18 +1,29 @@
 package src.Filtering;
 
 import java.util.List;
-import src.DormRoom.DormRoom;
+import src.DormRoom.IDormRoom;
 
 /**
- * Interface that unifies the required functionality for different room filters.
+ * The {@code IDormFilter} interface defines the contract for filtering
+ * collections of dorm rooms based on specified criteria. Implementations
+ * of this interface should provide mechanisms to reduce a larger set of
+ * dorm rooms down to those that match given filtering conditions.
+ *
+ * <p>This interface is intended for integration with various room-finding
+ * utilities, enabling the application to dynamically apply different filters
+ * or combine them as needed.</p>
  */
 public interface IDormFilter {
 
   /**
-   * Used to minimize the list of potential rooms until only dorms that fit the specific filtering
-   *    criteria are returned.
-   * @param filteringCriteria - the criteria that the user wants to filter all the dorm rooms by.
-   * @return A list of rooms that match the filtering criteria
+   * Filters the provided set of dorm rooms according to the specified
+   * {@link FilteringCriteria}. This method returns a subset of rooms that
+   * fully match the conditions outlined in the criteria.
+   *
+   * @param filteringCriteria the criteria defining which rooms should be included
+   *                          in the filtered result
+   * @return a list of {@link IDormRoom} instances that meet all the specified
+   *         filtering conditions
    */
-  List<DormRoom> filterDormList(FilteringCriteria filteringCriteria);
+  List<IDormRoom> filterDormList(FilteringCriteria filteringCriteria);
 }
