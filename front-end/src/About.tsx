@@ -5,7 +5,7 @@ import './styles/About.css'; // Create and import the corresponding CSS for styl
 const teamMembers = [
   {
     name: 'David Chanin',
-    role: 'Backend Programmer and Team Management',
+    role: 'Backend Programmer and Product Design',
     image: 'https://media.licdn.com/dms/image/v2/D4E03AQGcmzaRMPKvHw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1692817995449?e=1739404800&v=beta&t=6mjybPmMf0PNlJJLfbZ8bXVpZ101j34K4uf_aATpuuY', 
     linkedin: 'https://www.linkedin.com/in/david-chanin/',
   },
