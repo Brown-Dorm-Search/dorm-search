@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import Map, {
     Layer,
     MapLayerMouseEvent,
+    MapMouseEvent,
     Marker,
     Popup,
     Source,

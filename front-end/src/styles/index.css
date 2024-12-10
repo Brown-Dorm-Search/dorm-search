@@ -66,3 +66,48 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+/* NavBar CSS */
+
+/* Make the navbar stay fixed in the top right corner */
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #333;
+  padding: 10px 20px;
+  border-radius: 5px 0 0 5px; /* Rounded corners for the navbar */
+}
+
+/* Style the navbar list to be horizontal */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Flex container, makes the list horizontal */
+}
+
+nav ul li {
+  margin: 0 10px; /* Space out the list items horizontally */
+}
+
+/* Style the navbar links */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  background-color: #444; /* Darker background for the links */
+  border-radius: 3px; /* Rounded corners for the links */
+}
+
+nav ul li a:hover {
+  background-color: #555; /* Slightly lighter when hovering */
+}
+
+/* Add some padding to the main content so it's not hidden behind the fixed navbar */
+.content {
+  padding: 20px;
+  margin-top: 50px; /* Ensure content is below the navbar */
+}
