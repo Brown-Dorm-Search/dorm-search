@@ -1,5 +1,6 @@
 package src.Filtering.Node_KDTree;
 
+import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 import src.DormRoom.DormBuilding;
@@ -176,11 +177,11 @@ public class KDTreeWrapper implements IDormFilter {
    * {@link KDTreeNode} instances, and then applies quantitative filters through the KD-tree search.
    *
    * @param filteringCriteria the criteria specifying which dorm rooms should be returned
-   * @return a list of dorm rooms that match all the filtering criteria
+   * @return a set of dorm rooms that match all the filtering criteria
    */
   @Override
-  public List<IDormRoom> filterDormList(FilteringCriteria filteringCriteria) {
-    List<IDormRoom> result = new ArrayList<>();
+  public Set<IDormRoom> filterDormList(FilteringCriteria filteringCriteria) {
+    Set<IDormRoom> result = new HashSet<>();
 
     // The dorm room hierarchy is organized as:
     // dormBuilding -> isSuite -> hasKitchen -> bathroomType -> KDTreeNode
@@ -225,7 +226,7 @@ public class KDTreeWrapper implements IDormFilter {
 
             // Retrieve the KDTreeNode for the fully matched criteria and filter its dorm rooms
             KDTreeNode kdTreeNode = bathroomTypeMap.get(bathroomTypeCriteria);
-            List<IDormRoom> filteredRooms = kdTreeNode.filterDormList(filteringCriteria);
+            Set<IDormRoom> filteredRooms = kdTreeNode.filterDormList(filteringCriteria, 0);
 
             // Only add if there are filtered results
             if (!filteredRooms.isEmpty()) {

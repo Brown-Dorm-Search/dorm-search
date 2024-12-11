@@ -1,6 +1,6 @@
 package src.Filtering;
 
-import java.util.List;
+import java.util.Set;
 import src.DormRoom.IDormRoom;
 
 /**
@@ -22,8 +22,8 @@ public interface IDormFilter {
    *
    * @param filteringCriteria the criteria defining which rooms should be included
    *                          in the filtered result
-   * @return a list of {@link IDormRoom} instances that meet all the specified
+   * @return a set of {@link IDormRoom} instances that meet all the specified
    *         filtering conditions
    */
-  List<IDormRoom> filterDormList(FilteringCriteria filteringCriteria);
+  Set<IDormRoom> filterDormList(FilteringCriteria filteringCriteria);
 }

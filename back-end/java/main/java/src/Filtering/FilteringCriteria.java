@@ -63,6 +63,6 @@ import src.DormRoom.RoomCapacity;
  */
 public record FilteringCriteria(Set<CampusLocation> campusLocationCriteria,
                                 Set<Boolean> isSuiteCriteria, Set<Boolean> hasKitchenCriteria,
-                                Set<BathroomType> bathroomTypeCriteria, Number minRoomSizeCriteria,
-                                Number maxRoomSizeCriteria, Set<RoomCapacity> roomCapacityCriteria,
+                                Set<BathroomType> bathroomTypeCriteria, int minRoomSizeCriteria,
+                                int maxRoomSizeCriteria, Set<RoomCapacity> roomCapacityCriteria,
                                 Set<Integer> floorNumberCriteria) {}

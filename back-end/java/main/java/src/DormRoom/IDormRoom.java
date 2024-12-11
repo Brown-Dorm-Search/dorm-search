@@ -19,6 +19,12 @@ public interface IDormRoom {
    * @return the room number
    */
   String getRoomNumber();
+  /**
+   * Returns the number of occupants this room can house
+   *
+   * @return the room's capacity
+   */
+  RoomCapacity getRoomCapacity();
 
   /**
    * Returns the number of occupants this room can house as an int.

@@ -107,14 +107,14 @@ public class DormRoom implements IDormRoom {
     public int getRoomCapacityInt() {
         return roomCapacity.toInteger();
     }
-//    /**
-//     * Returns the number of occupants this room can house.
-//     *
-//     * @return the room's capacity
-//     */
-//    public RoomCapacity getRoomCapacity() {
-//        return roomCapacity;
-//    }
+    /**
+     * Returns the number of occupants this room can house.
+     *
+     * @return the room's capacity
+     */
+    public RoomCapacity getRoomCapacity() {
+        return roomCapacity;
+    }
 
 //    /**
 //     * Returns the URL of the floor plan that includes this room.
