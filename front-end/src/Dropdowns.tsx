@@ -126,7 +126,7 @@ export default function Dropdowns(props: DropdownsProps) {
       </div>
 
       <div className="dropdown">
-        <label htmlFor="HasKitchen">Has Kitcken</label>
+        <label htmlFor="HasKitchen">Has Kitchen</label>
         <select
           id="HasKitchen"
           value={selectedOptions.HasKitchen}

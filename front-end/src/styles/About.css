@@ -1,6 +1,7 @@
 .about-page {
     font-family: Arial, sans-serif;
     margin: 20px;
+    overflow-y: auto;
   }
   
   .description {
