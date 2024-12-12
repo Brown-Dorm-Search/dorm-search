@@ -109,6 +109,7 @@ button:focus-visible {
   padding: 0; /* Adjust this is below for thin bar height */ 
   background-color: #730dd3;
   min-height: 5vh; /* Adjust this is above for thin bar height */
+  max-height: 5vh;
 }
 
 .header-top .title {
@@ -120,7 +121,12 @@ button:focus-visible {
 
 .header-top nav {
   background-color: #730dd3;
-
+  padding: 2px 8px; /* Reduced padding for thinner navbar */
+  border-radius: 5px 0 0 5px; /* Rounded corners */
+  display: flex; /* Ensure flex layout */
+  align-items: center; /* Vertically align the navbar */
+  min-height: 3vh; /* Make navbar thinner */
+  max-height: 3vh; /* Keep navbar height small */
 }
 
 /* NavBar CSS */
@@ -133,6 +139,8 @@ nav {
   background-color: #333;
   padding: 4px 15px; /* Reduce for size */
   border-radius: 5px 0 0 5px; /* Rounded corners for the navbar */
+  min-height: 4vh;
+  max-height: 4vh;
 }
 
 /* Style the navbar list to be horizontal */
@@ -142,6 +150,7 @@ nav ul {
   margin: 0;
   display: flex; /* Flex container, makes the list horizontal */
   align-items: center; /* Vertically center the items */
+
 }
 
 nav ul li {
@@ -152,7 +161,7 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 8px 16px; /* Reduce for spacing */
+  padding: 4px 12px; /* Reduce for spacing */
   display: block;
   background-color: #444; /* Darker background for the links */
   border-radius: 3px; /* Rounded corners for the links */
