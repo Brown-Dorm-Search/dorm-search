@@ -40,3 +40,97 @@
 .read-the-docs {
   color: #888;
 }
+
+
+/* Bottom header bar (thick bar with dropdowns) */
+.header-bottom {
+  background-color: #333;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Dropdown container */
+.dropdown-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  width: 100%
+}
+
+/* Each dropdown */
+.dropdown {
+  flex: 1 1 150px; /* Allow each dropdown to be responsive and take up 150px minimum width */
+  max-width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Style for the label */
+.dropdown label {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+/* Style for the 'Option' text under the label */
+.dropdown p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+/* Style for the select dropdown */
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+.search-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/* Style for the search button */
+.search-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #730dd3;
+  color: white;
+  border: none;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Search button hover effect */
+.search-button:hover {
+  background-color: #570c99;
+}
+
+
+/* Adjust for larger screens if necessary */
+@media (min-width: 768px) {
+  .dropdown-container {
+    flex-wrap: nowrap;
+  }
+}
+
+
+.App {
+  position: relative;
+  display: flex; /* Use flexbox to arrange dropdowns horizontally */
+  width: 100%;
+  height: 10vh; /* Full screen height */
+  justify-content: space-evenly; /* Evenly space the dropdowns */
+  align-items: center; /* Center dropdowns vertically */
+  padding: 0px;
+  margin-top: 0
+}
+

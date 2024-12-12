@@ -6,19 +6,25 @@ import App from './App.tsx'
 import { Route } from 'react-router';
 import Navbar from './Navbar.tsx';
 import About from './About.tsx';
+import Dropdowns from './Dropdowns.tsx';
 
 createRoot(document.getElementById('root')!).render(
-  <BrowserRouter>
-    <Navbar />
+    <StrictMode>
+      <App />
+    </StrictMode>,
+)
+
+
+{/* 
+    <div className="header-top">
+      <div className="title">Brown Dorm Search</div>
+      <Navbar />
+    </div>
+  
     <div className="content">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={"Contact Page"} />
       </Routes>
-    </div>
-  {/* <StrictMode>
-    <App />
-  </StrictMode> */}
-  </BrowserRouter>,
-)
+    </div> */}
