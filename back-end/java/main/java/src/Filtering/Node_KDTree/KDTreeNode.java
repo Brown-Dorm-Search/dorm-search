@@ -129,7 +129,7 @@ public class KDTreeNode {
    * @return a set of {@link IDormRoom} instances that match the filtering criteria
    * @throws IllegalArgumentException if the axis is out of range
    */
-  public Set<IDormRoom> filterDormList(FilteringCriteria filteringCriteria, int axis) {
+  public Set<IDormRoom> filterDormSet(FilteringCriteria filteringCriteria, int axis) {
     return switch (axis % K) {
       case 0 -> this.roomSizeFilter(filteringCriteria, axis);
       case 1 -> this.roomCapacityFilter(filteringCriteria, axis);
@@ -201,10 +201,10 @@ public class KDTreeNode {
     Set<IDormRoom> output = this.addCurrentRoomIfValid(filteringCriteria);
 
     if (this.left != null) {
-      output.addAll(this.left.filterDormList(filteringCriteria, axis + 1));
+      output.addAll(this.left.filterDormSet(filteringCriteria, axis + 1));
     }
     if (this.right != null) {
-      output.addAll(this.right.filterDormList(filteringCriteria, axis + 1));
+      output.addAll(this.right.filterDormSet(filteringCriteria, axis + 1));
     }
     return output;
   }
@@ -258,7 +258,7 @@ public class KDTreeNode {
     //   be greater than the min.
     if (currVal < min) {
       if (this.right != null) {
-        output.addAll(this.right.filterDormList(filteringCriteria, axis + 1));
+        output.addAll(this.right.filterDormSet(filteringCriteria, axis + 1));
       }
       return output;
     }
@@ -267,17 +267,17 @@ public class KDTreeNode {
     //   be less than the max.
     if (currVal > max) {
       if (this.left != null) {
-        output.addAll(this.left.filterDormList(filteringCriteria, axis + 1));
+        output.addAll(this.left.filterDormSet(filteringCriteria, axis + 1));
       }
       return output;
     }
 
     // Within range, explore both sides of the subtree.
     if (this.left != null) {
-      output.addAll(this.left.filterDormList(newMaxFiltering, axis + 1));
+      output.addAll(this.left.filterDormSet(newMaxFiltering, axis + 1));
     }
     if (this.right != null) {
-      output.addAll(this.right.filterDormList(newMinFiltering, axis + 1));
+      output.addAll(this.right.filterDormSet(newMinFiltering, axis + 1));
     }
 
     return output;
@@ -360,14 +360,12 @@ public class KDTreeNode {
       return false;
     }
 
+    // RoomCapacity must be a valid roomCapacity
     if (!filteringCriteria.roomCapacityCriteria().contains(dormRoom.getRoomCapacity())) {
       return false;
     }
 
-    if (!filteringCriteria.floorNumberCriteria().contains(dormRoom.getFloorNumber())) {
-      return false;
-    }
-
-    return true;
+    // the floor number must be a valid floor number
+    return filteringCriteria.floorNumberCriteria().contains(dormRoom.getFloorNumber());
   }
 }

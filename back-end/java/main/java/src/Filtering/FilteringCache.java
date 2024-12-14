@@ -65,7 +65,7 @@ public class FilteringCache {
             new CacheLoader<>() {
               @Override
               public @NotNull Set<IDormRoom> load(@NotNull FilteringCriteria filteringCriteria) {
-                return filter.filterDormList(filteringCriteria);
+                return filter.filterDormSet(filteringCriteria);
               }
             }
         );
@@ -81,7 +81,7 @@ public class FilteringCache {
    * @throws ExecutionException if the computation (filtering) threw an exception
    * @throws NullPointerException if {@code filteringCriteria} is null
    */
-  public Set<IDormRoom> getFilteredDormList(FilteringCriteria filteringCriteria) throws ExecutionException {
+  public Set<IDormRoom> getFilteredDormSet(FilteringCriteria filteringCriteria) throws ExecutionException {
     if (filteringCriteria == null) {
       throw new NullPointerException("FilteringCriteria cannot be null.");
     }

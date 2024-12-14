@@ -25,5 +25,5 @@ public interface IDormFilter {
    * @return a set of {@link IDormRoom} instances that meet all the specified
    *         filtering conditions
    */
-  Set<IDormRoom> filterDormList(FilteringCriteria filteringCriteria);
+  Set<IDormRoom> filterDormSet(FilteringCriteria filteringCriteria);
 }

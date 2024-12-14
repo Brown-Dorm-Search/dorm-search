@@ -17,15 +17,11 @@ import src.DormRoom.RoomCapacity;
  * ranges, such as minRoomSizeCriteria and maxRoomSizeCriteria, filter all the rooms where the
  * room's square footage is not within the range. The following are the default filtering criteria
  * <p>
- * dormBuildingCriteria: Set<"Buxton House", "Chapin House", "Diman House", "Goddard House",
- *    "Harkness House", "Marcy House", "Olney House", "Sears House", "Hope College", "Slater Hall",
- *    "Grad Center A", "Grad Center B", "Grad Center C", "Grad Center D", "Vartan Gregorian Quad A",
- *    "Vartan Gregorian Quad B", "New Pembroke #1", "New Pembroke #2", "New Pembroke #3",
- *    "Hegemen Hall", "Littlefield Hall", "Caswell Hall", "Barbour Hall", "Minden Hall",
- *    "Perkins Hall", "Young Orchard #2", "Young Orchard #4", "Young Orchard #10", "Machado House">
- * isSuiteCriteria: Set<True, False>
- * hasKitchenCriteria: Set<True, False>
- * bathroomTypeCriteria: Set<Private, Semi-Private, Communal>
+ * campusLocationCriteria: Set<"WristonQuad","MainGreen","GradCenter","GregorianQuad","Pembroke",
+ *   "RuthJSimmons","ThayerStreet","EastCampus","Machado">
+ * isSuiteCriteria: Set<True,False>
+ * hasKitchenCriteria: Set<True,False>
+ * bathroomTypeCriteria: Set<Private,Semi-Private,Communal>
  * minRoomSizeCriteria: 0
  * maxRoomSizeCriteria: 99999
  * roomCapacityCriteria: Set<One,Two,Three,Four,Five,Six>

@@ -180,7 +180,7 @@ public class KDTreeWrapper implements IDormFilter {
    * @return a set of dorm rooms that match all the filtering criteria
    */
   @Override
-  public Set<IDormRoom> filterDormList(FilteringCriteria filteringCriteria) {
+  public Set<IDormRoom> filterDormSet(FilteringCriteria filteringCriteria) {
     Set<IDormRoom> result = new HashSet<>();
 
     // The dorm room hierarchy is organized as:
@@ -226,7 +226,7 @@ public class KDTreeWrapper implements IDormFilter {
 
             // Retrieve the KDTreeNode for the fully matched criteria and filter its dorm rooms
             KDTreeNode kdTreeNode = bathroomTypeMap.get(bathroomTypeCriteria);
-            Set<IDormRoom> filteredRooms = kdTreeNode.filterDormList(filteringCriteria, 0);
+            Set<IDormRoom> filteredRooms = kdTreeNode.filterDormSet(filteringCriteria, 0);
 
             // Only add if there are filtered results
             if (!filteredRooms.isEmpty()) {
