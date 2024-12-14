@@ -11,6 +11,34 @@
   <packaging>jar</packaging>
 
   <dependencies>
+    <!-- CSV Parser -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-csv</artifactId>
+      <version>1.12.0</version>
+    </dependency>
+
+
+    <!--
+          TestNG builds useful functionality on top of JUnit, such as method annotations.
+   -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+
+    <!--
+           JUnit is a unit testing library for Java.
+    -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.4.0</version>
+      <scope>test</scope>
+    </dependency>
+
     <!-- Example: Guava dependency -->
     <dependency>
       <groupId>com.google.guava</groupId>
