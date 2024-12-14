@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5d53b90e-8e66-48de-8f58-4d54bda5f40e" name="Changes" comment="feat: Added FilteringCriteria Class for all filtering criteria">
+      <change afterPath="$PROJECT_DIR$/java/dorm-search.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/Filtering/FilteringCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/back-end.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java/java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/DormRoom/BathroomType.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/DormRoom/BathroomType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/DormRoom/CampusLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/DormRoom/CampusLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/DormRoom/DormBuilding.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/DormRoom/DormBuilding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/DormRoom/DormRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/DormRoom/DormRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/Filtering/FilteringCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/Filtering/FilteringCriteria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/Filtering/IDormFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/Filtering/IDormFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/Filtering/Node_KDTree/KDTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/Filtering/Node_KDTree/KDTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/Filtering/Node_KDTree/KDTreeCache.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/Filtering/Node_KDTree/KDTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/Filtering/Node_KDTree/KDTreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/Filtering/Node_KDTree/Node.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2pquxFJocCIzJ9axGgDpUwqxeHt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "OverrideImplement.generate.javadoc": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "David",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "openjdk-21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/12673/cs320/dorm-search/back-end/java/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/12673/cs320/dorm-search/back-end/java/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\12673\cs320\dorm-search\back-end\java" />
+      <recent name="C:\Users\12673\cs320\dorm-search\back-end" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="back-end" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="back-end" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-f644763e9732-c0c073db" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d53b90e-8e66-48de-8f58-4d54bda5f40e" name="Changes" comment="" />
+      <created>1733506170681</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733506170681</updated>
+      <workItem from="1733506171645" duration="7023000" />
+      <workItem from="1733524334801" duration="8196000" />
+      <workItem from="1733590391867" duration="3574000" />
+      <workItem from="1733594448841" duration="1279000" />
+      <workItem from="1733612237498" duration="1505000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: implemented the wrest of the KDTreeNode wrapper.">
+      <option name="closed" value="true" />
+      <created>1733530126703</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733530126703</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: Added FilteringCriteria Class for all filtering criteria">
+      <option name="closed" value="true" />
+      <created>1733594227918</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733594227918</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: implemented the wrest of the KDTreeNode wrapper." />
+    <MESSAGE value="feat: Added FilteringCriteria Class for all filtering criteria" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Added FilteringCriteria Class for all filtering criteria" />
+  </component>
+</project>
