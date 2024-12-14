@@ -282,14 +282,14 @@ public class DormBuilding {
   }
 
 
-//  /**
-//   * Returns the name of the building.
-//   *
-//   * @return the building's name, for example "Barbour Hall" or "Grad Center A"
-//   */
-//  public String getBuildingName() {
-//    return buildingName;
-//  }
+  /**
+   * Returns the name of the building.
+   *
+   * @return the building's name, for example "Barbour Hall" or "Grad Center A"
+   */
+  public String getBuildingName() {
+    return buildingName;
+  }
 //
 //  /**
 //   * Returns the ratio of total building occupancy to the number of available washing machines.
