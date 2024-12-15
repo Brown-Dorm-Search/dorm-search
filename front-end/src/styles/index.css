@@ -23,9 +23,7 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
+  margin-top: 0;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -68,16 +66,81 @@ button:focus-visible {
 }
 
 
+
+/* Header Section */
+/* .AppHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px 0 0 5px;
+  background-color: #730dd3;
+  min-height: 8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(1px + 2vmin);
+  color: white;
+} */
+
+
+.AppHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #730dd3;
+  z-index: 10; /* Ensure header stays on top */
+}
+
+/* Top header bar (thin bar with title and navbar) */
+.header-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #730dd3;
+  z-index: 10; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0; /* Adjust this is below for thin bar height */ 
+  background-color: #730dd3;
+  min-height: 5vh; /* Adjust this is above for thin bar height */
+  max-height: 5vh;
+}
+
+.header-top .title {
+  font-size: 1.5em;
+  padding: 15px;
+  color: white;
+  font-weight: bold; /* For font weight*/
+}
+
+.header-top nav {
+  background-color: #730dd3;
+  padding: 2px 8px; /* Reduced padding for thinner navbar */
+  border-radius: 5px 0 0 5px; /* Rounded corners */
+  display: flex; /* Ensure flex layout */
+  align-items: center; /* Vertically align the navbar */
+  min-height: 3vh; /* Make navbar thinner */
+  max-height: 3vh; /* Keep navbar height small */
+}
+
 /* NavBar CSS */
 
 /* Make the navbar stay fixed in the top right corner */
 nav {
-  position: fixed;
+  position: relative;
   top: 0;
   right: 0;
   background-color: #333;
-  padding: 10px 20px;
+  padding: 4px 15px; /* Reduce for size */
   border-radius: 5px 0 0 5px; /* Rounded corners for the navbar */
+  min-height: 4vh;
+  max-height: 4vh;
 }
 
 /* Style the navbar list to be horizontal */
@@ -86,17 +149,19 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex; /* Flex container, makes the list horizontal */
+  align-items: center; /* Vertically center the items */
+
 }
 
 nav ul li {
-  margin: 0 10px; /* Space out the list items horizontally */
+  margin: 4px; /* Space out the list items horizontally */ /* Reduce for smaller width of navbar */
 }
 
 /* Style the navbar links */
 nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 4px 12px; /* Reduce for spacing */
   display: block;
   background-color: #444; /* Darker background for the links */
   border-radius: 3px; /* Rounded corners for the links */
@@ -108,6 +173,11 @@ nav ul li a:hover {
 
 /* Add some padding to the main content so it's not hidden behind the fixed navbar */
 .content {
-  padding: 20px;
-  margin-top: 50px; /* Ensure content is below the navbar */
+  height: 5vh;
+  width: 100vw;
+  margin-top: 5vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+
 }

@@ -1,0 +1,24 @@
+.panel-container {
+    display: flex;            /* Use flexbox to create a row layout */
+    height: 100vh;            /* Full viewport height */
+  }
+  
+  .panel {
+    flex: 1;                  /* Distribute space equally */
+    border: 1px solid #ccc;   /* Optional, to make the panels visible */
+    padding: 20px;
+    box-sizing: border-box;   /* Ensure padding is included in the width/height calculation */
+  }
+  
+  .left {
+    background-color: #000000;
+  }
+  
+  .center {
+    background-color: #000000;
+  }
+  
+  .right {
+    background-color: #000000;
+  }
+  

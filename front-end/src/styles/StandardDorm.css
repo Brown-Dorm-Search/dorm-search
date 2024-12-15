@@ -1,0 +1,57 @@
+.standard-room-info {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 90%; /* Adjust the width based on your layout */
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .standard-room-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .room-number {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .floor-plan-link {
+    font-size: 0.9em;
+    color: #0077b5;
+    text-decoration: none;
+  }
+  
+  .floor-plan-link:hover {
+    text-decoration: underline;
+  }
+  
+  .room-details {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+  }
+  
+  .detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .detail label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .detail span {
+    color: #333;
+    font-size: 1em;
+  }
+  
