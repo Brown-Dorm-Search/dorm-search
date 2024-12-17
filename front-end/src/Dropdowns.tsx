@@ -1,10 +1,14 @@
 import React, { Dispatch, SetStateAction, useState } from 'react';
 import "./styles/App.css"
+import MultiRangeSlider from "multi-range-slider-react";
 
 export interface DropdownsProps {
-    resultStr: string;
-    setResultStr: Dispatch<SetStateAction<string>>;
+  resultStr: string;
+  setResultStr: Dispatch<SetStateAction<string>>;
+  FilteredDorms: string;
+  setFilteredDorms: Dispatch<SetStateAction<string>>;
 }
+
 
 
 export default function Dropdowns(props: DropdownsProps) {
@@ -15,8 +19,10 @@ export default function Dropdowns(props: DropdownsProps) {
     RoomCapacity: [],
     HasBathroom: [],
     HasKitchen: [],
-    RoomSize: [],
+    minRoomSize: [],
+    maxRoomSize: [],
   });
+
 
 
   // Handle change for multi-select dropdowns
@@ -27,17 +33,48 @@ export default function Dropdowns(props: DropdownsProps) {
       [dropdown]: selectedValues,
     }));
   };
-
   const handleSearchClick = () => {
     console.log('Search clicked');
     const resultString = Object.entries(selectedOptions)
-    .map(([dropdown, value]) => `${dropdown}: ${`${value}` === '' ? 'All' : value}`)
-    .join(', ');
+      .map(([dropdown, value]) => `${dropdown}: ${`${value}` === '' ? 'All' : value}`)
+      .join(', ');
 
-    
+    const dormsMap = Object.entries(selectedOptions.Campus_Location)
+      .map(([value]) => `${`${value}` === '' ? 'All' : value}`)
+      .join(', ');
     console.log(resultString);
+    props.setFilteredDorms(dormsMap);
     props.setResultStr(resultString)
   };
+
+  async function fetchSearch() {
+    const fetch1 = await fetch(
+      `http://localhost:3232/filter?campusLocation=${encodeURIComponent(
+        selectedOptions.Campus_Location
+      )}&isSuite=${encodeURIComponent(
+        selectedOptions.PartOfSuite
+      )}&hasKitchen=${encodeURIComponent(
+        selectedOptions.HasKitchen
+      )}&bathroomType=${encodeURIComponent(
+        selectedOptions.HasBathroom
+      )}&minRoomSize=${encodeURIComponent(
+        selectedOptions.minRoomSize
+      )}&maxRoomSize=${encodeURIComponent(
+        selectedOptions.maxRoomsize
+      )}&roomCapacity=${encodeURIComponent(
+        selectedOptions.RoomCapacity
+      )}&floorNumber=${encodeURIComponent(
+        selectedOptions.Floor
+      )}`
+    );
+    const filterjson = await fetch1.json();
+    if (filterjson.result === "success") {
+      console.log("search successful");
+      props.setResultStr(filterjson);
+    } else {
+      console.error("Invalid data from API:", filterjson);
+    }
+  }
 
   return (
     <div className="dropdown-container">
@@ -47,8 +84,9 @@ export default function Dropdowns(props: DropdownsProps) {
           id="Campus Location"
           value={selectedOptions.Campus_Location}
           onChange={(e) => handleChange(e, 'Campus_Location')}
+          multiple
         >
-         <option value="All">All</option>
+          <option value="All">All</option>
           <option value="East Campus">East Campus</option>
           <option value="Grad Center">Grad Center</option>
           <option value="Gregorian Quad">Gregorian Quad</option>
@@ -67,6 +105,7 @@ export default function Dropdowns(props: DropdownsProps) {
           id="Floor"
           value={selectedOptions.Floor}
           onChange={(e) => handleChange(e, 'Floor')}
+          multiple
         >
           <option value="All">All</option>
           <option value="Floor 1">Floor 1</option>
@@ -100,6 +139,7 @@ export default function Dropdowns(props: DropdownsProps) {
           id="RoomCapacity"
           value={selectedOptions.RoomCapacity}
           onChange={(e) => handleChange(e, 'RoomCapacity')}
+          multiple
         >
           <option value="All">All</option>
           <option value="1">1</option>
@@ -117,6 +157,7 @@ export default function Dropdowns(props: DropdownsProps) {
           id="HasBathroom"
           value={selectedOptions.HasBathroom}
           onChange={(e) => handleChange(e, 'HasBathroom')}
+          multiple
         >
           <option value="All">All</option>
           <option value="Private">Private</option>
@@ -138,17 +179,25 @@ export default function Dropdowns(props: DropdownsProps) {
         </select>
       </div>
 
-      <div className="dropdown">
+      <div className='multi-range-slider-container'>
         <label htmlFor="RoomSize">Room Size</label>
-        <select
-          id="RoomSize"
-          value={selectedOptions.RoomSize}
-          onChange={(e) => handleChange(e, 'RoomSize')}
-        >
-          <option value="All">All</option>
-          <option value="0-250">0-250</option>
-          <option value="250-500">250-500</option>
-        </select>
+        <MultiRangeSlider
+          min={0}
+          max={500}
+          step={20}
+          minValue={selectedOptions.minRoomSize}
+          maxValue={selectedOptions.maxRoomSize}
+          onInput={(e) => {
+            setSelectedOptions(prevState => ({
+              ...prevState,
+              minRoomSize: e.minValue,
+              maxRoomSize: e.maxValue
+            }));
+          }}
+        ></MultiRangeSlider>
+        <p>
+          Selected range: {selectedOptions.minRoomSize} - {selectedOptions.maxRoomSize}
+        </p>
       </div>
 
       <div className="search-button-container">

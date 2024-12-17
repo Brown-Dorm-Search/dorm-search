@@ -12,9 +12,27 @@ import Map, {
     ViewStateChangeEvent,
 } from "react-map-gl";
 import * as mapboxgl from "mapbox-gl";
+
+/**
+ * The {@code MapBox} is an ui element that allows users to view
+ * a map of the dorms. When searching for dorms, the dorm halls that have 
+ * dorms within your search will highlight. When you hover over a building,
+ * the building name will appear. When you click on a building, the map will then 
+ * be replaced with a image of the building and some of the buildings information,
+ * address, etc. This will also open a panel on the right to show what dorms under the filter
+ * that are in the selected building. Zooming out is limited. 
+ * 
+ * When using this in junction with other elements, 'filteredDorms' and 'clickedDorm' 
+ * should be available from App.tsx. 'filteredDorms' refers to buildings that highlighted, 
+ * and 'clickedDorm' refers to the builidng on the map that has most
+ * recently been clicked by the user. 
+ */
 type HoverDormState = { feature: any; x: any; y: any } | null;
 const MAPBOX_KEY = import.meta.env.VITE_MAPBOX_TOKEN;
 
+/**
+     * Intial map scale
+     */
 const BrownLocation: LatLong = {
     lat: 41.827,
     long: -71.4,
@@ -31,35 +49,73 @@ if (!MAPBOX_KEY) {
     console.error("Mapbox API key not found. Please add it to your .env file.");
 }
 
+/**
+     * filteredDorms and clickedDorms both communicate
+     * to the parent class, allowing for the Map to appear 
+     * different nad be affected by children classes of its parent. 
+     */
 interface MapboxProps {
-    filteredDorms: Array<string>;
-    setFilteredDorms: React.Dispatch<React.SetStateAction<Array<string>>>;
+    filteredDorms: string;
+    setFilteredDorms: React.Dispatch<React.SetStateAction<string>>;
     clickedDorm: string;
     setClickedDorm: React.Dispatch<React.SetStateAction<string>>;
 }
 
 export default function Mapbox(props: MapboxProps) {
+
+    /**
+     * viewState is significant for zoom and moving aroudn the map
+     */
     const [viewState, setViewState] = useState({
         latitude: BrownLocation.lat,
         longitude: BrownLocation.long,
         zoom: initialZoom,
     });
+
+    /**
+     * makes the dorms have that orange color to distinguish them
+     */
     const [dormOverlay, setDormOverlay] = useState<GeoJSON.FeatureCollection | undefined>(
         undefined
     );
+
+    /**
+     * works with filtered dorms to change the Overlay 
+     */
     const [selectOverlay, setSelectOverlay] = useState<GeoJSON.FeatureCollection | undefined>(
         undefined
     );
+
+    /**
+     * Keep track of the Hover box information. 
+     * x, y coords of where the box is
+     * has feature information of dorm 
+     */
     const [currentHoverDorm, setHoverDorm] = useState<HoverDormState>(null);
+
+    /**
+     * Makes sure that the map is laoded before overlay layers
+     */
     const [mapLoaded, setMapLoaded] = useState(false);
 
-
+    /**
+     * makes sure there is a secodn for the map to laod
+     * before the layers are laoded ontop 
+     */
     useEffect(() => {
         setTimeout(() => {
             setMapLoaded(true);
-        }, 1000);
+        }, 800);
     }, []);
+
+    /**
+    * makes the dorm overlay the imported dorm's geojson
+    */
     useEffect(() => { setDormOverlay(geojson); }, []);
+
+    /**
+    * only gets the features of the filteredDorms, for searhcign purposes 
+    */
     useEffect(() => {
         const filteredFeatures = geojson.features.filter((feature: any) =>
             props.filteredDorms.includes(feature.properties.name)
@@ -73,6 +129,11 @@ export default function Mapbox(props: MapboxProps) {
         setSelectOverlay(filteredGeoJson);
     }, []);
 
+    /**
+    * on Hover constantly updates the currentHoverDorm varible
+    * in order to properly get ht eddorm the hoverbox should exist over
+    * as well as its information
+    */
     const onHover = useCallback((event: { features: any; point: { x: any; y: any; }; }) => {
         const {
             features,
@@ -82,6 +143,11 @@ export default function Mapbox(props: MapboxProps) {
         setHoverDorm(hoveredFeature && { feature: hoveredFeature, x, y });
     }, []);
 
+    /**
+    * makes sure clickedDorm becomes the dorm that the user clicked.
+    * This will send a log and also shoudl allow the parent 
+    * class to deal with the click properly.
+    */
     function clickDorm(e: mapboxgl.MapMouseEvent) {
         const { lng, lat } = e.lngLat;
         const point = [lng, lat];
@@ -160,8 +226,8 @@ export default function Mapbox(props: MapboxProps) {
                     {currentHoverDorm && (
                         <div className="balh"
                             style={{
-                                left: currentHoverDorm.x,
-                                top: currentHoverDorm.y,
+                                left: currentHoverDorm.x - 60,
+                                top: currentHoverDorm.y + 20,
                                 position: 'absolute',
                                 backgroundColor: 'white',
                                 padding: '10px',

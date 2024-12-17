@@ -12,7 +12,7 @@ function Home() {
   const [resultString, setResultString] = useState('');
   const [building, setBuilding] = useState('');
   //used prop.clickedDorm[] to get clicked dorm
-  const [filteredDorms, setFilteredDorms] = useState<Array<string>>([]);
+  const [filteredDorms, setFilteredDorms] = useState('');
   const [clickedDorm, setClickedDorms] = useState<string>('');
   //set filtered dorms to change map highlights.
 
@@ -25,7 +25,7 @@ function Home() {
     <>
       <div>
         <div className="header-bottom">
-          <Dropdowns resultStr={resultString} setResultStr={setResultString}></Dropdowns>
+          <Dropdowns resultStr={resultString} setResultStr={setResultString} setFilteredDorms={setFilteredDorms} FilteredDorms={''}></Dropdowns>
         </div>
         <div className="panel-container">
           <div className="panel left">{resultString}</div>
