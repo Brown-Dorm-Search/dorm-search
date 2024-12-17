@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +24,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -62,7 +65,8 @@
 
 /* Each dropdown */
 .dropdown {
-  flex: 1 1 150px; /* Allow each dropdown to be responsive and take up 150px minimum width */
+  flex: 1 1 150px;
+  /* Allow each dropdown to be responsive and take up 150px minimum width */
   max-width: 120px;
   display: flex;
   flex-direction: column;
@@ -109,6 +113,10 @@ select {
   transition: background-color 0.3s ease;
 }
 
+.title {
+  color: white;
+}
+
 /* Search button hover effect */
 .search-button:hover {
   background-color: #570c99;
@@ -125,12 +133,15 @@ select {
 
 .App {
   position: relative;
-  display: flex; /* Use flexbox to arrange dropdowns horizontally */
+  display: flex;
+  /* Use flexbox to arrange dropdowns horizontally */
   width: 100%;
-  height: 10vh; /* Full screen height */
-  justify-content: space-evenly; /* Evenly space the dropdowns */
-  align-items: center; /* Center dropdowns vertically */
+  height: 10vh;
+  /* Full screen height */
+  justify-content: space-evenly;
+  /* Evenly space the dropdowns */
+  align-items: center;
+  /* Center dropdowns vertically */
   padding: 0px;
   margin-top: 0
 }
-

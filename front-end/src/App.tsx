@@ -13,7 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="header-top">
-        <div className="title">Brown Dorm Search</div>
+        <div className="title">Brown Dorm Finder</div>
         <Navbar />
       </div>
 

@@ -1,18 +1,18 @@
 import "mapbox-gl/dist/mapbox-gl.css";
 import * as turf from '@turf/turf';
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useCallback, useState } from "react";
 import { all_dorms, selected_dorms } from "./overlay";
 import geojson from "./Tiledata.json";
 import Map, {
     Layer,
     MapLayerMouseEvent,
     MapMouseEvent,
-    Marker,
     Popup,
     Source,
     ViewStateChangeEvent,
 } from "react-map-gl";
-
+import * as mapboxgl from "mapbox-gl";
+type HoverDormState = { feature: any; x: any; y: any } | null;
 const MAPBOX_KEY = import.meta.env.VITE_MAPBOX_TOKEN;
 
 const BrownLocation: LatLong = {
@@ -50,8 +50,15 @@ export default function Mapbox(props: MapboxProps) {
     const [selectOverlay, setSelectOverlay] = useState<GeoJSON.FeatureCollection | undefined>(
         undefined
     );
+    const [currentHoverDorm, setHoverDorm] = useState<HoverDormState>(null);
+    const [mapLoaded, setMapLoaded] = useState(false);
 
 
+    useEffect(() => {
+        setTimeout(() => {
+            setMapLoaded(true);
+        }, 1000);
+    }, []);
     useEffect(() => { setDormOverlay(geojson); }, []);
     useEffect(() => {
         const filteredFeatures = geojson.features.filter((feature: any) =>
@@ -64,6 +71,15 @@ export default function Mapbox(props: MapboxProps) {
         };
 
         setSelectOverlay(filteredGeoJson);
+    }, []);
+
+    const onHover = useCallback((event: { features: any; point: { x: any; y: any; }; }) => {
+        const {
+            features,
+            point: { x, y }
+        } = event;
+        const hoveredFeature = features && features[0];
+        setHoverDorm(hoveredFeature && { feature: hoveredFeature, x, y });
     }, []);
 
     function clickDorm(e: mapboxgl.MapMouseEvent) {
@@ -86,7 +102,6 @@ export default function Mapbox(props: MapboxProps) {
     }
 
 
-
     return (
         <div>
             {MAPBOX_KEY ? (
@@ -96,6 +111,7 @@ export default function Mapbox(props: MapboxProps) {
 
                     style={{ width: window.innerWidth / 3, height: window.innerHeight / 2 }}
                     mapStyle={"mapbox://styles/knewlin713/cm43jrtsp002g01rz80qfdre0"}
+
                     onMove={(ev: ViewStateChangeEvent) => {
                         if (ev.viewState.latitude > 41.837) {
                             setViewState({
@@ -129,15 +145,34 @@ export default function Mapbox(props: MapboxProps) {
                             });
                         }
                     }}
-                    onClick={(ev: mapboxgl.MapMouseEvent) => clickDorm(ev)}
+                    onClick={(e: MapLayerMouseEvent) => clickDorm(e)}
+                    interactiveLayerIds={['all_dorms']}
+                    onMouseMove={onHover}
                 >
-                    <Source id="selected_dorms" type="geojson" data={selectOverlay}>
-                        <Layer {...selected_dorms} />
-                        <Source id="all_dorms" type="geojson" data={dormOverlay}>
-                            <Layer {...all_dorms}
-                            />
-                        </Source>
-                    </Source>
+                    {mapLoaded && (
+                        <Source id="selected_dorms" type="geojson" data={selectOverlay}>
+                            <Layer {...selected_dorms} />
+                            <Source id="all_dorms" type="geojson" data={dormOverlay}>
+                                <Layer {...all_dorms}
+                                />
+                            </Source>
+                        </Source>)}
+                    {currentHoverDorm && (
+                        <div className="balh"
+                            style={{
+                                left: currentHoverDorm.x,
+                                top: currentHoverDorm.y,
+                                position: 'absolute',
+                                backgroundColor: 'white',
+                                padding: '10px',
+                                border: '1px solid #ccc',
+                                zIndex: 1000,
+                                fontSize: '16px',
+                                color: 'black'
+                            }}>
+                            <div>Dorm: {currentHoverDorm.feature.properties.Name}</div>
+                        </div>)}
+
                 </Map>
             ) : (
                 "No MAXBOX_KEY provided. Cannot load map."
