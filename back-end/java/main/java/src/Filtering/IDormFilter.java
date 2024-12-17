@@ -1,7 +1,7 @@
-package src.Filtering;
+package Filtering;
 
 import java.util.Set;
-import src.DormRoom.IDormRoom;
+import DormRoom.IDormRoom;
 
 /**
  * The {@code IDormFilter} interface defines the contract for filtering

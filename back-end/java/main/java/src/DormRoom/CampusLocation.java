@@ -1,4 +1,4 @@
-package src.DormRoom;
+package DormRoom;
 
 import java.util.Set;
 

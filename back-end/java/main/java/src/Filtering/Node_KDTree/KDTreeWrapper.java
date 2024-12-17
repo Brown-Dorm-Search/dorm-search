@@ -1,14 +1,14 @@
-package src.Filtering.Node_KDTree;
+package Filtering.Node_KDTree;
 
 import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
-import src.DormRoom.DormBuilding;
-import src.DormRoom.BathroomType;
-import src.DormRoom.DormRoom;
-import src.DormRoom.IDormRoom;
-import src.Filtering.FilteringCriteria;
-import src.Filtering.IDormFilter;
+import DormRoom.DormBuilding;
+import DormRoom.BathroomType;
+import DormRoom.DormRoom;
+import DormRoom.IDormRoom;
+import Filtering.FilteringCriteria;
+import Filtering.IDormFilter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

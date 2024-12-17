@@ -1,5 +1,0 @@
-1.) Add Buxton, Pembrokes, Chen, Danoff, Sternlight?, Wayland?, Kings House to dorm building and campus locations
-
-2.) Use Jackson's Parser instead of instatializes the main class with an empty dorm room list.
-
-3.) Replace the int for floorNumbers with its own enum

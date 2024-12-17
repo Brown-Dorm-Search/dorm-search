@@ -1,9 +1,9 @@
-package src.Filtering;
+package Filtering;
 
-import src.DormRoom.BathroomType;
-import src.DormRoom.CampusLocation;
+import DormRoom.BathroomType;
+import DormRoom.CampusLocation;
 import java.util.Set;
-import src.DormRoom.RoomCapacity;
+import DormRoom.RoomCapacity;
 
 
 /**
