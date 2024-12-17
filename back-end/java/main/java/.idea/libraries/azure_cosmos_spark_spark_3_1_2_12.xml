@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="azure.cosmos.spark.spark_3.1_2.12" type="repository">
+    <properties maven-id="com.azure.cosmos.spark:azure-cosmos-spark_3-1_2-12:4.33.0" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/azure/cosmos/spark/azure-cosmos-spark_3-1_2-12/4.33.0/azure-cosmos-spark_3-1_2-12-4.33.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,4 +1,4 @@
-package src.DormRoom;
+package DormRoom;
 
 /**
  * An enum representing the maximum capacity of a dorm.

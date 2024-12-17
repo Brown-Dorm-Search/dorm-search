@@ -1,5 +1,8 @@
-package src.DormRoom;
+package DormRoom;
 
+import DormRoom.BathroomType;
+import DormRoom.DormBuilding;
+import DormRoom.RoomCapacity;
 import java.util.List;
 
 /**

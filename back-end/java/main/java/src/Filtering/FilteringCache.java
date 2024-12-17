@@ -1,12 +1,14 @@
-package src.Filtering;
+package Filtering;
 
+import Filtering.FilteringCriteria;
+import Filtering.IDormFilter;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
 import java.util.Set;
 import java.util.concurrent.ExecutionException;
 import org.jetbrains.annotations.NotNull;
-import src.DormRoom.IDormRoom;
+import DormRoom.IDormRoom;
 
 /**
  * The {@code FilteringCache} class provides a caching layer for dorm room filtering operations.
@@ -65,7 +67,7 @@ public class FilteringCache {
             new CacheLoader<>() {
               @Override
               public @NotNull Set<IDormRoom> load(@NotNull FilteringCriteria filteringCriteria) {
-                return filter.filterDormList(filteringCriteria);
+                return filter.filterDormSet(filteringCriteria);
               }
             }
         );
@@ -81,7 +83,7 @@ public class FilteringCache {
    * @throws ExecutionException if the computation (filtering) threw an exception
    * @throws NullPointerException if {@code filteringCriteria} is null
    */
-  public Set<IDormRoom> getFilteredDormList(FilteringCriteria filteringCriteria) throws ExecutionException {
+  public Set<IDormRoom> getFilteredDormSet(FilteringCriteria filteringCriteria) throws ExecutionException {
     if (filteringCriteria == null) {
       throw new NullPointerException("FilteringCriteria cannot be null.");
     }
