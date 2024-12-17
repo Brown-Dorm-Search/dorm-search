@@ -7,10 +7,6 @@ import java.io.IOException;
 
 public class EnumUtils {
 
-    public EnumUtils() {
-
-    }
-
     public static RoomCapacity getRoomCapacity(String capacity) throws IllegalArgumentException {
         switch (capacity.toLowerCase()) {
             case "one":
