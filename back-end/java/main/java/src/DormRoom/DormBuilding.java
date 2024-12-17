@@ -1,4 +1,4 @@
-package src.DormRoom;
+package DormRoom;
 
 /**
  * The {@code DormBuilding} class represents data about a specific dormitory building on campus.
@@ -282,6 +282,7 @@ public class DormBuilding {
   }
 
 
+
   /**
    * Returns the name of the building.
    *
@@ -336,4 +337,5 @@ public class DormBuilding {
 //  public CampusLocation getCampusLocation() {
 //    return campusLocation;
 //  }
+
 }
