@@ -121,9 +121,9 @@ public class DormRoom implements IDormRoom {
 //     *
 //     * @return the floor plan URL
 //     */
-//    public String getFloorPlanLink() {
-//        return floorPlanLink;
-//    }
+    public String getFloorPlanLink() {
+        return floorPlanLink;
+    }
 
     /**
      * Indicates whether the room is equipped with a kitchen.
