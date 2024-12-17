@@ -1,6 +1,8 @@
 1.) Add Buxton, Pembrokes, Chen, Danoff, Sternlight?, Wayland?, Kings House to dorm building and campus locations
 
-2.) Finish categorically filtering by all the criteria
+2.) Use Jackson's Parser instead of instatializes the main class with an empty dorm room list.
+
+3.) Replace the int for floorNumbers with its own enum
 
 4.) Consider adding categorical variables ot KDTreeNode for filtering
 

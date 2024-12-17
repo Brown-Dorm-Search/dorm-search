@@ -1,4 +1,4 @@
-package src.DormRoom;
+package DormRoom;
 
 /**
  * The {@code DormBuilding} class represents data about a specific dormitory building on campus.
@@ -280,6 +280,7 @@ public class DormBuilding {
       case null, default -> throw new RuntimeException("Not a valid building name: " + buildingName);
     }
   }
+
 
 
   /**

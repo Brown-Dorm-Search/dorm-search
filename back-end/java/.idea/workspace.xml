@@ -4,7 +4,60 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="634e8b99-80fe-4b90-9e0d-5896aaa399d1" name="Changes" comment="@feat Implemented the categorical part of the filter" />
+    <list default="true" id="634e8b99-80fe-4b90-9e0d-5896aaa399d1" name="Changes" comment="@feat Implemented the categorical part of the filter">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/java/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/java/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/dorm-search.iml" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/dorm-search.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/src/DormRoom/BathroomType.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/src/DormRoom/BathroomType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/src/DormRoom/CampusLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/src/DormRoom/CampusLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/src/DormRoom/DormBuilding.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/src/DormRoom/DormBuilding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/src/DormRoom/DormRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/src/DormRoom/DormRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/src/DormRoom/IDormRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/src/DormRoom/IDormRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/src/DormRoom/RoomCapacity.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/src/DormRoom/RoomCapacity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/src/DormRoom/Suite.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/src/DormRoom/Suite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/src/Filtering/FilteringCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/src/Filtering/FilteringCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/src/Filtering/FilteringCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/src/Filtering/FilteringCriteria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/src/Filtering/IDormFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/src/Filtering/IDormFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/src/Filtering/Node_KDTree/KDTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/src/Filtering/Node_KDTree/KDTreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/src/Filtering/Node_KDTree/KDTreeWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/src/Filtering/Node_KDTree/KDTreeWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/src/Server/FilteringHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/src/Server/FilteringHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/src/Server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/src/Server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/.idea/libraries/azure_cosmos_spark_spark_3_1_2_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/ToDo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/dorm-search.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/src/DormRoom/BathroomType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/src/DormRoom/CampusLocation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/src/DormRoom/DormBuilding.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/src/DormRoom/DormRoom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/src/DormRoom/IDormRoom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/src/DormRoom/RoomCapacity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/src/DormRoom/Suite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/src/Filtering/FilteringCache$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/src/Filtering/FilteringCache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/src/Filtering/FilteringCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/src/Filtering/IDormFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/src/Filtering/Node_KDTree/KDTreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/src/Filtering/Node_KDTree/KDTreeWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/src/Server/FilteringHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/src/Server/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/target/dorm-search-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/classes/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/target/dorm-search-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/target/dorm-search-1.0.0.jar" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,27 +81,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "true",
-    "Repository.Attach.JavaDocs": "true",
-    "Repository.Attach.Sources": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "David",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/12673/cs320/dorm-search/back-end/java/main/java/pom.xml",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;David&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/12673/cs320/dorm-search/back-end/java/main/java/pom.xml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="src.Filtering" />
@@ -93,6 +146,7 @@
       <workItem from="1733612202511" duration="185000" />
       <workItem from="1733613706021" duration="4973000" />
       <workItem from="1733782554687" duration="345000" />
+      <workItem from="1734399651554" duration="705000" />
     </task>
     <task id="LOCAL-00001" summary="@feat Implemented a cache">
       <option name="closed" value="true" />
