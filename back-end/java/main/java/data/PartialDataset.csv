@@ -1,0 +1,563 @@
+Building,Floor,Suite,Room,Room Type,Suite Size (if applicable),Is Suite?,Room Size,Has Kitchen?,Has Bathroom?,Common Area Size,Floor Plan Link
+BARBOUR HALL,BARBOUR FL 0 APT,BARBOUR 050,BARBOUR 050 051,Double (Suite/Apartment),3,Yes,307,Yes,Yes,331,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_0_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 0 APT,BARBOUR 050,BARBOUR 050 052,Single (Suite/Apartment),3,Yes,98,Yes,Yes,331,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_0_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 0 APT,BARBOUR 080,BARBOUR 080 081,Double (Suite/Apartment),4,Yes,228,Yes,Yes,385,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_0_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 0 APT,BARBOUR 080,BARBOUR 080 084,Double (Suite/Apartment),4,Yes,199,Yes,Yes,385,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_0_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 1,BARBOUR 103,BARBOUR 103,Triple,,No,425,No,Yes,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_1_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 1,BARBOUR 105,BARBOUR 105,Triple,,No,482,Yes,Yes,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_1_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 1,BARBOUR 106,BARBOUR 106,Double,,No,379,No,Yes,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_1_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 1,BARBOUR 108,BARBOUR 108,Double,,No,397,No,Yes,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_1_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 1 APT,BARBOUR 150,BARBOUR 150 152,Triple (Suite/Apartment),5,Yes,276,Yes,Yes,312,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_1_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 1 APT,BARBOUR 150,BARBOUR 150 155,Double (Suite/Apartment),5,Yes,186,Yes,Yes,312,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_1_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 1 APT,BARBOUR 170,BARBOUR 170 171,Double (Suite/Apartment),4,Yes,183,Yes,Yes,329,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_1_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 1 APT,BARBOUR 170,BARBOUR 170 174,Double (Suite/Apartment),4,Yes,183,Yes,Yes,329,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_1_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 1 APT,BARBOUR 180,BARBOUR 180 180,Double (Suite/Apartment),4,Yes,182,Yes,Yes,262,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_1_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 1 APT,BARBOUR 180,BARBOUR 180 183,Double (Suite/Apartment),4,Yes,203,Yes,Yes,262,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_1_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 2,BARBOUR 201,BARBOUR 201,Double,,No,399,No,Yes,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_2_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 2,BARBOUR 202,BARBOUR 202,Double,,No,350,No,Yes,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_2_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 2,BARBOUR 203,BARBOUR 203,Triple,,No,387,No,Yes,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_2_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 2,BARBOUR 205,BARBOUR 205,Triple,,No,444,No,Yes,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_2_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 2 APT,BARBOUR 250,BARBOUR 250 252,Triple (Suite/Apartment),5,Yes,287,Yes,Yes,312,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_2_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 2 APT,BARBOUR 250,BARBOUR 250 255,Double (Suite/Apartment),5,Yes,186,Yes,Yes,312,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_2_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 2 APT,BARBOUR 260,BARBOUR 260 263,Single (Suite/Apartment),5,Yes,90,Yes,Yes,527,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_2_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 2 APT,BARBOUR 260,BARBOUR 260 264,Double (Suite/Apartment),5,Yes,183,Yes,Yes,527,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_2_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 2 APT,BARBOUR 260,BARBOUR 260 265,Double (Suite/Apartment),5,Yes,183,Yes,Yes,527,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_2_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 2 APT,BARBOUR 280,BARBOUR 280 281,Double (Suite/Apartment),4,Yes,182,Yes,Yes,262,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_2_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 2 APT,BARBOUR 280,BARBOUR 280 283,Double (Suite/Apartment),4,Yes,203,Yes,Yes,262,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_2_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 3,BARBOUR 301,BARBOUR 301,Double,,No,399,No,Yes,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_3_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 3,BARBOUR 302,BARBOUR 302,Double,,No,350,No,Yes,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_3_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 3,BARBOUR 303,BARBOUR 303,Triple,,No,425,No,Yes,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_3_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 3,BARBOUR 305,BARBOUR 305,Double,,No,482,Yes,Yes,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_3_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 3,BARBOUR 306,BARBOUR 306,Double,,No,379,No,Yes,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_3_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 3,BARBOUR 308,BARBOUR 308,Double,,No,397,No,Yes,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_3_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 3 APT,BARBOUR 350,BARBOUR 350 352,Triple (Suite/Apartment),5,Yes,287,Yes,Yes,312,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_3_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 3 APT,BARBOUR 350,BARBOUR 350 355,Double (Suite/Apartment),5,Yes,186,Yes,Yes,312,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_3_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 3 APT,BARBOUR 360,BARBOUR 360 363,Single (Suite/Apartment),5,Yes,90,Yes,Yes,350,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_3_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 3 APT,BARBOUR 360,BARBOUR 360 364,Double (Suite/Apartment),5,Yes,183,Yes,Yes,350,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_3_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 3 APT,BARBOUR 360,BARBOUR 360 365,Double (Suite/Apartment),5,Yes,183,Yes,Yes,350,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_3_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 3 APT,BARBOUR 370,BARBOUR 370 371,Double (Suite/Apartment),4,Yes,183,Yes,Yes,329,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_3_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 3 APT,BARBOUR 370,BARBOUR 370 374,Double (Suite/Apartment),4,Yes,183,Yes,Yes,329,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_3_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 3 APT,BARBOUR 390,BARBOUR 390 391,Double (Suite/Apartment),4,Yes,183,Yes,Yes,261,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_3_dwg_base_a_8x11l.pdf
+BARBOUR HALL,BARBOUR FL 3 APT,BARBOUR 390,BARBOUR 390 393,Double (Suite/Apartment),4,Yes,198,Yes,Yes,261,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100129_3_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 1,BUXTON 101,BUXTON 101,Double,,No,223,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_1_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 1,BUXTON 102,BUXTON 102,Double,,No,222,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_1_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 2,BUXTON 201,BUXTON 201,Double,,No,223,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_2_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 2,BUXTON 202,BUXTON 202,Double,,No,313,No,Yes,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_2_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 2,BUXTON 212,BUXTON 212,Single,,No,121,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_2_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 2,BUXTON 214,BUXTON 214,Double,,No,250,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_2_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 2,BUXTON 216A,BUXTON 216A,Single,,No,123,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_2_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 2,BUXTON 216B,BUXTON 216B,Single,,No,121,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_2_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 2,BUXTON 218,BUXTON 218,Double,,No,243,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_2_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 2,BUXTON 219,BUXTON 219,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_2_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 2,BUXTON 220,BUXTON 220,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_2_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 3,BUXTON 301,BUXTON 301,Double,,No,222,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_2_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 3,BUXTON 302,BUXTON 302,Double,,No,223,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_2_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 3,BUXTON 314,BUXTON 314,Double,,No,250,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_2_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 3,BUXTON 316A,BUXTON 316A,Single,,No,123,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_2_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 3,BUXTON 316B,BUXTON 316B,Single,,No,121,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_2_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 3,BUXTON 318,BUXTON 318,Double,,No,243,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_2_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 3,BUXTON 319,BUXTON 319,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_2_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 3,BUXTON 320,BUXTON 320,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_2_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 4,BUXTON 414,BUXTON 414,Double,,No,292,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_4_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 4,BUXTON 418,BUXTON 418,Double,,No,219,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_4_dwg_base_a_8x11l.pdf
+BUXTON HOUSE,BUXTON FL 4,BUXTON 420,BUXTON 420,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100174_4_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 1 S,CASWELL 101,CASWELL 101,Double,,No,235,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_1_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 1 S,CASWELL 102,CASWELL 102,Double,,No,287,No,Yes,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_1_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 1 S,CASWELL 103,CASWELL 103,Double,,No,215,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_1_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 1 S,CASWELL 104,CASWELL 104,Double,,No,213,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_1_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 1 M,CASWELL 105,CASWELL 105,Double,,No,270,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_1_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 1 M,CASWELL 106,CASWELL 106,Double,,No,252,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_1_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 1 M,CASWELL 107,CASWELL 107,Double,,No,195,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_1_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 1 M,CASWELL 108,CASWELL 108,Double,,No,213,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_1_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 1 N,CASWELL 109,CASWELL 109,Double,,No,233,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_1_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 1 N,CASWELL 110,CASWELL 110,Double,,No,234,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_1_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 1 N,CASWELL 111,CASWELL 111,Double,,No,262,No,Yes,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_1_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 1 N,CASWELL 112,CASWELL 112,Double,,No,214,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_1_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 2 S,CASWELL 201,CASWELL 201,Double,,No,239,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_2_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 2 S,CASWELL 202,CASWELL 202,Double,,No,273,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_2_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 2 S,CASWELL 203,CASWELL 203,Double,,No,241,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_2_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 2 S,CASWELL 204,CASWELL 204,Double,,No,219,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_2_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 2 M,CASWELL 205,CASWELL 205,Double,,No,239,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_2_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 2 M,CASWELL 206,CASWELL 206,Double,,No,278,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_2_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 2 M,CASWELL 207,CASWELL 207,Double,,No,257,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_2_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 2 M,CASWELL 208,CASWELL 208,Double,,No,219,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_2_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 2 N,CASWELL 209,CASWELL 209,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_2_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 2 N,CASWELL 210,CASWELL 210,Double,,No,248,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_2_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 2 N,CASWELL 211,CASWELL 211,Double,,No,231,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_2_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 2 N,CASWELL 212,CASWELL 212,Double,,No,215,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_2_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 3 S,CASWELL 301,CASWELL 301,Double,,No,239,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_3_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 3 S,CASWELL 302,CASWELL 302,Double,,No,269,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_3_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 3 S,CASWELL 303,CASWELL 303,Double,,No,243,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_3_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 3 S,CASWELL 303,CASWELL 304,Double,,No,219,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_3_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 3 M,CASWELL 305,CASWELL 305,Double,,No,239,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_3_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 3 M,CASWELL 306,CASWELL 306,Double,,No,280,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_3_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 3 M,CASWELL 307,CASWELL 307,Double,,No,247,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_3_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 3 M,CASWELL 308,CASWELL 308,Double,,No,219,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_3_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 3 N,CASWELL 309,CASWELL 309,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_3_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 3 N,CASWELL 310,CASWELL 310,Double,,No,237,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_3_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 3 N,CASWELL 311,CASWELL 311,Double,,No,220,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_3_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 3 N,CASWELL 312,CASWELL 312,Double,,No,215,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_3_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 4 S,CASWELL 401,CASWELL 401,Double,,No,263,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_4_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 4 S,CASWELL 402,CASWELL 402,Double,,No,281,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_4_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 4 S,CASWELL 403,CASWELL 403,Double,,No,237,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_4_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 4 S,CASWELL 404,CASWELL 404,Double,,No,243,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_4_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 4 M,CASWELL 405,CASWELL 405,Double,,No,239,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_4_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 4 M,CASWELL 406,CASWELL 406,Double,,No,257,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_4_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 4 M,CASWELL 407,CASWELL 407,Double,,No,254,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_4_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 4 M,CASWELL 408,CASWELL 408,Double,,No,243,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_4_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 4 N,CASWELL 409,CASWELL 409,Double,,No,251,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_4_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 4 N,CASWELL 410,CASWELL 410,Double,,No,264,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_4_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 4 N,CASWELL 411,CASWELL 411,Double,,No,254,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_4_dwg_base_a_8x11l.pdf
+CASWELL HALL,CASWELL FL 4 N,CASWELL 412,CASWELL 412,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100004_4_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 1,CHAPIN 106,CHAPIN 106,Single,,No,190,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_1_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 1,CHAPIN 107,CHAPIN 107,Double,,No,244,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_1_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 1,CHAPIN 108,CHAPIN 108,Double,,No,248,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_1_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 1,CHAPIN 113,CHAPIN 113,Double,,No,219,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_1_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 1,CHAPIN 114B,CHAPIN 114B,Single,,No,166,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_1_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 1,CHAPIN 117,CHAPIN 117,Double,,No,219,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_1_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 1,CHAPIN 120,CHAPIN 120,Single,,No,134,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_1_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 1,CHAPIN 124,CHAPIN 124,Double,,No,248,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_1_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 1,CHAPIN 126,CHAPIN 126,Single,,No,190,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_1_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 2,CHAPIN 201,CHAPIN 201,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_1_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 2,CHAPIN 202,CHAPIN 202,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_2_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 2,CHAPIN 204,CHAPIN 204,Double,,No,243,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_2_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 2,CHAPIN 206B,CHAPIN 206B,Single,,No,122,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_2_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 2,CHAPIN 207,CHAPIN 207,Double,,No,244,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_2_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 2,CHAPIN 208,CHAPIN 208,Double,,No,248,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_2_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 2,CHAPIN 210,CHAPIN 210,Single,,No,133,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_2_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 2,CHAPIN 211,CHAPIN 211,Single,,No,133,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_2_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 2,CHAPIN 212,CHAPIN 212,Single,,No,133,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_2_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 2,CHAPIN 213,CHAPIN 213,Double,,No,219,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_2_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 2,CHAPIN 214,CHAPIN 214,Double,,No,315,No,Yes,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_2_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 2,CHAPIN 217,CHAPIN 217,Double,,No,219,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_2_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 2,CHAPIN 223,CHAPIN 223,Double,,No,244,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_2_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 2,CHAPIN 224,CHAPIN 224,Double,,No,248,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_2_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 2,CHAPIN 228,CHAPIN 228,Double,,No,243,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_2_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 2,CHAPIN 229,CHAPIN 229,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_2_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 2,CHAPIN 230,CHAPIN 230,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_2_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 3,CHAPIN 301,CHAPIN 301,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_3_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 3,CHAPIN 302,CHAPIN 302,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_3_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 3,CHAPIN 304,CHAPIN 304,Double,,No,243,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_3_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 3,CHAPIN 306A,CHAPIN 306A,Single,,No,122,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_3_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 3,CHAPIN 306B,CHAPIN 306B,Single,,No,122,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_3_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 3,CHAPIN 307,CHAPIN 307,Double,,No,244,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_3_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 3,CHAPIN 308,CHAPIN 308,Double,,No,248,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_3_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 3,CHAPIN 313,CHAPIN 313,Double,,No,219,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_3_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 3,CHAPIN 314,CHAPIN 314,Double,,No,223,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_3_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 3,CHAPIN 317,CHAPIN 317,Double,,No,219,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_3_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 3,CHAPIN 323,CHAPIN 323,Double,,No,244,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_3_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 3,CHAPIN 324,CHAPIN 324,Double,,No,248,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_3_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 3,CHAPIN 328,CHAPIN 328,Double,,No,243,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_3_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 3,CHAPIN 329,CHAPIN 329,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_3_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 3,CHAPIN 330,CHAPIN 330,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_3_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 4,CHAPIN 402,CHAPIN 402,Double,,No,226,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_4_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 4,CHAPIN 404,CHAPIN 404,Double,,No,215,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_4_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 4,CHAPIN 406,CHAPIN 406,Double,,No,225,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_4_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 4,CHAPIN 407,CHAPIN 407,Double,,No,193,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_4_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 4,CHAPIN 426,CHAPIN 426,Double,,No,272,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_4_dwg_base_a_8x11l.pdf
+CHAPIN HOUSE,CHAPIN FL 4,CHAPIN 428,CHAPIN 428,Double,,No,329,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100163_4_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 1,DIMAN 117,DIMAN 117,Double,,No,224,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_1_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 1,DIMAN 121,DIMAN 121,Double,,No,215,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_1_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 2,DIMAN 201,DIMAN 201,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_2_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 2,DIMAN 202,DIMAN 202,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_2_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 2,DIMAN 208,DIMAN 208,Double,,No,248,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_2_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 2,DIMAN 215,DIMAN 215,Triple,,No,338,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_2_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 2,DIMAN 217,DIMAN 217,Double,,No,224,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_2_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 2,DIMAN 221,DIMAN 221,Triple,,No,216,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_2_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 3,DIMAN 301,DIMAN 301,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_3_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 3,DIMAN 302,DIMAN 302,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_3_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 3,DIMAN 304,DIMAN 304,Double,,No,243,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_3_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 3,DIMAN 306A,DIMAN 306A,Single,,No,122,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_3_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 3,DIMAN 307,DIMAN 307,Double,,No,248,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_3_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 3,DIMAN 308,DIMAN 308,Double,,No,249,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_3_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 3,DIMAN 309,DIMAN 309,Single,,No,129,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_3_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 3,DIMAN 315,DIMAN 315,Triple,,No,338,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_3_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 3,DIMAN 317,DIMAN 317,Double,,No,205,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_3_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 3,DIMAN 321,DIMAN 321,Double,,No,215,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_3_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 3,DIMAN 323,DIMAN 323,Single,,No,129,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_3_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 3,DIMAN 325,DIMAN 325,Single,,No,129,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_3_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 3,DIMAN 326,DIMAN 326,Single,,No,129,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_3_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 3,DIMAN 327,DIMAN 327,Double,,No,248,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_3_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 3,DIMAN 328,DIMAN 328,Double,,No,248,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_3_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 3,DIMAN 329A,DIMAN 329A,Single,,No,122,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_3_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 3,DIMAN 329B,DIMAN 329B,Single,,No,122,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_3_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 3,DIMAN 331,DIMAN 331,Double,,No,245,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_3_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 3,DIMAN 332,DIMAN 332,Single,,No,153,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_3_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 4,DIMAN 402,DIMAN 402,Double,,No,226,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_4_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 4,DIMAN 404,DIMAN 404,Double,,No,215,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_4_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 4,DIMAN 406,DIMAN 406,Double,,No,225,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_4_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 4,DIMAN 407,DIMAN 407,Double,,No,215,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_4_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 4,DIMAN 427,DIMAN 427,Double,,No,219,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_4_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 4,DIMAN 428,DIMAN 428,Double,,No,217,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_4_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 4,DIMAN 429,DIMAN 429,Double,,No,219,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_4_dwg_base_a_8x11l.pdf
+DIMAN HOUSE,DIMAN FL 4,DIMAN 431,DIMAN 431,Double,,No,237,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100164_4_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 1,GODDARD 127,GODDARD 127,Double,,No,219,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_1_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 2,GODDARD 201,GODDARD 201,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_2_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 2,GODDARD 202,GODDARD 202,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_2_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 2,GODDARD 212,GODDARD 212,Single,,No,126,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_2_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 2,GODDARD 214,GODDARD 214,Single,,No,133,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_2_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 2,GODDARD 216,GODDARD 216,Single,,No,133,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_2_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 2,GODDARD 217,GODDARD 217,Double,,No,135,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_2_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 2,GODDARD 219,GODDARD 219,Single,,No,132,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_2_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 2,GODDARD 221,GODDARD 221,Single,,No,172,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_2_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 2,GODDARD 223,GODDARD 223,Double,,No,224,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_2_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 2,GODDARD 227,GODDARD 227,Double,,No,219,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_2_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 1,GODDARD 230,GODDARD 230,Single,,No,133,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_1_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 1,GODDARD 231,GODDARD 231,Single,,No,133,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_1_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 1,GODDARD 247,GODDARD 247,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_1_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 1,GODDARD 248,GODDARD 248,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_1_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 3,GODDARD 301,GODDARD 301,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_3_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 3,GODDARD 302,GODDARD 302,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_3_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 3,GODDARD 303,GODDARD 303,Single,,No,141,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_3_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 3,GODDARD 304,GODDARD 304,Double,,No,241,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_3_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 3,GODDARD 308,GODDARD 308,Double,,No,250,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_3_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 3,GODDARD 318,GODDARD 318,Single,,No,127,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_3_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 3,GODDARD 319,GODDARD 319,Single,,No,132,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_3_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 3,GODDARD 323,GODDARD 323,Double,,No,224,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_3_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 3,GODDARD 327,GODDARD 327,Double,,No,219,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_3_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 2,GODDARD 330,GODDARD 330,Single,,No,129,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_2_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 2,GODDARD 331,GODDARD 331,Single,,No,129,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_2_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 2,GODDARD 333,GODDARD 333,Single,,No,129,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_2_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 2,GODDARD 340,GODDARD 340,Single,,No,121,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_2_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 2,GODDARD 342,GODDARD 342,Double,,No,250,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_2_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 2,GODDARD 344A,GODDARD 344A,Single,,No,123,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_2_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 2,GODDARD 344B,GODDARD 344B,Single,,No,123,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_2_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 2,GODDARD 345,GODDARD 345,Single,,No,141,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_2_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 2,GODDARD 346,GODDARD 346,Double,,No,238,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_2_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 2,GODDARD 347,GODDARD 347,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_2_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 2,GODDARD 348,GODDARD 348,Double,,No,232,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_2_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 4,GODDARD 402,GODDARD 402,Double,,No,242,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_4_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 4,GODDARD 404,GODDARD 404,Double,,No,209,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_4_dwg_base_a_8x11l.pdf
+GODDARD HOUSE,GODDARD FL 4,GODDARD 406,GODDARD 406,Double,,No,296,No,No,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100157_4_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 1,GRADCTR A 130,GRADCTR A 130 133,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_1_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 1,GRADCTR A 130,GRADCTR A 130 134,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_1_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 1,GRADCTR A 140,GRADCTR A 140 141,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_1_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 1,GRADCTR A 140,GRADCTR A 140 142,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_1_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 1,GRADCTR A 140,GRADCTR A 140 143,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_1_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 1,GRADCTR A 140,GRADCTR A 140 144,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_1_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 1,GRADCTR A 140,GRADCTR A 140 145,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_1_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 2,GRADCTR A 220,GRADCTR A 220 222,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_2_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 2,GRADCTR A 220,GRADCTR A 220 223,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_2_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 2,GRADCTR A 220,GRADCTR A 220 224,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_2_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 2,GRADCTR A 220,GRADCTR A 220 225,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_2_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 2,GRADCTR A 230,GRADCTR A 230 231,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_2_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 2,GRADCTR A 230,GRADCTR A 230 232,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_2_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 2,GRADCTR A 230,GRADCTR A 230 233,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_2_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 2,GRADCTR A 230,GRADCTR A 230 234,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_2_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 2,GRADCTR A 240,GRADCTR A 240 241,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_2_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 2,GRADCTR A 240,GRADCTR A 240 242,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_2_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 2,GRADCTR A 240,GRADCTR A 240 243,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_2_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 2,GRADCTR A 240,GRADCTR A 240 246,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_2_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 3,GRADCTR A 310,GRADCTR A 310 311,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_3_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 3,GRADCTR A 310,GRADCTR A 310 312,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_3_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 3,GRADCTR A 310,GRADCTR A 310 314,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_3_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 3,GRADCTR A 310,GRADCTR A 310 315,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_3_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 3,GRADCTR A 320,GRADCTR A 320 322,Single (Suite/Apartment),,No,157,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_3_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 3,GRADCTR A 320,GRADCTR A 320 323,Single (Suite/Apartment),,No,153,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_3_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 3,GRADCTR A 320,GRADCTR A 320 324,Single (Suite/Apartment),,No,164,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_3_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 3,GRADCTR A 330,GRADCTR A 330 331,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_3_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 3,GRADCTR A 330,GRADCTR A 330 332,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_3_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 3,GRADCTR A 330,GRADCTR A 330 334,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_3_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 3,GRADCTR A 340,GRADCTR A 340 344,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_3_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 3,GRADCTR A 340,GRADCTR A 340 345,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_3_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 3,GRADCTR A 340,GRADCTR A 340 346,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_3_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 4,GRADCTR A 410,GRADCTR A 410 411,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_4_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 4,GRADCTR A 410,GRADCTR A 410 412,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_4_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 4,GRADCTR A 410,GRADCTR A 410 413,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_4_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 4,GRADCTR A 410,GRADCTR A 410 414,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_4_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 4,GRADCTR A 410,GRADCTR A 410 415,Single (Suite/Apartment),,No,193,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_4_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 4,GRADCTR A 420,GRADCTR A 420 421,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_4_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 4,GRADCTR A 420,GRADCTR A 420 422,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_4_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 4,GRADCTR A 420,GRADCTR A 420 423,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_4_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 4,GRADCTR A 420,GRADCTR A 420 424,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_4_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 4,GRADCTR A 420,GRADCTR A 420 425,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_4_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 4,GRADCTR A 420,GRADCTR A 420 426,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_4_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 4,GRADCTR A 430,GRADCTR A 430 434,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_4_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 4,GRADCTR A 440,GRADCTR A 440 441,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_4_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 4,GRADCTR A 440,GRADCTR A 440 442,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_4_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 4,GRADCTR A 440,GRADCTR A 440 443,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_4_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 4,GRADCTR A 440,GRADCTR A 440 444,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_4_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 4,GRADCTR A 440,GRADCTR A 440 445,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_4_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 4,GRADCTR A 440,GRADCTR A 440 446,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_4_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 5,GRADCTR A 510,GRADCTR A 510 511,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_5_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 5,GRADCTR A 510,GRADCTR A 510 512,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_5_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 5,GRADCTR A 510,GRADCTR A 510 513,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_5_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 5,GRADCTR A 510,GRADCTR A 510 514,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_5_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 5,GRADCTR A 510,GRADCTR A 510 515,Single (Suite/Apartment),,No,193,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_5_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 5,GRADCTR A 520,GRADCTR A 520 521,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_5_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 5,GRADCTR A 520,GRADCTR A 520 522,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_5_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 5,GRADCTR A 520,GRADCTR A 520 523,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_5_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 5,GRADCTR A 520,GRADCTR A 520 524,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_5_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 5,GRADCTR A 520,GRADCTR A 520 525,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_5_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 5,GRADCTR A 530,GRADCTR A 530 531,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_5_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 5,GRADCTR A 530,GRADCTR A 530 532,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_5_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 5,GRADCTR A 530,GRADCTR A 530 533,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_5_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 5,GRADCTR A 530,GRADCTR A 530 534,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_5_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 5,GRADCTR A 530,GRADCTR A 530 535,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_5_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 5,GRADCTR A 540,GRADCTR A 540 541,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_5_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 5,GRADCTR A 540,GRADCTR A 540 542,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_5_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 5,GRADCTR A 540,GRADCTR A 540 543,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_5_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 5,GRADCTR A 540,GRADCTR A 540 544,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_5_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 5,GRADCTR A 540,GRADCTR A 540 545,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_5_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 5,GRADCTR A 540,GRADCTR A 540 546,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_5_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 6,GRADCTR A 610,GRADCTR A 610 611,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_6_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 6,GRADCTR A 610,GRADCTR A 610 612,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_6_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 6,GRADCTR A 610,GRADCTR A 610 614,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_6_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 6,GRADCTR A 610,GRADCTR A 610 615,Single (Suite/Apartment),,No,193,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_6_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 6,GRADCTR A 620,GRADCTR A 620 621,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_6_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 6,GRADCTR A 620,GRADCTR A 620 622,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_6_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 6,GRADCTR A 620,GRADCTR A 620 623,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_6_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 6,GRADCTR A 620,GRADCTR A 620 624,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_6_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 6,GRADCTR A 620,GRADCTR A 620 625,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_6_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 6,GRADCTR A 620,GRADCTR A 620 626,Single (Suite/Apartment),,No,225,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_6_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 6,GRADCTR A 640,GRADCTR A 640 641,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_6_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 6,GRADCTR A 640,GRADCTR A 640 642,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_6_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 6,GRADCTR A 640,GRADCTR A 640 643,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_6_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 6,GRADCTR A 640,GRADCTR A 640 644,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_6_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 6,GRADCTR A 640,GRADCTR A 640 645,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_6_dwg_base_a_8x11l.pdf
+GRAD CENTER A,GRADCTR A FL 6,GRADCTR A 640,GRADCTR A 640 646,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100082_6_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 1,GRADCTR B 110,GRADCTR B 110 113,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_1_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 1,GRADCTR B 110,GRADCTR B 110 115,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_1_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 1,GRADCTR B 120,GRADCTR B 120 121,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_1_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 1,GRADCTR B 120,GRADCTR B 120 122,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_1_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 1,GRADCTR B 120,GRADCTR B 120 123,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_1_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 1,GRADCTR B 120,GRADCTR B 120 124,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_1_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 1,GRADCTR B 120,GRADCTR B 120 125,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_1_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 1,GRADCTR B 140,GRADCTR B 140 141,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_1_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 1,GRADCTR B 140,GRADCTR B 140 142,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_1_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 1,GRADCTR B 140,GRADCTR B 140 143,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_1_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 1,GRADCTR B 140,GRADCTR B 140 144,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_1_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 1,GRADCTR B 140,GRADCTR B 140 145,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_1_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 2,GRADCTR B 210,GRADCTR B 210 212,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_2_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 2,GRADCTR B 210,GRADCTR B 210 213,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_2_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 2,GRADCTR B 210,GRADCTR B 210 214,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_2_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 2,GRADCTR B 210,GRADCTR B 210 215,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_2_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 2,GRADCTR B 210,GRADCTR B 210 216,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_2_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 2,GRADCTR B 220,GRADCTR B 220 221,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_2_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 2,GRADCTR B 220,GRADCTR B 220 222,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_2_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 2,GRADCTR B 220,GRADCTR B 220 223,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_2_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 2,GRADCTR B 220,GRADCTR B 220 224,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_2_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 2,GRADCTR B 230,GRADCTR B 230 231,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_2_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 2,GRADCTR B 230,GRADCTR B 230 232,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_2_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 2,GRADCTR B 230,GRADCTR B 230 233,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_2_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 2,GRADCTR B 230,GRADCTR B 230 234,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_2_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 2,GRADCTR B 230,GRADCTR B 230 235,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_2_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 2,GRADCTR B 240,GRADCTR B 240 241,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_2_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 2,GRADCTR B 240,GRADCTR B 240 242,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_2_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 2,GRADCTR B 240,GRADCTR B 240 243,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_2_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 2,GRADCTR B 240,GRADCTR B 240 244,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_2_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 2,GRADCTR B 240,GRADCTR B 240 245,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_2_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 3,GRADCTR B 310,GRADCTR B 310 313,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_3_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 3,GRADCTR B 310,GRADCTR B 310 314,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_3_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 3,GRADCTR B 310,GRADCTR B 310 315,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_3_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 3,GRADCTR B 320,GRADCTR B 320 321,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_3_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 3,GRADCTR B 320,GRADCTR B 320 322,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_3_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 3,GRADCTR B 320,GRADCTR B 320 323,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_3_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 3,GRADCTR B 320,GRADCTR B 320 325,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_3_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 3,GRADCTR B 340,GRADCTR B 340 341,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_3_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 3,GRADCTR B 340,GRADCTR B 340 344,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_3_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 3,GRADCTR B 340,GRADCTR B 340 345,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_3_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 410,GRADCTR B 410 411,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 410,GRADCTR B 410 412,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 410,GRADCTR B 410 413,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 410,GRADCTR B 410 414,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 410,GRADCTR B 410 415,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 410,GRADCTR B 410 416,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 420,GRADCTR B 420 421,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 420,GRADCTR B 420 422,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 420,GRADCTR B 420 423,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 420,GRADCTR B 420 424,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 420,GRADCTR B 420 425,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 430,GRADCTR B 430 431,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 430,GRADCTR B 430 432,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 430,GRADCTR B 430 433,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 430,GRADCTR B 430 434,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 430,GRADCTR B 430 435,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 430,GRADCTR B 430 436,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 440,GRADCTR B 440 441,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 440,GRADCTR B 440 442,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 440,GRADCTR B 440 443,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 440,GRADCTR B 440 444,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 4,GRADCTR B 440,GRADCTR B 440 445,Single (Suite/Apartment),,No,193,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_4_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 5,GRADCTR B 510,GRADCTR B 510 511,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_5_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 5,GRADCTR B 510,GRADCTR B 510 512,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_5_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 5,GRADCTR B 510,GRADCTR B 510 513,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_5_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 5,GRADCTR B 510,GRADCTR B 510 514,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_5_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 5,GRADCTR B 510,GRADCTR B 510 515,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_5_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 5,GRADCTR B 510,GRADCTR B 510 516,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_5_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 5,GRADCTR B 520,GRADCTR B 520 521,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_5_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 5,GRADCTR B 520,GRADCTR B 520 522,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_5_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 5,GRADCTR B 520,GRADCTR B 520 523,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_5_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 5,GRADCTR B 520,GRADCTR B 520 524,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_5_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 5,GRADCTR B 520,GRADCTR B 520 525,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_5_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 5,GRADCTR B 530,GRADCTR B 530 531,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_5_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 5,GRADCTR B 530,GRADCTR B 530 532,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_5_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 5,GRADCTR B 530,GRADCTR B 530 533,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_5_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 5,GRADCTR B 530,GRADCTR B 530 534,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_5_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 5,GRADCTR B 530,GRADCTR B 530 535,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_5_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 5,GRADCTR B 540,GRADCTR B 540 541,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_5_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 5,GRADCTR B 540,GRADCTR B 540 542,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_5_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 5,GRADCTR B 540,GRADCTR B 540 544,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_5_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 5,GRADCTR B 540,GRADCTR B 540 545,Single (Suite/Apartment),,No,193,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_5_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 6,GRADCTR B 610,GRADCTR B 610 611,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_6_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 6,GRADCTR B 610,GRADCTR B 610 612,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_6_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 6,GRADCTR B 610,GRADCTR B 610 613,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_6_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 6,GRADCTR B 610,GRADCTR B 610 614,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_6_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 6,GRADCTR B 610,GRADCTR B 610 615,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_6_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 6,GRADCTR B 610,GRADCTR B 610 616,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_6_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 6,GRADCTR B 630,GRADCTR B 630 632,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_6_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 6,GRADCTR B 630,GRADCTR B 630 633,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_6_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 6,GRADCTR B 630,GRADCTR B 630 634,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_6_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 6,GRADCTR B 630,GRADCTR B 630 635,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_6_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 6,GRADCTR B 630,GRADCTR B 630 636,Single (Suite/Apartment),,No,225,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_6_dwg_base_a_8x11l.pdf
+GRAD CENTER B,GRADCTR B FL 6,GRADCTR B 640,GRADCTR B 640 644,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100108_6_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 1,GRADCTR C 110,GRADCTR C 110 113,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_1_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 1,GRADCTR C 130,GRADCTR C 130 133,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_1_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 1,GRADCTR C 140,GRADCTR C 140 141,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_1_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 1,GRADCTR C 140,GRADCTR C 140 142,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_1_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 1,GRADCTR C 140,GRADCTR C 140 143,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_1_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 1,GRADCTR C 140,GRADCTR C 140 144,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_1_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 1,GRADCTR C 140,GRADCTR C 140 145,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_1_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 2,GRADCTR C 220,GRADCTR C 220 221,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_2_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 2,GRADCTR C 220,GRADCTR C 220 222,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_2_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 2,GRADCTR C 220,GRADCTR C 220 223,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_2_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 2,GRADCTR C 220,GRADCTR C 220 224,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_2_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 2,GRADCTR C 220,GRADCTR C 220 225,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_2_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 2,GRADCTR C 230,GRADCTR C 230 231,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_2_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 2,GRADCTR C 230,GRADCTR C 230 235,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_2_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 2,GRADCTR C 230,GRADCTR C 230 236,Single (Suite/Apartment),,No,225,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_2_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 2,GRADCTR C 240,GRADCTR C 240 241,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_2_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 2,GRADCTR C 240,GRADCTR C 240 242,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_2_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 2,GRADCTR C 240,GRADCTR C 240 243,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_2_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 2,GRADCTR C 240,GRADCTR C 240 244,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_2_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 2,GRADCTR C 240,GRADCTR C 240 245,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_2_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 3,GRADCTR C 320,GRADCTR C 320 321,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_3_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 3,GRADCTR C 320,GRADCTR C 320 324,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_3_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 3,GRADCTR C 320,GRADCTR C 320 325,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_3_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 3,GRADCTR C 330,GRADCTR C 330 333,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_3_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 4,GRADCTR C 420,GRADCTR C 420 421,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_4_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 4,GRADCTR C 420,GRADCTR C 420 422,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_4_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 4,GRADCTR C 420,GRADCTR C 420 423,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_4_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 4,GRADCTR C 420,GRADCTR C 420 424,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_4_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 4,GRADCTR C 420,GRADCTR C 420 425,Single (Suite/Apartment),,No,193,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_4_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 4,GRADCTR C 430,GRADCTR C 430 435,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_4_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 5,GRADCTR C 510,GRADCTR C 510 511,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_5_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 5,GRADCTR C 510,GRADCTR C 510 512,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_5_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 5,GRADCTR C 510,GRADCTR C 510 513,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_5_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 5,GRADCTR C 510,GRADCTR C 510 514,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_5_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 5,GRADCTR C 510,GRADCTR C 510 515,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_5_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 5,GRADCTR C 510,GRADCTR C 510 516,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_5_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 5,GRADCTR C 520,GRADCTR C 520 521,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_5_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 5,GRADCTR C 520,GRADCTR C 520 522,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_5_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 5,GRADCTR C 520,GRADCTR C 520 523,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_5_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 5,GRADCTR C 520,GRADCTR C 520 524,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_5_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 5,GRADCTR C 520,GRADCTR C 520 525,Single (Suite/Apartment),,No,193,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_5_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 5,GRADCTR C 530,GRADCTR C 530 531,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_5_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 5,GRADCTR C 530,GRADCTR C 530 532,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_5_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 5,GRADCTR C 530,GRADCTR C 530 533,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_5_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 5,GRADCTR C 530,GRADCTR C 530 534,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_5_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 5,GRADCTR C 530,GRADCTR C 530 535,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_5_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 5,GRADCTR C 540,GRADCTR C 540 541,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_5_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 5,GRADCTR C 540,GRADCTR C 540 542,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_5_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 5,GRADCTR C 540,GRADCTR C 540 543,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_5_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 5,GRADCTR C 540,GRADCTR C 540 544,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_5_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 5,GRADCTR C 540,GRADCTR C 540 545,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_5_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 6,GRADCTR C 610,GRADCTR C 610 611,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_6_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 6,GRADCTR C 610,GRADCTR C 610 612,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_6_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 6,GRADCTR C 610,GRADCTR C 610 613,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_6_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 6,GRADCTR C 610,GRADCTR C 610 614,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_6_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 6,GRADCTR C 610,GRADCTR C 610 615,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_6_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 6,GRADCTR C 610,GRADCTR C 610 616,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_6_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 6,GRADCTR C 620,GRADCTR C 620 621,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_6_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 6,GRADCTR C 620,GRADCTR C 620 622,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_6_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 6,GRADCTR C 620,GRADCTR C 620 624,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_6_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 6,GRADCTR C 620,GRADCTR C 620 625,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_6_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 6,GRADCTR C 640,GRADCTR C 640 641,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_6_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 6,GRADCTR C 640,GRADCTR C 640 642,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_6_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 6,GRADCTR C 640,GRADCTR C 640 643,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_6_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 6,GRADCTR C 640,GRADCTR C 640 644,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_6_dwg_base_a_8x11l.pdf
+GRAD CENTER C,GRADCTR C FL 6,GRADCTR C 640,GRADCTR C 640 645,Single (Suite/Apartment),,No,193,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100176_6_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 1,GRADCTR D 110,GRADCTR D 110 111,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_1_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 1,GRADCTR D 110,GRADCTR D 110 112,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_1_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 1,GRADCTR D 110,GRADCTR D 110 113,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_1_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 1,GRADCTR D 110,GRADCTR D 110 114,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_1_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 1,GRADCTR D 110,GRADCTR D 110 115,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_1_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 2,GRADCTR D 210,GRADCTR D 210 211,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_2_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 2,GRADCTR D 210,GRADCTR D 210 214,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_2_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 2,GRADCTR D 220,GRADCTR D 220 226,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_2_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 2,GRADCTR D 230,GRADCTR D 230 231,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_2_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 2,GRADCTR D 230,GRADCTR D 230 232,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_2_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 2,GRADCTR D 230,GRADCTR D 230 233,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_2_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 2,GRADCTR D 230,GRADCTR D 230 234,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_2_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 2,GRADCTR D 230,GRADCTR D 230 235,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_2_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 2,GRADCTR D 240,GRADCTR D 240 241,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_2_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 2,GRADCTR D 240,GRADCTR D 240 242,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_2_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 2,GRADCTR D 240,GRADCTR D 240 243,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_2_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 2,GRADCTR D 240,GRADCTR D 240 244,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_2_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 2,GRADCTR D 240,GRADCTR D 240 245,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_2_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 2,GRADCTR D 240,GRADCTR D 240 246,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_2_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 3,GRADCTR D 310,GRADCTR D 310 311,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 3,GRADCTR D 320,GRADCTR D 320 321,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 3,GRADCTR D 320,GRADCTR D 320 322,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 3,GRADCTR D 320,GRADCTR D 320 323,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 3,GRADCTR D 320,GRADCTR D 320 324,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 3,GRADCTR D 320,GRADCTR D 320 325,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 3,GRADCTR D 320,GRADCTR D 320 326,Single (Suite/Apartment),,No,207,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 3,GRADCTR D 330,GRADCTR D 330 331,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 3,GRADCTR D 330,GRADCTR D 330 332,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 3,GRADCTR D 330,GRADCTR D 330 333,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 3,GRADCTR D 330,GRADCTR D 330 334,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 3,GRADCTR D 330,GRADCTR D 330 335,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 3,GRADCTR D 340,GRADCTR D 340 341,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 3,GRADCTR D 340,GRADCTR D 340 342,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 3,GRADCTR D 340,GRADCTR D 340 343,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 3,GRADCTR D 340,GRADCTR D 340 344,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 3,GRADCTR D 340,GRADCTR D 340 345,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 3,GRADCTR D 340,GRADCTR D 340 346,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 4,GRADCTR D 410,GRADCTR D 410 411,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_4_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 4,GRADCTR D 410,GRADCTR D 410 412,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 4,GRADCTR D 410,GRADCTR D 410 413,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_4_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 4,GRADCTR D 410,GRADCTR D 410 414,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 4,GRADCTR D 410,GRADCTR D 410 415,Single (Suite/Apartment),,No,193,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_4_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 4,GRADCTR D 430,GRADCTR D 430 431,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 4,GRADCTR D 430,GRADCTR D 430 432,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_4_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 4,GRADCTR D 430,GRADCTR D 430 433,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 4,GRADCTR D 430,GRADCTR D 430 434,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_4_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 4,GRADCTR D 430,GRADCTR D 430 435,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 4,GRADCTR D 440,GRADCTR D 440 441,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_4_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 4,GRADCTR D 440,GRADCTR D 440 442,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 4,GRADCTR D 440,GRADCTR D 440 443,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_4_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 4,GRADCTR D 440,GRADCTR D 440 444,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 4,GRADCTR D 440,GRADCTR D 440 445,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_4_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 4,GRADCTR D 440,GRADCTR D 440 446,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_3_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 5,GRADCTR D 510,GRADCTR D 510 512,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_5_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 5,GRADCTR D 510,GRADCTR D 510 513,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_5_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 5,GRADCTR D 510,GRADCTR D 510 515,Single (Suite/Apartment),,No,193,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_5_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 5,GRADCTR D 520,GRADCTR D 520 521,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_5_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 5,GRADCTR D 520,GRADCTR D 520 522,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_5_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 5,GRADCTR D 520,GRADCTR D 520 523,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_5_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 5,GRADCTR D 520,GRADCTR D 520 524,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_5_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 5,GRADCTR D 520,GRADCTR D 520 525,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_5_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 5,GRADCTR D 520,GRADCTR D 520 526,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_5_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 5,GRADCTR D 530,GRADCTR D 530 531,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_5_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 5,GRADCTR D 530,GRADCTR D 530 532,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_5_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 5,GRADCTR D 530,GRADCTR D 530 533,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_5_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 5,GRADCTR D 530,GRADCTR D 530 534,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_5_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 5,GRADCTR D 540,GRADCTR D 540 541,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_5_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 5,GRADCTR D 540,GRADCTR D 540 542,Single (Suite/Apartment),,No,217,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_5_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 5,GRADCTR D 540,GRADCTR D 540 543,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_5_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 5,GRADCTR D 540,GRADCTR D 540 544,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_5_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 5,GRADCTR D 540,GRADCTR D 540 545,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_5_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 5,GRADCTR D 540,GRADCTR D 540 546,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_5_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 6,GRADCTR D 610,GRADCTR D 610 611,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_6_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 6,GRADCTR D 610,GRADCTR D 610 612,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_6_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 6,GRADCTR D 610,GRADCTR D 610 614,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_6_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 6,GRADCTR D 610,GRADCTR D 610 615,Single (Suite/Apartment),,No,193,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_6_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 6,GRADCTR D 630,GRADCTR D 630 631,Single (Suite/Apartment),,No,185,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_6_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 6,GRADCTR D 630,GRADCTR D 630 632,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_6_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 6,GRADCTR D 630,GRADCTR D 630 633,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_6_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 6,GRADCTR D 630,GRADCTR D 630 634,Single (Suite/Apartment),,No,181,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_6_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 6,GRADCTR D 630,GRADCTR D 630 635,Single (Suite/Apartment),,No,192,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_6_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 6,GRADCTR D 640,GRADCTR D 640 644,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_6_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 6,GRADCTR D 640,GRADCTR D 640 645,Single (Suite/Apartment),,No,213,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_6_dwg_base_a_8x11l.pdf
+GRAD CENTER D,GRADCTR D FL 6,GRADCTR D 640,GRADCTR D 640 646,Single (Suite/Apartment),,No,224,No,Semi,0,https://brown.edu/Facilities/Facilities_Management/maps/docx/floor_plan/m_100206_6_dwg_base_a_8x11l.pdf
