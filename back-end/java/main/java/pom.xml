@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.dorm-search</groupId>
+  <artifactId>dorm-search</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+
+  <dependencies>
+
+    <!-- CSV Parser -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-csv</artifactId>
+      <version>1.12.0</version>
+    </dependency>
+    <!-- Guava dependency -->
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>32.1.2-jre</version>
+    </dependency>
+    <!--Jetbrains dependency-->
+    <dependency>
+      <groupId>org.jetbrains</groupId>
+      <artifactId>annotations</artifactId>
+      <version>13.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <!--
+           TestNG builds useful functionality on top of JUnit, such as method annotations.
+    -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.10.2</version>
+      <scope>compile</scope>
+    </dependency>
+    <!-- JUnit 5 (Jupiter) Dependencies -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.10.0</version> <!-- Latest version -->
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.10.0</version>
+      <scope>test</scope>
+    </dependency>
+    <!--
+    Spark is a lightweight framework for creating web applications.
+           Spark is most commonly used to create APIs and websites.
+    -->
+    <dependency>
+      <groupId>com.sparkjava</groupId>
+      <artifactId>spark-core</artifactId>
+      <version>2.9.3</version>
+    </dependency>
+    <!-- Moshi Adapters -->
+    <dependency>
+      <groupId>com.squareup.moshi</groupId>
+      <artifactId>moshi-adapters</artifactId>
+      <version>1.15.2</version>
+    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>junit</groupId>-->
+<!--      <artifactId>junit</artifactId>-->
+<!--      <version>4.13.1</version>-->
+<!--      <scope>compile</scope>-->
+<!--    </dependency>-->
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>21</source>
+          <target>21</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
