@@ -1,4 +1,4 @@
-package src.Server;
+package Server;
 
 import com.squareup.moshi.JsonAdapter;
 import com.squareup.moshi.Moshi;
@@ -10,12 +10,12 @@ import java.util.Set;
 import spark.Request;
 import spark.Response;
 import spark.Route;
-import src.DormRoom.BathroomType;
-import src.DormRoom.CampusLocation;
-import src.DormRoom.IDormRoom;
-import src.DormRoom.RoomCapacity;
-import src.Filtering.FilteringCache;
-import src.Filtering.FilteringCriteria;
+import DormRoom.BathroomType;
+import DormRoom.CampusLocation;
+import DormRoom.IDormRoom;
+import DormRoom.RoomCapacity;
+import Filtering.FilteringCache;
+import Filtering.FilteringCriteria;
 
 /**
  * The {@code FilteringHandler} class handles HTTP requests for dorm room filtering queries.

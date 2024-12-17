@@ -1,11 +1,12 @@
-package src.Filtering.Node_KDTree;
+package Filtering.Node_KDTree;
 
+import Filtering.FilteringCriteria;
 import java.util.HashSet;
 import java.util.Set;
 import org.jetbrains.annotations.NotNull;
-import src.DormRoom.IDormRoom;
-import src.DormRoom.RoomCapacity;
-import src.Filtering.FilteringCriteria;
+import DormRoom.IDormRoom;
+import DormRoom.RoomCapacity;
+import Filtering.FilteringCriteria;
 import java.util.List;
 import java.util.Comparator;
 

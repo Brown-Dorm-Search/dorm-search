@@ -1,14 +1,14 @@
-package src.Server;
+package Server;
 
 import static spark.Spark.after;
 
 import java.util.ArrayList;
 import java.util.List;
 import spark.Spark;
-import src.DormRoom.IDormRoom;
-import src.Filtering.FilteringCache;
-import src.Filtering.IDormFilter;
-import src.Filtering.Node_KDTree.KDTreeWrapper;
+import DormRoom.IDormRoom;
+import Filtering.FilteringCache;
+import Filtering.IDormFilter;
+import Filtering.Node_KDTree.KDTreeWrapper;
 
 /**
  * The {@code Server} class represents the main entry point for the backend of the dorm room filtering system.

@@ -1,12 +1,14 @@
-package src.Filtering;
+package Filtering;
 
+import Filtering.FilteringCriteria;
+import Filtering.IDormFilter;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
 import java.util.Set;
 import java.util.concurrent.ExecutionException;
 import org.jetbrains.annotations.NotNull;
-import src.DormRoom.IDormRoom;
+import DormRoom.IDormRoom;
 
 /**
  * The {@code FilteringCache} class provides a caching layer for dorm room filtering operations.
