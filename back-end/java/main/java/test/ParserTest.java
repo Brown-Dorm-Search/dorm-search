@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import src.DormRoom.IDormRoom;
 import src.DormRoom.RoomCapacity;
 import src.DormRoom.BathroomType;
-import src.Parsing.EnumUtils;
+import src.Parsing.ParserUtils;
 import src.Parsing.RoomParser;
 
 import java.io.IOException;
@@ -21,67 +21,67 @@ public class ParserTest {
     @Test
     void testGetRoomCapacityValid() throws IOException{
         // Test valid inputs
-        assertEquals(RoomCapacity.One, EnumUtils.getRoomCapacity("one"));
-        assertEquals(RoomCapacity.Two, EnumUtils.getRoomCapacity("two"));
-        assertEquals(RoomCapacity.Three, EnumUtils.getRoomCapacity("three"));
-        assertEquals(RoomCapacity.Four, EnumUtils.getRoomCapacity("four"));
-        assertEquals(RoomCapacity.Five, EnumUtils.getRoomCapacity("five"));
-        assertEquals(RoomCapacity.Six, EnumUtils.getRoomCapacity("six"));
+        assertEquals(RoomCapacity.One, ParserUtils.getRoomCapacity("one"));
+        assertEquals(RoomCapacity.Two, ParserUtils.getRoomCapacity("two"));
+        assertEquals(RoomCapacity.Three, ParserUtils.getRoomCapacity("three"));
+        assertEquals(RoomCapacity.Four, ParserUtils.getRoomCapacity("four"));
+        assertEquals(RoomCapacity.Five, ParserUtils.getRoomCapacity("five"));
+        assertEquals(RoomCapacity.Six, ParserUtils.getRoomCapacity("six"));
     }
 
     @Test
     void testGetRoomCapacityInvalid() throws IOException{
         // Test invalid inputs
-        assertThrows(IllegalArgumentException.class, () -> {EnumUtils.getRoomCapacity("seven");});
+        assertThrows(IllegalArgumentException.class, () -> {ParserUtils.getRoomCapacity("seven");});
 
-        assertThrows(IllegalArgumentException.class, () -> {EnumUtils.getRoomCapacity("abc");});
+        assertThrows(IllegalArgumentException.class, () -> {ParserUtils.getRoomCapacity("abc");});
 
     }
 
     // Test for roomTypeToSize(String size)
     @Test
     void testRoomTypeToSizeValid() throws IOException{
-        assertEquals(RoomCapacity.One, EnumUtils.roomTypeToSize("Single Room"));
-        assertEquals(RoomCapacity.Two, EnumUtils.roomTypeToSize("Double Room"));
-        assertEquals(RoomCapacity.Three, EnumUtils.roomTypeToSize("Triple Room"));
+        assertEquals(RoomCapacity.One, ParserUtils.roomTypeToSize("Single Room"));
+        assertEquals(RoomCapacity.Two, ParserUtils.roomTypeToSize("Double Room"));
+        assertEquals(RoomCapacity.Three, ParserUtils.roomTypeToSize("Triple Room"));
     }
 
     @Test
     void testRoomTypeToSizeInvalid() throws IOException{
         // Test for invalid room type string
-        assertThrows(IllegalArgumentException.class, () -> {EnumUtils.roomTypeToSize("Quad Room");});
+        assertThrows(IllegalArgumentException.class, () -> {ParserUtils.roomTypeToSize("Quad Room");});
 
     }
 
     // Test for parseYesNo(String input)
     @Test
     void testParseYesNoValid() {
-        assertTrue(EnumUtils.parseYesNo("Yes"));
-        assertFalse(EnumUtils.parseYesNo("No"));
+        assertTrue(ParserUtils.parseYesNo("Yes"));
+        assertFalse(ParserUtils.parseYesNo("No"));
     }
 
     @Test
     void testParseYesNoInvalid() {
         // Test for invalid inputs
-        assertThrows(IllegalArgumentException.class, () -> {EnumUtils.parseYesNo("Maybe");});
+        assertThrows(IllegalArgumentException.class, () -> {ParserUtils.parseYesNo("Maybe");});
     }
 
     // Test for getBathroomType(String type)
     @Test
     void testGetBathroomTypeValid() {
-        assertEquals(BathroomType.Private, EnumUtils.getBathroomType("yes"));
-        assertEquals(BathroomType.SemiPrivate, EnumUtils.getBathroomType("semi"));
-        assertEquals(BathroomType.Communal, EnumUtils.getBathroomType("no"));
+        assertEquals(BathroomType.Private, ParserUtils.getBathroomType("yes"));
+        assertEquals(BathroomType.SemiPrivate, ParserUtils.getBathroomType("semi"));
+        assertEquals(BathroomType.Communal, ParserUtils.getBathroomType("no"));
     }
 
     @Test
     void testGetBathroomTypeInvalid() {
         // Test for invalid bathroom type
-        assertThrows(IllegalArgumentException.class, () -> {EnumUtils.getBathroomType("shared");});
+        assertThrows(IllegalArgumentException.class, () -> {ParserUtils.getBathroomType("shared");});
     }
 
     @Test
-    public void testParsePartial() throws IOException {
+    public void testParsePartial() throws IOException, NumberFormatException, NullPointerException {
         RoomParser parser = new RoomParser("data/PartialDataset.csv");
         ArrayList<IDormRoom> rooms = parser.getRooms();
         Assert.assertEquals(548, rooms.size());

@@ -3,3 +3,5 @@
 2.) Finish categorically filtering by all the criteria
 
 4.) Consider adding categorical variables ot KDTreeNode for filtering
+
+5.) Update getRooms in RoomParser to be a list instead of an iterator to make the code more readable
