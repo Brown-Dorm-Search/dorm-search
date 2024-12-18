@@ -1,8 +1,4 @@
-package src.Parsing;
-
-import src.DormRoom.IDormRoom;
-import src.DormRoom.DormRoom;
-import src.DormRoom.Suite;
+package Parsing;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;

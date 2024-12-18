@@ -1,4 +1,4 @@
-package src.Parsing;
+package Parsing;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import org.apache.commons.csv.CSVRecord;
-import src.DormRoom.*;
+import DormRoom.*;
 
 /**
  * A utility class for parsing CSV files related to dorm rooms and suites.

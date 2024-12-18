@@ -170,7 +170,7 @@ public class DormBuilding {
         this.campusLocation = CampusLocation.GregorianQuad;
         this.hasElevatorAccess = true;
       }
-      case "vartan qregorian quad b" -> {
+      case "vartan gregorian quad b" -> {
         this.peoplePerWasher = 28.5f;
         this.year = 1991;
         this.address = "101 Thayer St, Providence, RI 02906";
@@ -202,7 +202,7 @@ public class DormBuilding {
 //      }
 
       // RuthJSimmons
-      case "Hegeman Hall" -> {
+      case "hegeman hall" -> {
         this.peoplePerWasher = 56.5f;
         this.year = 1991;
         this.address = "128 George St, Providence, RI 02906";
@@ -234,7 +234,7 @@ public class DormBuilding {
         this.campusLocation = CampusLocation.EastCampus;
         this.hasElevatorAccess = false;
       }
-      case "King House" -> {
+      case "king house" -> {
         this.peoplePerWasher = 27f;
         this.year = 1895;
         this.address = "154 Hope St, Providence, RI 02912";
@@ -242,7 +242,7 @@ public class DormBuilding {
         this.hasElevatorAccess = false;
       }
 
-      case "Minden Hall" -> {
+      case "minden hall" -> {
         this.peoplePerWasher = 25.3333333f;
         this.year = 1912;
         this.address = "121 Waterman St, Providence, RI 02906";

@@ -9,3 +9,5 @@
 to the dormBuildings.
 
 5.) Update getRooms in RoomParser to be a list instead of an iterator to make the code more readable
+
+6.) Make it so API can take 1 or one for roomCapacity.

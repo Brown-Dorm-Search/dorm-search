@@ -5,11 +5,11 @@ import static org.testng.AssertJUnit.*;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import src.DormRoom.IDormRoom;
-import src.DormRoom.RoomCapacity;
-import src.DormRoom.BathroomType;
-import src.Parsing.ParserUtils;
-import src.Parsing.RoomParser;
+import DormRoom.IDormRoom;
+import DormRoom.RoomCapacity;
+import DormRoom.BathroomType;
+import Parsing.ParserUtils;
+import Parsing.RoomParser;
 
 import java.io.IOException;
 import java.util.ArrayList;
