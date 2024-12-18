@@ -114,9 +114,11 @@ export default function Mapbox(props: MapboxProps) {
     useEffect(() => { setDormOverlay(geojson); }, []);
 
     /**
-    * only gets the features of the filteredDorms, for searhcign purposes 
+    * only gets the features of the filteredDorms, for searching purposes 
     */
     useEffect(() => {
+
+
         const filteredFeatures = geojson.features.filter((feature: any) =>
             props.filteredDorms.includes(feature.properties.name)
         );

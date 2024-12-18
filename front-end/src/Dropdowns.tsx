@@ -1,4 +1,5 @@
 import React, { Dispatch, SetStateAction, useState } from 'react';
+import Select from 'react-select';
 import "./styles/App.css"
 import MultiRangeSlider from "multi-range-slider-react";
 
@@ -12,59 +13,105 @@ export interface DropdownsProps {
 
 
 export default function Dropdowns(props: DropdownsProps) {
-  const [selectedOptions, setSelectedOptions] = useState({
-    Campus_Location: [],
-    Floor: [],
-    PartOfSuite: [],
-    RoomCapacity: [],
-    HasBathroom: [],
-    HasKitchen: [],
-    minRoomSize: [],
-    maxRoomSize: [],
-  });
+  const [campusLocation, setCampusLocation] = useState<Array<string>>(['All']);
+  const [floor, setFloor] = useState<Array<string>>(['All']);
+  const [partOfSuite, setPartOfSuite] = useState<Array<string>>(['All']);
+  const [roomCapacity, setRoomCapacity] = useState<Array<string>>(['All']);
+  const [hasBathroom, setHasBathroom] = useState<Array<string>>(['All']);
+  const [hasKitchen, setHasKitchen] = useState<Array<string>>(['All']);
+  const [minRoomSize, setMinRoomSize] = useState<string>('0');
+  const [maxRoomSize, setMaxRoomSize] = useState<string>('500');
 
 
-
-  // Handle change for multi-select dropdowns
-  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>, dropdown: string) => {
-    const selectedValues = Array.from(event.target.selectedOptions, option => option.value);
-    setSelectedOptions(prevState => ({
-      ...prevState,
-      [dropdown]: selectedValues,
-    }));
-  };
   const handleSearchClick = () => {
     console.log('Search clicked');
-    const resultString = Object.entries(selectedOptions)
-      .map(([dropdown, value]) => `${dropdown}: ${`${value}` === '' ? 'All' : value}`)
-      .join(', ');
-
-    const dormsMap = Object.entries(selectedOptions.Campus_Location)
-      .map(([value]) => `${`${value}` === '' ? 'All' : value}`)
-      .join(', ');
+    const combinedSelectedOptions = [
+      ...campusLocation,
+      ...floor,
+      ...partOfSuite,
+      ...roomCapacity,
+      ...hasBathroom,
+      ...hasKitchen,
+      ...minRoomSize,
+      ...maxRoomSize,
+    ];
+    const resultString = combinedSelectedOptions.join(', ');
     console.log(resultString);
-    props.setFilteredDorms(dormsMap);
+    //props.setFilteredDorms(dormsMap);
     props.setResultStr(resultString)
   };
+
+
+
+  const options = [
+    { value: 'All', label: 'All' },
+    { value: 'Yes', label: 'Yes' },
+    { value: 'No', label: 'No' },
+  ];
+
+  const optionsFloor = [
+    { value: 'All', label: 'All' },
+    { value: '1', label: 'Floor 1' },
+    { value: '2', label: 'Floor 2' },
+    { value: '3', label: 'Floor 3' },
+    { value: '4', label: 'Floor 4' },
+    { value: '5', label: 'Floor 5' },
+    { value: '6', label: 'Floor 6' },
+    { value: '7', label: 'Floor 7' },
+    { value: '8', label: 'Floor 8' },
+
+  ];
+
+  const optionsBathroom = [
+    { value: 'All', label: 'All' },
+    { value: 'Private', label: 'Private' },
+    { value: 'Communal', label: 'Communal' },
+    { value: 'SemiPrivate', label: 'SemiPrivate' },
+  ];
+
+  const optionsRoomCap = [
+    { value: 'All', label: 'All' },
+    { value: 'one', label: '1' },
+    { value: 'two', label: '2' },
+    { value: 'three', label: '3' },
+    { value: 'four', label: '4' },
+    { value: 'five', label: '5' },
+    { value: 'six', label: '6' },
+  ];
+
+  const optionsLoc = [
+    { value: 'All', label: 'All' },
+    { value: 'WristonQuad', label: 'Wriston Quad' },
+    { value: 'MainGreen', label: 'Main Green' },
+    { value: 'GradCenter', label: 'Grad Center' },
+    { value: 'GregorianQuad', label: 'Gregorian Quad' },
+    { value: 'Pembroke', label: 'Pembroke' },
+    { value: 'RuthJSimmons', label: 'Ruth J. Simmons Wuad' },
+    { value: 'ThayerStreet', label: 'Thayer Street' },
+    { value: 'EastCampus', label: 'East Campus' },
+    { value: 'Machado', label: 'Machado House' },
+  ];
+
+
 
   async function fetchSearch() {
     const fetch1 = await fetch(
       `http://localhost:3232/filter?campusLocation=${encodeURIComponent(
-        selectedOptions.Campus_Location
+        campusLocation.join(', ')
       )}&isSuite=${encodeURIComponent(
-        selectedOptions.PartOfSuite
+        partOfSuite.join(', ')
       )}&hasKitchen=${encodeURIComponent(
-        selectedOptions.HasKitchen
+        hasKitchen.join(', ')
       )}&bathroomType=${encodeURIComponent(
-        selectedOptions.HasBathroom
+        hasBathroom.join(', ')
       )}&minRoomSize=${encodeURIComponent(
-        selectedOptions.minRoomSize
+        minRoomSize
       )}&maxRoomSize=${encodeURIComponent(
-        selectedOptions.maxRoomsize
+        maxRoomSize
       )}&roomCapacity=${encodeURIComponent(
-        selectedOptions.RoomCapacity
+        roomCapacity.join(', ')
       )}&floorNumber=${encodeURIComponent(
-        selectedOptions.Floor
+        floor.join(', ')
       )}`
     );
     const filterjson = await fetch1.json();
@@ -78,105 +125,160 @@ export default function Dropdowns(props: DropdownsProps) {
 
   return (
     <div className="dropdown-container">
-      <div className="dropdown">
-        <label htmlFor="Campus_Location">Campus Location</label>
-        <select
-          id="Campus Location"
-          value={selectedOptions.Campus_Location}
-          onChange={(e) => handleChange(e, 'Campus_Location')}
-          multiple
-        >
-          <option value="All">All</option>
-          <option value="East Campus">East Campus</option>
-          <option value="Grad Center">Grad Center</option>
-          <option value="Gregorian Quad">Gregorian Quad</option>
-          <option value="Machado House">Machado House</option>
-          <option value="Main Green">Main Green</option>
-          <option value="Minden Hall">Minden Hall</option>
-          <option value="North Campus">North Campus</option>
-          <option value="Ruth J. Simmons Quad">Ruth J. Simmons Quad</option>
-          <option value="Wriston Quad">Wriston Quad</option>
-        </select>
+      <div className="multi-select">
+        <label htmlFor="CampusLocation">Campus Location</label>
+        <Select
+          id="CampusLocation"
+          options={optionsLoc}
+          isMulti
+          value={campusLocation.map(value => optionsLoc.find(option => option.value === value))}
+          getOptionLabel={(e: { label: any; }) => e.label}
+          getOptionValue={(e: { value: any; }) => e.value}
+          onChange={(newSelectedOptions: any) => {
+            const allClicked = newSelectedOptions[newSelectedOptions.length - 1]?.value === 'All';
+            const hasAllOption = newSelectedOptions[0]?.value === 'All';
+            if (allClicked) {
+              setCampusLocation(['All']);
+            } else if (hasAllOption) {
+              setCampusLocation([newSelectedOptions[1]?.value]);
+            } else {
+              const selectedValues = newSelectedOptions.map((option: any) => option.value);
+              setCampusLocation(selectedValues);
+            }
+          }}
+          className="basic-multi-select"
+          classNamePrefix="select"
+        />
       </div>
 
-      <div className="dropdown">
-        <label htmlFor="Floor">Floor</label>
-        <select
-          id="Floor"
-          value={selectedOptions.Floor}
-          onChange={(e) => handleChange(e, 'Floor')}
-          multiple
-        >
-          <option value="All">All</option>
-          <option value="Floor 1">Floor 1</option>
-          <option value="Floor 2">Floor 2</option>
-          <option value="Floor 3">Floor 3</option>
-          <option value="Floor 4">Floor 4</option>
-          <option value="Floor 5">Floor 5</option>
-          <option value="Floor 6">Floor 6</option>
-          <option value="Floor 7">Floor 7</option>
-          <option value="Floor 8">Floor 8</option>
-
-        </select>
+      <div className="multi-select">
+        <label htmlFor="FloorNumber">Floors</label>
+        <Select
+          id="FloorNumber"
+          options={optionsFloor}
+          isMulti
+          value={floor.map(value => optionsFloor.find(option => option.value === value))}
+          getOptionLabel={(e: { label: any; }) => e.label}
+          getOptionValue={(e: { value: any; }) => e.value}
+          onChange={(newSelectedOptions: any) => {
+            const allClicked = newSelectedOptions[newSelectedOptions.length - 1]?.value === 'All';
+            const hasAllOption = newSelectedOptions[0]?.value === 'All';
+            if (allClicked) {
+              setFloor(['All']);
+            } else if (hasAllOption) {
+              setFloor([newSelectedOptions[1]?.value]);
+            } else {
+              const selectedValues = newSelectedOptions.map((option: any) => option.value);
+              setFloor(selectedValues);
+            }
+          }}
+          className="basic-multi-select"
+          classNamePrefix="select"
+        />
       </div>
 
-      <div className="dropdown">
+      <div className="multi-select">
         <label htmlFor="PartOfSuite">Part of Suite</label>
-        <select
+        <Select
           id="PartOfSuite"
-          value={selectedOptions.PartOfSuite}
-          onChange={(e) => handleChange(e, 'PartOfSuite')}
-        >
-          <option value="All">All</option>
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
-        </select>
+          options={options}
+          isMulti
+          value={partOfSuite.map(value => options.find(option => option.value === value))}
+          getOptionLabel={(e: { label: any; }) => e.label}
+          getOptionValue={(e: { value: any; }) => e.value}
+          onChange={(newSelectedOptions: any) => {
+            const allClicked = newSelectedOptions[newSelectedOptions.length - 1]?.value === 'All';
+            const hasAllOption = newSelectedOptions[0]?.value === 'All';
+            if (allClicked) {
+              setPartOfSuite(['All']);
+            } else if (hasAllOption) {
+              setPartOfSuite([newSelectedOptions[1]?.value]);
+            } else {
+              const selectedValues = newSelectedOptions.map((option: any) => option.value);
+              setPartOfSuite(selectedValues);
+            }
+          }}
+          className="basic-multi-select"
+          classNamePrefix="select"
+        />
       </div>
 
-      <div className="dropdown">
+      <div className="multi-select">
         <label htmlFor="RoomCapacity">People in Room</label>
-        <select
+        <Select
           id="RoomCapacity"
-          value={selectedOptions.RoomCapacity}
-          onChange={(e) => handleChange(e, 'RoomCapacity')}
-          multiple
-        >
-          <option value="All">All</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-        </select>
+          options={optionsRoomCap}
+          isMulti
+          value={roomCapacity.map(value => optionsRoomCap.find(option => option.value === value))}
+          getOptionLabel={(e: { label: any; }) => e.label}
+          getOptionValue={(e: { value: any; }) => e.value}
+          onChange={(newSelectedOptions: any) => {
+            const allClicked = newSelectedOptions[newSelectedOptions.length - 1]?.value === 'All';
+            const hasAllOption = newSelectedOptions[0]?.value === 'All';
+            if (allClicked) {
+              setRoomCapacity(['All']);
+            } else if (hasAllOption) {
+              setRoomCapacity([newSelectedOptions[1]?.value]);
+            } else {
+              const selectedValues = newSelectedOptions.map((option: any) => option.value);
+              setRoomCapacity(selectedValues);
+            }
+          }}
+          className="basic-multi-select"
+          classNamePrefix="select"
+        />
       </div>
 
-      <div className="dropdown">
-        <label htmlFor="HasBathroom">Has Bathroom</label>
-        <select
-          id="HasBathroom"
-          value={selectedOptions.HasBathroom}
-          onChange={(e) => handleChange(e, 'HasBathroom')}
-          multiple
-        >
-          <option value="All">All</option>
-          <option value="Private">Private</option>
-          <option value="Semi-Private">Semi-Private</option>
-          <option value="Communal">Communal</option>
-        </select>
+      <div className="multi-select">
+        <label htmlFor="hasBathroom">Has Bathroom</label>
+        <Select
+          id="hasBathroom"
+          options={optionsBathroom}
+          isMulti
+          value={hasBathroom.map(value => optionsBathroom.find(option => option.value === value))}
+          getOptionLabel={(e: { label: any; }) => e.label}
+          getOptionValue={(e: { value: any; }) => e.value}
+          onChange={(newSelectedOptions: any) => {
+            const allClicked = newSelectedOptions[newSelectedOptions.length - 1]?.value === 'All';
+            const hasAllOption = newSelectedOptions[0]?.value === 'All';
+            if (allClicked) {
+              setHasBathroom(['All']);
+            } else if (hasAllOption) {
+              setHasBathroom([newSelectedOptions[1]?.value]);
+            } else {
+              const selectedValues = newSelectedOptions.map((option: any) => option.value);
+              setHasBathroom(selectedValues);
+            }
+          }}
+          className="basic-multi-select"
+          classNamePrefix="select"
+        />
       </div>
 
-      <div className="dropdown">
+      <div className="multi-select">
         <label htmlFor="HasKitchen">Has Kitchen</label>
-        <select
+        <Select
           id="HasKitchen"
-          value={selectedOptions.HasKitchen}
-          onChange={(e) => handleChange(e, 'HasKitchen')}
-        >
-          <option value="All">All</option>
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
-        </select>
+          options={options}
+          isMulti
+          value={hasKitchen.map(value => options.find(option => option.value === value))}
+          getOptionLabel={(e: { label: any; }) => e.label}
+          getOptionValue={(e: { value: any; }) => e.value}
+          onChange={(newSelectedOptions: any) => {
+            const allClicked = newSelectedOptions[newSelectedOptions.length - 1]?.value === 'All';
+            const hasAllOption = newSelectedOptions[0]?.value === 'All';
+            if (allClicked) {
+              setHasKitchen(['All']);
+            } else if (hasAllOption) {
+              setHasKitchen([newSelectedOptions[1]?.value]);
+            } else {
+              const selectedValues = newSelectedOptions.map((option: any) => option.value);
+              setHasKitchen(selectedValues);
+            }
+          }}
+          className="basic-multi-select"
+          classNamePrefix="select"
+        />
       </div>
 
       <div className='multi-range-slider-container'>
@@ -185,18 +287,15 @@ export default function Dropdowns(props: DropdownsProps) {
           min={0}
           max={500}
           step={20}
-          minValue={selectedOptions.minRoomSize}
-          maxValue={selectedOptions.maxRoomSize}
-          onInput={(e) => {
-            setSelectedOptions(prevState => ({
-              ...prevState,
-              minRoomSize: e.minValue,
-              maxRoomSize: e.maxValue
-            }));
+          minValue={minRoomSize}
+          maxValue={maxRoomSize}
+          onInput={(e: { minValue: any; maxValue: any; }) => {
+            setMaxRoomSize(e.maxValue)
+            setMinRoomSize(e.minValue)
           }}
         ></MultiRangeSlider>
         <p>
-          Selected range: {selectedOptions.minRoomSize} - {selectedOptions.maxRoomSize}
+          Selected range: {minRoomSize} - {maxRoomSize}
         </p>
       </div>
 
