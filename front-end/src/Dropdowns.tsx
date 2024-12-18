@@ -4,10 +4,10 @@ import "./styles/App.css"
 import MultiRangeSlider from "multi-range-slider-react";
 
 export interface DropdownsProps {
-  resultStr: string;
-  setResultStr: Dispatch<SetStateAction<string>>;
-  FilteredDorms: string;
-  setFilteredDorms: Dispatch<SetStateAction<string>>;
+  resultStr: any;
+  setResultStr: Dispatch<SetStateAction<any>>;
+  FilteredDorms: Array<string>;
+  setFilteredDorms: Dispatch<SetStateAction<Array<string>>>;
 }
 
 
@@ -21,27 +21,6 @@ export default function Dropdowns(props: DropdownsProps) {
   const [hasKitchen, setHasKitchen] = useState<Array<string>>(['All']);
   const [minRoomSize, setMinRoomSize] = useState<string>('0');
   const [maxRoomSize, setMaxRoomSize] = useState<string>('500');
-
-
-  const handleSearchClick = () => {
-    console.log('Search clicked');
-    const combinedSelectedOptions = [
-      ...campusLocation,
-      ...floor,
-      ...partOfSuite,
-      ...roomCapacity,
-      ...hasBathroom,
-      ...hasKitchen,
-      ...minRoomSize,
-      ...maxRoomSize,
-    ];
-    const resultString = combinedSelectedOptions.join(', ');
-    console.log(resultString);
-    //props.setFilteredDorms(dormsMap);
-    props.setResultStr(resultString)
-  };
-
-
 
   const options = [
     { value: 'All', label: 'All' },
@@ -92,11 +71,22 @@ export default function Dropdowns(props: DropdownsProps) {
     { value: 'Machado', label: 'Machado House' },
   ];
 
+  function filteringNames(filterArray: any[]): string[] {
+    const modifiedNames: string[] = [];
 
+    filterArray.forEach(item => {
+      const modifiedName = item.dormBuilding.buildingName.replace("GRAD_CENTER_D", "Graduate Center D");
+      if (!modifiedNames.includes(modifiedName)) {
+        modifiedNames.push(modifiedName);
+      }
+    });
+
+    return modifiedNames;
+  }
 
   async function fetchSearch() {
     const fetch1 = await fetch(
-      `http://localhost:3232/filter?campusLocation=${encodeURIComponent(
+      `http://localhost:3233/filter?campusLocation=${encodeURIComponent(
         campusLocation.join(', ')
       )}&isSuite=${encodeURIComponent(
         partOfSuite.join(', ')
@@ -117,11 +107,20 @@ export default function Dropdowns(props: DropdownsProps) {
     const filterjson = await fetch1.json();
     if (filterjson.result === "success") {
       console.log("search successful");
-      props.setResultStr(filterjson);
+      //console.log(filterjson);
+      //props.setResultStr(JSON.stringify(filterjson));
+      props.setFilteredDorms(filteringNames(filterjson.filteredDormRoomSet));
+      console.log("setfiltered to ", filteringNames(filterjson.filteredDormRoomSet))
     } else {
       console.error("Invalid data from API:", filterjson);
     }
   }
+
+  const handleSearchClick = () => {
+    console.log('Search clicked');
+    fetchSearch();
+  };
+
 
   return (
     <div className="dropdown-container">
@@ -305,5 +304,6 @@ export default function Dropdowns(props: DropdownsProps) {
     </div>
   );
 }
+
 
 

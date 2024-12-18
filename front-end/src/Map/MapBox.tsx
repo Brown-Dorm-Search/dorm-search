@@ -55,8 +55,8 @@ if (!MAPBOX_KEY) {
      * different nad be affected by children classes of its parent. 
      */
 interface MapboxProps {
-    filteredDorms: string;
-    setFilteredDorms: React.Dispatch<React.SetStateAction<string>>;
+    filteredDorms: Array<string>;
+    setFilteredDorms: React.Dispatch<React.SetStateAction<Array<string>>>;
     clickedDorm: string;
     setClickedDorm: React.Dispatch<React.SetStateAction<string>>;
 }
@@ -116,20 +116,6 @@ export default function Mapbox(props: MapboxProps) {
     /**
     * only gets the features of the filteredDorms, for searching purposes 
     */
-    useEffect(() => {
-
-
-        const filteredFeatures = geojson.features.filter((feature: any) =>
-            props.filteredDorms.includes(feature.properties.name)
-        );
-
-        const filteredGeoJson = {
-            type: geojson.type,
-            features: filteredFeatures,
-        };
-
-        setSelectOverlay(filteredGeoJson);
-    }, []);
 
     /**
     * on Hover constantly updates the currentHoverDorm varible
@@ -143,11 +129,20 @@ export default function Mapbox(props: MapboxProps) {
         } = event;
         const hoveredFeature = features && features[0];
         setHoverDorm(hoveredFeature && { feature: hoveredFeature, x, y });
+        const filteredFeatures = geojson.features.filter((feature: any) =>
+            props.filteredDorms.includes(feature.properties.name)
+        );
+        const filteredGeoJson = {
+            type: geojson.type,
+            features: filteredFeatures,
+        };
+        console.log(geojson.type);
+        setSelectOverlay(filteredGeoJson);
     }, []);
 
     /**
     * makes sure clickedDorm becomes the dorm that the user clicked.
-    * This will send a log and also shoudl allow the parent 
+    * This will send a log and also should allow the parent 
     * class to deal with the click properly.
     */
     function clickDorm(e: mapboxgl.MapMouseEvent) {
