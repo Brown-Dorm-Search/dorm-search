@@ -36,6 +36,33 @@ public class ParserUtils {
     }
 
     /**
+     * Converts an integer representing room capacity to a corresponding {@link RoomCapacity} enum value.
+     *
+     * @param capacity An integer representing the room capacity (e.g., 1, 2, 3, etc.).
+     * @return The corresponding {@link RoomCapacity} enum value.
+     * @throws IllegalArgumentException If the capacity integer is invalid or not in the expected range (1-6).
+     */
+    public static RoomCapacity getRoomCapacity(int capacity) throws IllegalArgumentException {
+        switch (capacity) {
+            case 1:
+                return RoomCapacity.One;
+            case 2:
+                return RoomCapacity.Two;
+            case 3:
+                return RoomCapacity.Three;
+            case 4:
+                return RoomCapacity.Four;
+            case 5:
+                return RoomCapacity.Five;
+            case 6:
+                return RoomCapacity.Six;
+            default:
+                throw new IllegalArgumentException("Room capacity must be an integer between 1 and 6");
+        }
+    }
+
+
+    /**
      * Converts a room type string (such as "Single", "Double", "Triple") to the corresponding room capacity.
      *
      * @param size A string representing the room type (e.g., "Single", "Double", "Triple").
