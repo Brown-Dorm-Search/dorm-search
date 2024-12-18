@@ -132,13 +132,15 @@ public class ParserTest {
         assertEquals(12, numSuites);
 
         IDormRoom room0 = rooms.get(0);
-        assertEquals(room0.getRoomNumber(), "BARBOUR 050 051");
+        assertEquals("BARBOUR 050", room0.getRoomNumber());
         assertTrue(room0.hasKitchen());
         assertTrue(room0.isSuite());
         assertEquals(BathroomType.Private, room0.getBathroomType());
+        assertEquals(736, room0.getRoomSize());
+        assertEquals(RoomCapacity.Three, room0.getRoomCapacity());
 
         IDormRoom room136 = rooms.get(136);
-        assertEquals(room136.getRoomNumber(), "CHAPIN 330");
+        assertEquals("CHAPIN 330", room136.getRoomNumber());
         assertEquals(room136.getRoomSize(), 232);
         assertFalse(room136.hasKitchen());
         assertFalse(room136.isSuite());
