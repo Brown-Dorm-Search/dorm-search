@@ -129,7 +129,7 @@ public class RoomParser {
      * @return A {@link Suite} instance containing the dorm rooms and the common area size.
      */
     private static Suite parseSuite(ArrayList<DormRoom> roomsInSuite, int commonAreaSize) {
-        DormRoom firstRoom = roomsInSuite.get(0);
+        DormRoom firstRoom = roomsInSuite.getFirst();
 
         // Get common area data
 
@@ -141,12 +141,10 @@ public class RoomParser {
         boolean hasKitchen = firstRoom.hasKitchen();
         boolean isSuite = firstRoom.isSuite();
         BathroomType bathType = firstRoom.getBathroomType();
-        String building = firstRoom.getDormBuilding().getBuildingName();
+        String building = firstRoom.getDormBuilding().buildingName().toString();
 
-        Suite suiteToReturn = new Suite(roomSize, roomNumber, capacity, floorPlan, hasKitchen,
+      return new Suite(roomSize, roomNumber, capacity, floorPlan, hasKitchen,
                 isSuite, bathType, building, commonAreaSize, roomsInSuite);
-
-        return suiteToReturn;
     }
 
     /**
@@ -240,9 +238,7 @@ public class RoomParser {
         BathroomType bathType = ParserUtils.getBathroomType(room.get("Has Bathroom?"));
         String building = room.get("Building");
 
-        DormRoom newRoom = new DormRoom(roomSize, roomNumber, capacity, floorPlan, hasKitchen,
+      return new DormRoom(roomSize, roomNumber, capacity, floorPlan, hasKitchen,
                 isSuite, bathType, building);
-
-        return newRoom;
     }
 }
