@@ -11,7 +11,7 @@ public enum CampusLocation {
   MainGreen,
   GradCenter,
   GregorianQuad,
-  Pembroke,
+//  Pembroke,
   RuthJSimmons,
   ThayerStreet,
   EastCampus,
@@ -40,10 +40,10 @@ public enum CampusLocation {
           new DormBuilding("Grad Center D"));
       case GregorianQuad -> Set.of(new DormBuilding("Vartan Gregorian Quad A"),
           new DormBuilding("Vartan Gregorian Quad B"));
-      case Pembroke -> Set.of(new DormBuilding("New Pembroke #1"),
-          new DormBuilding("New Pembroke #2"),
-          new DormBuilding("New Pembroke #3"),
-          new DormBuilding("West House"));
+//      case Pembroke -> Set.of(new DormBuilding("New Pembroke #1"),
+//          new DormBuilding("New Pembroke #2"),
+//          new DormBuilding("New Pembroke #3"),
+//          new DormBuilding("West House"));
       case RuthJSimmons -> Set.of(new DormBuilding("Hegeman Hall"),
           new DormBuilding("Littlefield Hall"));
       case ThayerStreet -> Set.of(new DormBuilding("Caswell Hall"));

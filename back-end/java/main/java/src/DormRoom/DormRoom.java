@@ -1,5 +1,7 @@
 package DormRoom;
 
+import java.util.Objects;
+
 /**
  * The {@code DormRoom} class represents a dormitory room with various attributes such as size,
  * capacity, building location, and amenities. It is designed to encapsulate data about a single
@@ -166,6 +168,27 @@ public class DormRoom implements IDormRoom {
      * @return the floor number of the dorm room
      */
     public int getFloorNumber(){
-        return Integer.getInteger(String.valueOf(this.roomNumber.charAt(0)));
+        return Integer.parseInt(this.roomNumber.substring(0,1));
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof final DormRoom dormRoom)) {
+            return false;
+        }
+      return roomSize == dormRoom.roomSize && hasKitchen == dormRoom.hasKitchen
+            && isSuite == dormRoom.isSuite && roomNumber.equals(dormRoom.roomNumber)
+            && roomCapacity == dormRoom.roomCapacity && Objects.equals(floorPlanLink,
+            dormRoom.floorPlanLink) && bathroomType == dormRoom.bathroomType && Objects.equals(
+            dormBuilding, dormRoom.dormBuilding);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(roomSize, roomNumber, roomCapacity, floorPlanLink, hasKitchen, isSuite,
+            bathroomType, dormBuilding);
     }
 }

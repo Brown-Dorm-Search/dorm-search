@@ -1,5 +1,7 @@
 package DormRoom;
 
+import java.util.Objects;
+
 /**
  * The {@code DormBuilding} class represents data about a specific dormitory building on campus.
  * Each instance contains information such as the building's name, its postal location,
@@ -176,31 +178,31 @@ public class DormBuilding {
         this.hasElevatorAccess = true;
       }
 
-      // Pembroke
-      case "new pembroke #1" -> {
-        this.peoplePerWasher = Float.parseFloat(null);
-        this.year = 0;
-        this.address = null;
-        this.campusLocation = CampusLocation.Pembroke;
-        this.hasElevatorAccess = Boolean.getBoolean("null");
-      }
-      case "new pembroke #2" -> {
-        this.peoplePerWasher = Float.parseFloat(null);
-        this.year = 0;
-        this.address = null;
-        this.campusLocation = CampusLocation.Pembroke;
-        this.hasElevatorAccess = Boolean.getBoolean("null");
-      }
-      case "new pembroke #3" -> {
-        this.peoplePerWasher = Float.parseFloat(null);
-        this.year = 0;
-        this.address = null;
-        this.campusLocation = CampusLocation.Pembroke;
-        this.hasElevatorAccess = Boolean.getBoolean("null");
-      }
+//      // Pembroke
+//      case "New Pembroke #1" -> {
+//        this.peoplePerWasher = Float.parseFloat(null);
+//        this.year = 0;
+//        this.address = null;
+//        this.campusLocation = CampusLocation.Pembroke;
+//        this.hasElevatorAccess = Boolean.getBoolean("null");
+//      }
+//      case "New Pembroke #2" -> {
+//        this.peoplePerWasher = Float.parseFloat(null);
+//        this.year = 0;
+//        this.address = null;
+//        this.campusLocation = CampusLocation.Pembroke;
+//        this.hasElevatorAccess = Boolean.getBoolean("null");
+//      }
+//      case "New Pembroke #3" -> {
+//        this.peoplePerWasher = Float.parseFloat(null);
+//        this.year = 0;
+//        this.address = null;
+//        this.campusLocation = CampusLocation.Pembroke;
+//        this.hasElevatorAccess = Boolean.getBoolean("null");
+//      }
 
       // RuthJSimmons
-      case "hegemen hall" -> {
+      case "Hegeman Hall" -> {
         this.peoplePerWasher = 56.5f;
         this.year = 1991;
         this.address = "128 George St, Providence, RI 02906";
@@ -232,7 +234,15 @@ public class DormBuilding {
         this.campusLocation = CampusLocation.EastCampus;
         this.hasElevatorAccess = false;
       }
-      case "minden hall" -> {
+      case "King House" -> {
+        this.peoplePerWasher = 27f;
+        this.year = 1895;
+        this.address = "154 Hope St, Providence, RI 02912";
+        this.campusLocation = CampusLocation.EastCampus;
+        this.hasElevatorAccess = false;
+      }
+
+      case "Minden Hall" -> {
         this.peoplePerWasher = 25.3333333f;
         this.year = 1912;
         this.address = "121 Waterman St, Providence, RI 02906";
@@ -281,7 +291,25 @@ public class DormBuilding {
     }
   }
 
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (!(o instanceof final DormBuilding that)) {
+      return false;
+    }
+    return Float.compare(peoplePerWasher, that.peoplePerWasher) == 0 && year == that.year
+        && hasElevatorAccess == that.hasElevatorAccess && Objects.equals(buildingName,
+        that.buildingName) && Objects.equals(address, that.address)
+        && campusLocation == that.campusLocation;
+  }
 
+  @Override
+  public int hashCode() {
+    return Objects.hash(buildingName, peoplePerWasher, year, address, campusLocation,
+        hasElevatorAccess);
+  }
 
   /**
    * Returns the name of the building.
