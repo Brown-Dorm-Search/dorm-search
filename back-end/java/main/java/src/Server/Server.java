@@ -3,9 +3,7 @@ package Server;
 import static spark.Spark.after;
 
 import Parsing.RoomParser;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import spark.Spark;
 import DormRoom.IDormRoom;
@@ -26,8 +24,9 @@ public class Server {
    * @param dormRoomList the list of {@link IDormRoom} instances used to initialize the filtering system
    */
   public Server(List<IDormRoom> dormRoomList) {
+    int portNumber = 3233;
     // Set the server port
-    Spark.port(3232);
+    Spark.port(portNumber);
 
     // Configure CORS headers
     after(
@@ -48,18 +47,19 @@ public class Server {
     Spark.awaitInitialization();
 
     // Log the server start message
-    System.out.println("Server started at http://localhost:3232");
+    System.out.println("Server started at http://localhost:" + portNumber);
   }
 
   /**
    * The main method for starting the server. This method creates a default server instance with
-   * no dorm rooms and runs it on port 3232.
+   * no dorm rooms and runs it.
    *
    * @param args the command-line arguments (not used)
    */
   public static void main(String[] args) {
     // Parse the dorm list
     try {
+      // Parse the data when the server is initialized
       RoomParser parser = new RoomParser("data/PartialDataset.csv");
       List<IDormRoom> dormRoomList = parser.getRooms();
 

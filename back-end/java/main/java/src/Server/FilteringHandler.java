@@ -145,7 +145,7 @@ public class FilteringHandler implements Route {
     Set<CampusLocation> campusLocations = new HashSet<>();
     for (String location : campusLocation.split(",")) {
       try {
-        campusLocations.add(CampusLocation.valueOf(location.trim().toUpperCase()));
+        campusLocations.add(CampusLocation.valueOf(location.trim()));
       } catch (IllegalArgumentException e) {
         throw new IllegalArgumentException(
             "Invalid value for campusLocation: " + location + ". Valid values are: "
@@ -236,7 +236,7 @@ public class FilteringHandler implements Route {
     Set<BathroomType> bathroomTypes = new HashSet<>();
     for (String type : bathroomType.split(",")) {
       try {
-        bathroomTypes.add(BathroomType.valueOf(type.trim().toUpperCase()));
+        bathroomTypes.add(BathroomType.valueOf(type.trim()));
       } catch (IllegalArgumentException e) {
         throw new IllegalArgumentException(
             "Invalid value for bathroomType: " + type + ". Valid values are: "
@@ -326,7 +326,7 @@ public class FilteringHandler implements Route {
     Set<RoomCapacity> capacities = new HashSet<>();
     for (String capacity : roomCapacity.split(",")) {
       try {
-        capacities.add(RoomCapacity.valueOf(capacity.trim().toUpperCase()));
+        capacities.add(RoomCapacity.valueOf(capacity.trim()));
       } catch (IllegalArgumentException e) {
         throw new IllegalArgumentException(
             "Invalid value for roomCapacity: " + capacity + ". Valid values are: "

@@ -79,7 +79,7 @@ public class DormRoom implements IDormRoom {
         this.hasKitchen = hasKitchen;
         this.isSuite = isSuite;
         this.bathroomType = bathroomType;
-        this.dormBuilding = new DormBuilding(buildingName);
+        this.dormBuilding = new DormBuilding(DormBuildingName.fromString(buildingName));
     }
 
 
@@ -168,7 +168,33 @@ public class DormRoom implements IDormRoom {
      * @return the floor number of the dorm room
      */
     public int getFloorNumber(){
-        return Integer.parseInt(this.roomNumber.substring(0,1));
+        return Integer.parseInt(DormRoom.getFloorNumberHelper(this.roomNumber));
+    }
+
+    /**
+     * Extracts the floor number from a room number string by identifying the third-to-last digit.
+     * This method assumes that the floor number is represented by the third-to-last integer in the string.
+     *
+     * @param str The room number string containing digits, where the floor number is represented by the third-to-last digit.
+     * @return A string containing the third-to-last digit, which corresponds to the floor number.
+     * @throws IllegalArgumentException If the room number string does not contain enough digits to determine a floor number
+     *                                  (i.e., fewer than three digits).
+     */
+    private static String getFloorNumberHelper(String str) throws IllegalArgumentException{
+
+        int count = 0;
+
+        // Traverse the string from the end to the start
+        for (int i = str.length() - 1; i >= 0; i--) {
+            if (Character.isDigit(str.charAt(i))) {
+                count++;
+                if (count == 3)
+                    return String.valueOf(str.charAt(i));
+            }
+
+        }
+        // Return null character if no digit is found
+        throw new IllegalArgumentException("Could not parse floor number for floor: " + str);
     }
 
     @Override
