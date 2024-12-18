@@ -4,5 +4,8 @@
 
 3.) Replace the int for floorNumbers with its own enum
 
+
 4.) Change DormBuilding class to an enum of dormBuilding names, and a record that maps the dormBuildingNames
 to the dormBuildings.
+
+5.) Update getRooms in RoomParser to be a list instead of an iterator to make the code more readable
