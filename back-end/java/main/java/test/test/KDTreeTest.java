@@ -199,7 +199,7 @@ public class KDTreeTest {
     return java.util.stream.IntStream.range(1, size + 1)
         .mapToObj(i -> new DormRoom(
             100 + (i % 500),
-            String.valueOf(i),
+            String.valueOf(i+100),
             RoomCapacity.values()[i % RoomCapacity.values().length],
             "floorplan.com/" + i,
             i % 2 == 0,

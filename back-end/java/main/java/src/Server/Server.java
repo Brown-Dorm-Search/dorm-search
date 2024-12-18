@@ -27,7 +27,7 @@ public class Server {
    */
   public Server(List<IDormRoom> dormRoomList) {
     // Set the server port
-    Spark.port(3232);
+    Spark.port(3233);
 
     // Configure CORS headers
     after(
@@ -62,7 +62,13 @@ public class Server {
     try {
       RoomParser parser = new RoomParser("data/PartialDataset.csv");
       List<IDormRoom> dormRoomList = parser.getRooms();
-
+//      for (int i = 0; i < dormRoomList.size(); i++) {
+//        System.out.print(dormRoomList.get(i).getFloorNumber() + "   ");
+//        System.out.print(dormRoomList.get(i).getRoomNumber() + "   ||   ");
+//        if (i%5 == 0) {
+//          System.out.print("\n");
+//        }
+//      }
       // Instantiate and start the server
       Server server = new Server(dormRoomList);
       System.out.println("Server has been activated");
