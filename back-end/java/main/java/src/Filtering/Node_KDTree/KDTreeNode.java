@@ -1,12 +1,12 @@
 package Filtering.Node_KDTree;
 
 import Filtering.FilteringCriteria;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 import org.jetbrains.annotations.NotNull;
 import DormRoom.IDormRoom;
 import DormRoom.RoomCapacity;
-import Filtering.FilteringCriteria;
 import java.util.List;
 import java.util.Comparator;
 
@@ -72,14 +72,15 @@ public class KDTreeNode {
     }
 
     int axis = depth % K;
-    rooms.sort(this.getComparatorForAxis(axis));
+    List<IDormRoom> sortableDormList = new ArrayList<>(rooms);
+    sortableDormList.sort(this.getComparatorForAxis(axis));
 
-    int medianIndex = rooms.size() / 2;
-    this.value = rooms.get(medianIndex);
+    int medianIndex = sortableDormList.size() / 2;
+    this.value = sortableDormList.get(medianIndex);
 
     // Left subtree
     if (medianIndex > 0) {
-      List<IDormRoom> leftRooms = rooms.subList(0, medianIndex);
+      List<IDormRoom> leftRooms = sortableDormList.subList(0, medianIndex);
       this.left = new KDTreeNode(leftRooms, depth + 1);
     } else {
       this.left = null;
@@ -87,7 +88,7 @@ public class KDTreeNode {
 
     // Right subtree
     if (medianIndex < rooms.size() - 1) {
-      List<IDormRoom> rightRooms = rooms.subList(medianIndex + 1, rooms.size());
+      List<IDormRoom> rightRooms = sortableDormList.subList(medianIndex + 1, rooms.size());
       this.right = new KDTreeNode(rightRooms, depth + 1);
     } else {
       this.right = null;

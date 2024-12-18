@@ -1,9 +1,7 @@
 package DormRoom;
 
-import DormRoom.BathroomType;
-import DormRoom.DormBuilding;
-import DormRoom.RoomCapacity;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * The {@code Suite} class represents a specialized type of {@link DormRoom} that contains
@@ -78,5 +76,25 @@ public class Suite extends DormRoom {
     super(roomSize, roomNumber, roomCapacity, floorPlanLink, hasKitchen, isSuite, bathroomType, buildingName);
     this.commonAreaSize = commonAreaSize;
     this.internalDormRooms = internalDormRooms;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (!(o instanceof final Suite suite)) {
+      return false;
+    }
+    if (!super.equals(o)) {
+      return false;
+    }
+    return commonAreaSize == suite.commonAreaSize && Objects.equals(internalDormRooms,
+        suite.internalDormRooms);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(super.hashCode(), commonAreaSize, internalDormRooms);
   }
 }
