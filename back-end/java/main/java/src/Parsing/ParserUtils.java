@@ -17,22 +17,16 @@ public class ParserUtils {
      * @throws IllegalArgumentException If the capacity string is invalid or not in the expected range (1-6).
      */
     public static RoomCapacity getRoomCapacity(String capacity) throws IllegalArgumentException {
-        switch (capacity.toLowerCase()) {
-            case "one":
-                return RoomCapacity.One;
-            case "two":
-                return RoomCapacity.Two;
-            case "three":
-                return RoomCapacity.Three;
-            case "four":
-                return RoomCapacity.Four;
-            case "five":
-                return RoomCapacity.Five;
-            case "six":
-                return RoomCapacity.Six;
-            case null, default:
-                throw new IllegalArgumentException("Room capacity must be a number from 1 to 6");
-        }
+      return switch (capacity.toLowerCase()) {
+        case "one" -> RoomCapacity.One;
+        case "two" -> RoomCapacity.Two;
+        case "three" -> RoomCapacity.Three;
+        case "four" -> RoomCapacity.Four;
+        case "five" -> RoomCapacity.Five;
+        case "six" -> RoomCapacity.Six;
+        case null, default ->
+            throw new IllegalArgumentException("Room capacity must be a number from 1 to 6");
+      };
     }
 
     /**
@@ -43,22 +37,16 @@ public class ParserUtils {
      * @throws IllegalArgumentException If the capacity integer is invalid or not in the expected range (1-6).
      */
     public static RoomCapacity getRoomCapacity(int capacity) throws IllegalArgumentException {
-        switch (capacity) {
-            case 1:
-                return RoomCapacity.One;
-            case 2:
-                return RoomCapacity.Two;
-            case 3:
-                return RoomCapacity.Three;
-            case 4:
-                return RoomCapacity.Four;
-            case 5:
-                return RoomCapacity.Five;
-            case 6:
-                return RoomCapacity.Six;
-            default:
-                throw new IllegalArgumentException("Room capacity must be an integer between 1 and 6");
-        }
+      return switch (capacity) {
+        case 1 -> RoomCapacity.One;
+        case 2 -> RoomCapacity.Two;
+        case 3 -> RoomCapacity.Three;
+        case 4 -> RoomCapacity.Four;
+        case 5 -> RoomCapacity.Five;
+        case 6 -> RoomCapacity.Six;
+        default ->
+            throw new IllegalArgumentException("Room capacity must be an integer between 1 and 6");
+      };
     }
 
 

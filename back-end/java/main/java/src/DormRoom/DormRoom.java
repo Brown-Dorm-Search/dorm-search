@@ -79,7 +79,7 @@ public class DormRoom implements IDormRoom {
         this.hasKitchen = hasKitchen;
         this.isSuite = isSuite;
         this.bathroomType = bathroomType;
-        this.dormBuilding = new DormBuilding(buildingName);
+        this.dormBuilding = new DormBuilding(DormBuildingName.fromString(buildingName));
     }
 
 

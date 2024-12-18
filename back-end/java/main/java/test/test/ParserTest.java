@@ -21,7 +21,7 @@ public class ParserTest {
      * Verifies that the method correctly converts string inputs ("one", "two", etc.) to corresponding {@link RoomCapacity} enum values.
      */
     @Test
-    void testGetRoomCapacityValid() throws IOException{
+    void testGetRoomCapacityValid(){
         // Test valid inputs
         assertEquals(RoomCapacity.One, ParserUtils.getRoomCapacity("one"));
         assertEquals(RoomCapacity.Two, ParserUtils.getRoomCapacity("two"));
@@ -36,7 +36,7 @@ public class ParserTest {
      * Verifies that the method throws an {@link IllegalArgumentException} when an invalid capacity is provided.
      */
     @Test
-    void testGetRoomCapacityInvalid() throws IOException{
+    void testGetRoomCapacityInvalid() {
         // Test invalid inputs
         assertThrows(IllegalArgumentException.class, () -> {ParserUtils.getRoomCapacity("seven");});
         assertThrows(IllegalArgumentException.class, () -> {ParserUtils.getRoomCapacity("abc");});
@@ -48,7 +48,7 @@ public class ParserTest {
      * to corresponding {@link RoomCapacity} enum values.
      */
     @Test
-    void testRoomTypeToSizeValid() throws IOException{
+    void testRoomTypeToSizeValid() {
         assertEquals(RoomCapacity.One, ParserUtils.roomTypeToSize("Single Room"));
         assertEquals(RoomCapacity.Two, ParserUtils.roomTypeToSize("Double Room"));
         assertEquals(RoomCapacity.Three, ParserUtils.roomTypeToSize("Triple Room"));
@@ -59,7 +59,7 @@ public class ParserTest {
      * Verifies that the method throws an {@link IllegalArgumentException} when an unrecognized room type string is provided.
      */
     @Test
-    void testRoomTypeToSizeInvalid() throws IOException{
+    void testRoomTypeToSizeInvalid() {
         // Test for invalid room type string
         assertThrows(IllegalArgumentException.class, () -> {ParserUtils.roomTypeToSize("Quad Room");});
     }
@@ -131,7 +131,7 @@ public class ParserTest {
         assertEquals(536, numDorms);
         assertEquals(12, numSuites);
 
-        IDormRoom room0 = rooms.get(0);
+        IDormRoom room0 = rooms.getFirst();
         assertEquals("BARBOUR 050", room0.getRoomNumber());
         assertTrue(room0.hasKitchen());
         assertTrue(room0.isSuite());
@@ -146,6 +146,6 @@ public class ParserTest {
         assertFalse(room136.isSuite());
         assertEquals(BathroomType.Communal, room136.getBathroomType());
         assertEquals(RoomCapacity.Two, room136.getRoomCapacity());
-        assertEquals("CHAPIN HOUSE", room136.getDormBuilding().getBuildingName());
+        assertEquals("Chapin House", room136.getDormBuilding().buildingName().toString());
     }
 }
