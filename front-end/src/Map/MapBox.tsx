@@ -116,7 +116,20 @@ export default function Mapbox(props: MapboxProps) {
     /**
     * only gets the features of the filteredDorms, for searching purposes 
     */
+    useEffect(() => {
+        const filteredFeatures = geojson.features.filter((feature: any) =>
+            props.filteredDorms.includes(feature.properties.Name)
+        );
 
+        const filteredGeoJson = {
+            type: geojson.type,
+            features: filteredFeatures,
+        };
+        const featureNames = geojson.features.map((feature: { properties: { Name: any; }; }) => feature.properties.Name);
+
+        console.log(featureNames);
+        setSelectOverlay(filteredGeoJson);
+    }, [props.filteredDorms]);
     /**
     * on Hover constantly updates the currentHoverDorm varible
     * in order to properly get ht eddorm the hoverbox should exist over
@@ -129,15 +142,6 @@ export default function Mapbox(props: MapboxProps) {
         } = event;
         const hoveredFeature = features && features[0];
         setHoverDorm(hoveredFeature && { feature: hoveredFeature, x, y });
-        const filteredFeatures = geojson.features.filter((feature: any) =>
-            props.filteredDorms.includes(feature.properties.name)
-        );
-        const filteredGeoJson = {
-            type: geojson.type,
-            features: filteredFeatures,
-        };
-        console.log(geojson.type);
-        setSelectOverlay(filteredGeoJson);
     }, []);
 
     /**

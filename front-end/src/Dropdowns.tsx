@@ -75,7 +75,32 @@ export default function Dropdowns(props: DropdownsProps) {
     const modifiedNames: string[] = [];
 
     filterArray.forEach(item => {
-      const modifiedName = item.dormBuilding.buildingName.replace("GRAD_CENTER_D", "Graduate Center D");
+      //TODO: replce dif names and make ovelay selected lighter
+      //TODO: change map names to make consistent with data file (names not address)
+      const modifiedName = item.dormBuilding.buildingName.replace("GRAD_CENTER_D", "Graduate Center D")
+        .replace("GRADE_CENTER_C", "Graduate Center C").replace("GRAD_CENTER_B", "Graduate Center B")
+        .replace("GRADE_CENTER_A", "Graduate Center A").replace("BUXTON_HOUSE", "Buxton House")
+        .replace("CHAPIN_HOUSE", "Chapin House").replace("NORTH_HOUSE", "North House")
+        .replace("PERKINS_HALL", "Perkins Hall").replace("MORRISS_HALL", "Morriss Hall")
+        .replace("YOUNG_ORCHARD_#2", "Young Orchard 2").replace("GODDARD_HOUSE", "Goddard House")
+        .replace("MARCY_HOUSE", "Marcy House").replace("WAYLAND_HOUSE", "Wayland House")
+        .replace("SEARS_HOUSE", "Sears House").replace("EVERETT_POLAND", "Everett-Poland")
+        .replace("JAMESON-MEAD", "Jameson-Mead").replace("ARCHIBALD-BRONSON", "Archibald-Bronson")
+        .replace("OLNEY_HOUSE", "Olney House").replace("DIMAN_HOUSE", "Diman House")
+        .replace("HARKNESS_HOUSE", "Harkness House").replace("VARTAN_GREGORIAN_QUAD_A", "Vartan Gregorian Quad A")
+        .replace("DANOFF_HALL", "Danoff Hall").replace("BARBOUR_HALL", "Barbour Hall")
+        .replace("YOUNG_ORCHARD_#4", "Young Orchard 4").replace("YOUNG_ORCHARD_#10", "Young Orchard 10")
+        .replace("KING_HOUSE", "King House").replace("SLATER_HALL", "Slater Hall")
+        .replace("HOPE_COLLEGE", "Hope College").replace("CASWELL_HALL", "Caswell Hall")
+        .replace("HEGEMEN_HALL", "Hegeman Hall").replace("LITTLEFIELD_HALL", "Littlefield Hall")
+        .replace("MINDEN_HALL", "Minden Hall").replace("METCALF_HALL", "Metcalf Hall")
+        .replace("MILLER_HALL", "Miller Hall").replace("ANDREWS_HALL", "Andrews Hall")
+        .replace("DONOVAN_HOUSE", "Donovan House").replace("CHAMPLIN_HALL", "Champlin Hall")
+        .replace("NEW_PEMBROKE_#3", "New Pembroke 3").replace("NEW_PEMBROKE_#2", "New Pembroke 2")
+        .replace("NEW_PEMBROKE_#1", "New Pembroke 1").replace("NEW_PEMBROKE_#4", "New Pembroke 4")
+        .replace("HARAMBEE_HOUSE", "Harambee House").replace("WOOLLEY_HALL", "Woolley Hall")
+        .replace("EMERY_HALL", "Emery Hall").replace("WEST_HOUSE", "West House")
+        .replace("MACHADO_HOUSE", "Machado House").replace("VARTAN_GREGORIAN_QUAD_B", "Vartan Gregorian Quad B");
       if (!modifiedNames.includes(modifiedName)) {
         modifiedNames.push(modifiedName);
       }

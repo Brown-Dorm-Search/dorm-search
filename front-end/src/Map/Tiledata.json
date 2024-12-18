@@ -4,7 +4,7 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "Brown St 111"
+                "Name": "North House"
             },
             "geometry": {
                 "coordinates": [
@@ -3266,7 +3266,7 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "Danoff Residence Hall"
+                "Name": "Danoff Hall"
             },
             "geometry": {
                 "coordinates": [
@@ -3636,7 +3636,7 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "Slater"
+                "Name": "Slater Hall"
             },
             "geometry": {
                 "coordinates": [
@@ -4166,7 +4166,7 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "Bowen St 219"
+                "Name": "Donovan House"
             },
             "geometry": {
                 "coordinates": [
@@ -4274,7 +4274,7 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "New Pembroke 3"
+                "Name": "New Pembroke 1"
             },
             "geometry": {
                 "coordinates": [
@@ -4490,7 +4490,7 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "Thayer St 315"
+                "Name": "Harambee House"
             },
             "geometry": {
                 "coordinates": [
