@@ -16,5 +16,9 @@ export const selected_dorms: FillLayer = {
     paint: {
         "fill-color": "#FDFD96",
         "fill-opacity": 1,
+        "fill-outline-color": "#000000",
+        "fill-outline-width": 100
+        ,
+
     },
 };
