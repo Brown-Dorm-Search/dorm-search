@@ -3,6 +3,22 @@ import Select from 'react-select';
 import "./styles/App.css"
 import MultiRangeSlider from "multi-range-slider-react";
 
+/*
+Dropdowns provides the dropdown multiselect, the scroll bar, and 
+the search button at the top of the website. It also fetches informaiton
+from the backend and sends that information to the parent function,
+"Home", which then uses that information to display information
+accordingly. 
+*/
+/*
+DropdownsProps uses "resultStr" and in order to send the parent
+directory, Home, the json fetched from backend. This information
+will be used to show selections in the panels below the dropdowns.
+
+FilteredDorms does the same as resultStr, but only provides
+a list of names of the dorm buildings that were identified 
+to have dorm matches to the search request. 
+ */
 export interface DropdownsProps {
   resultStr: any;
   setResultStr: Dispatch<SetStateAction<any>>;
@@ -10,9 +26,10 @@ export interface DropdownsProps {
   setFilteredDorms: Dispatch<SetStateAction<Array<string>>>;
 }
 
-
-
 export default function Dropdowns(props: DropdownsProps) {
+  /*The below constants are set by the dropdowns,
+  and their value is put in the fetch request to the backend
+  in order to get the requested information */
   const [campusLocation, setCampusLocation] = useState<Array<string>>(['All']);
   const [floor, setFloor] = useState<Array<string>>(['All']);
   const [partOfSuite, setPartOfSuite] = useState<Array<string>>(['All']);
@@ -22,12 +39,15 @@ export default function Dropdowns(props: DropdownsProps) {
   const [minRoomSize, setMinRoomSize] = useState<string>('0');
   const [maxRoomSize, setMaxRoomSize] = useState<string>('500');
 
+
+  /* option values for hasKitchen and isSuite dropdowns */
   const options = [
     { value: 'All', label: 'All' },
     { value: 'Yes', label: 'Yes' },
     { value: 'No', label: 'No' },
   ];
 
+  /* option values for floor dropdowns */
   const optionsFloor = [
     { value: 'All', label: 'All' },
     { value: '1', label: 'Floor 1' },
@@ -41,6 +61,7 @@ export default function Dropdowns(props: DropdownsProps) {
 
   ];
 
+  /* option values for hasBathroom dropdowns */
   const optionsBathroom = [
     { value: 'All', label: 'All' },
     { value: 'Private', label: 'Private' },
@@ -48,6 +69,7 @@ export default function Dropdowns(props: DropdownsProps) {
     { value: 'SemiPrivate', label: 'SemiPrivate' },
   ];
 
+  /* option values for roomCapacity dropdowns */
   const optionsRoomCap = [
     { value: 'All', label: 'All' },
     { value: 'one', label: '1' },
@@ -58,6 +80,7 @@ export default function Dropdowns(props: DropdownsProps) {
     { value: 'six', label: '6' },
   ];
 
+  /* option values for campusLocation dropdowns */
   const optionsLoc = [
     { value: 'All', label: 'All' },
     { value: 'WristonQuad', label: 'Wriston Quad' },
@@ -71,6 +94,10 @@ export default function Dropdowns(props: DropdownsProps) {
     { value: 'Machado', label: 'Machado House' },
   ];
 
+  /* filteringNames takes the json from the backend, and creates a list of
+  buildings names that are matches for the search request.
+  this is later set as filteredDorms
+  */
   function filteringNames(filterArray: any[]): string[] {
     const modifiedNames: string[] = [];
 
@@ -108,7 +135,8 @@ export default function Dropdowns(props: DropdownsProps) {
 
     return modifiedNames;
   }
-
+  /* fetchSearch sets resultStr and filteredDorms by retrieving
+  information from the backend.*/
   async function fetchSearch() {
     const fetch1 = await fetch(
       `http://localhost:3233/filter?campusLocation=${encodeURIComponent(
@@ -141,6 +169,8 @@ export default function Dropdowns(props: DropdownsProps) {
     }
   }
 
+  /* handleSearchClick runs when the serach button is clicked.
+  it then fetches the informtion form the backend.  */
   const handleSearchClick = () => {
     console.log('Search clicked');
     fetchSearch();
@@ -149,6 +179,9 @@ export default function Dropdowns(props: DropdownsProps) {
 
   return (
     <div className="dropdown-container">
+      {/* the below ui includes dropdowns and a button 
+      which fetches from the backend using the requests made by
+      the selected dropdown options */}
       <div className="multi-select">
         <label htmlFor="CampusLocation">Campus Location</label>
         <Select

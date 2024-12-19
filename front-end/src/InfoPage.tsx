@@ -4,8 +4,18 @@ interface dorm {
     clickedDorm: string;
     setClickedDorm: React.Dispatch<React.SetStateAction<string>>;
 }
+
+/*Info Page refers to the panel in the center when a dorm building is clicked.
+A panel will then appaar after a dorm building, on the left panel or map 
+is clicked. The panel then displays information about the dorm clciked.
+the ui for the different information and format per dorm is provided below. '
+In the future, We hope to exculsively retrieve this information from the backend. 
+*/
 export default function InfoPage(props: dorm) {
     //TODO: put in backend
+    /*Currently can't pull form backend since backend only has dorms searched,
+    not all dorms that currently exist. Searching "all" doesn't work as we don't have 
+    dorm rooms for all dorms yet.*/
     const handleClick = () => {
         props.setClickedDorm('');
     };

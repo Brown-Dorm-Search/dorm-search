@@ -9,22 +9,7 @@ import About from './About.tsx';
 import Dropdowns from './Dropdowns.tsx';
 
 createRoot(document.getElementById('root')!).render(
-    <StrictMode>
-      <App />
-    </StrictMode>,
+  <StrictMode>
+    <App />
+  </StrictMode>,
 )
-
-
-{/* 
-    <div className="header-top">
-      <div className="title">Brown Dorm Search</div>
-      <Navbar />
-    </div>
-  
-    <div className="content">
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={"Contact Page"} />
-      </Routes>
-    </div> */}

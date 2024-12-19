@@ -9,17 +9,27 @@ import StandardDorm from './StandardDorm'
 import Suite, { DormRoomProps } from './Suite'
 import InfoPage from './InfoPage'
 
+/**
+Home() displays the panels that are shown in the website. 
+This includes the dorm building information on the right, the map in the middle,
+and the dorm information on the right. Users cna use the ui 
+to navigate between sets of information to learn more about possible 
+dorms.*/
 function Home() {
+  //resultString is the json retreived from the backend
   const [resultString, setResultString] = useState<any>('');
+  //filteredDorms is the names of the buildings that have dorm matches of the search request
   const [filteredDorms, setFilteredDorms] = useState<Array<string>>([]);
+  //clickedDorm is the dorm ui that was clicked most recently, on the map or left pannel.
   const [clickedDorm, setClickedDorms] = useState<string>('');
-  //set filtered dorms to change map highlights.
 
-  const suiteRoom1: DormRoomProps = { roomNumber: "BARBOUR 080 081", roomType: "Double", roomSize: 228 }
-  const suiteRoom2: DormRoomProps = { roomNumber: "BARBOUR 080 084", roomType: "Double", roomSize: 199 }
-  const suiteRooms = [suiteRoom1, suiteRoom2]
-
-
+  /**
+   * handleButtonClick sets the clickedDorm
+   * in the case that a dorm button is pressed
+   * on the left pannel.
+   * 
+   * @param name is the name of the dorm building clicked.
+   */
   function handleButtonClick(name: SetStateAction<string>) {
     setClickedDorms(name);
   }
@@ -81,7 +91,6 @@ function Home() {
                       return normalizedBuildingName === clickedDorm.toLowerCase();
                     })
                     .map((feature: { isSuite: string; roomNumber: string; floorPlanLink: string; roomCapacity: string; bathroomType: string; hasKitchen: boolean; roomSize: number; internalDormRooms: { roomNumber: any; roomCapacity: any; roomCapcity: any }[]; buildingName: string }) => {
-                      // Choose whether to render a Room or Suite based on isSuite
                       if (feature.isSuite == "true") {
                         return <Suite
                           suiteNumber={feature.roomNumber}

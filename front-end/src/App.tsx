@@ -31,18 +31,3 @@ function App() {
 export default App
 
 
-{/* 
-  <BrowserRouter>
-    <div className="header-top">
-      <div className="title">Brown Dorm Search</div>
-      <Navbar />
-    </div>
-  
-    <div className="content">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={"Contact Page"} />
-      </Routes>
-    </div>
-  </BrowserRouter> */}
