@@ -65,7 +65,7 @@ export default function Dropdowns(props: DropdownsProps) {
     { value: 'GradCenter', label: 'Grad Center' },
     { value: 'GregorianQuad', label: 'Gregorian Quad' },
     { value: 'Pembroke', label: 'Pembroke' },
-    { value: 'RuthJSimmons', label: 'Ruth J. Simmons Wuad' },
+    { value: 'RuthJSimmons', label: 'Ruth J. Simmons Quad' },
     { value: 'ThayerStreet', label: 'Thayer Street' },
     { value: 'EastCampus', label: 'East Campus' },
     { value: 'Machado', label: 'Machado House' },
@@ -78,8 +78,8 @@ export default function Dropdowns(props: DropdownsProps) {
       //TODO: replce dif names and make ovelay selected lighter
       //TODO: change map names to make consistent with data file (names not address)
       const modifiedName = item.dormBuilding.buildingName.replace("GRAD_CENTER_D", "Graduate Center D")
-        .replace("GRADE_CENTER_C", "Graduate Center C").replace("GRAD_CENTER_B", "Graduate Center B")
-        .replace("GRADE_CENTER_A", "Graduate Center A").replace("BUXTON_HOUSE", "Buxton House")
+        .replace("GRAD_CENTER_C", "Graduate Center C").replace("GRAD_CENTER_B", "Graduate Center B")
+        .replace("GRAD_CENTER_A", "Graduate Center A").replace("BUXTON_HOUSE", "Buxton House")
         .replace("CHAPIN_HOUSE", "Chapin House").replace("NORTH_HOUSE", "North House")
         .replace("PERKINS_HALL", "Perkins Hall").replace("MORRISS_HALL", "Morriss Hall")
         .replace("YOUNG_ORCHARD_#2", "Young Orchard 2").replace("GODDARD_HOUSE", "Goddard House")

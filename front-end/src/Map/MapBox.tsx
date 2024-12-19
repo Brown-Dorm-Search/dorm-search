@@ -125,9 +125,6 @@ export default function Mapbox(props: MapboxProps) {
             type: geojson.type,
             features: filteredFeatures,
         };
-        const featureNames = geojson.features.map((feature: { properties: { Name: any; }; }) => feature.properties.Name);
-
-        console.log(featureNames);
         setSelectOverlay(filteredGeoJson);
     }, [props.filteredDorms]);
     /**
@@ -176,7 +173,7 @@ export default function Mapbox(props: MapboxProps) {
                     mapboxAccessToken={MAPBOX_KEY}
                     {...viewState}
 
-                    style={{ width: window.innerWidth / 3, height: window.innerHeight / 2 }}
+                    style={{ width: window.innerWidth * 2 / 3, height: window.innerHeight * 2 / 3 }}
                     mapStyle={"mapbox://styles/knewlin713/cm43jrtsp002g01rz80qfdre0"}
 
                     onMove={(ev: ViewStateChangeEvent) => {

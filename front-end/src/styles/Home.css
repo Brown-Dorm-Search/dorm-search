@@ -1,24 +1,54 @@
 .panel-container {
-    display: flex;            /* Use flexbox to create a row layout */
-    height: 100vh;            /* Full viewport height */
-  }
-  
-  .panel {
-    flex: 1;                  /* Distribute space equally */
-    border: 1px solid #ccc;   /* Optional, to make the panels visible */
-    padding: 20px;
-    box-sizing: border-box;   /* Ensure padding is included in the width/height calculation */
-  }
-  
-  .left {
-    background-color: #000000;
-  }
-  
-  .center {
-    background-color: #000000;
-  }
-  
-  .right {
-    background-color: #000000;
-  }
-  
+  display: flex;
+  /* Use flexbox to create a row layout */
+  height: 100vh;
+  /* Full viewport height */
+}
+
+.panel {
+  flex: 1;
+  /* Distribute space equally */
+  border: 1px solid #ccc;
+  /* Optional, to make the panels visible */
+  padding: 20px;
+  box-sizing: border-box;
+  color: black;
+  /* Ensure padding is included in the width/height calculation */
+}
+
+.left {
+  background-color: #ffffff;
+}
+
+.center {
+  background-color: #ffffff;
+  width: 400px;
+}
+
+.right {
+  background-color: #ffffff;
+}
+
+.center img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.grey-button {
+  background-color: #808080;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.grey-button:hover {
+  background-color: #696969;
+}
+
+.grey-button:active {
+  background-color: #505050;
+}
