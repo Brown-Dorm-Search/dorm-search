@@ -76,19 +76,19 @@ function Home() {
 
           {clickedDorm !== "" &&
             <div className="panel right">
-              <p>Below are dorms in {clickedDorm} that meet your search options</p>
-              <>
-                {
-                  resultString
+              {resultString === "" && <p>Nothing Searched Yet</p>}
+              {resultString !== "" &&
+                <><p>Below are dorms in {clickedDorm} that meet your search options</p><>
+                  {resultString
                     .filter((feature: { dormBuilding: { buildingName: string } }) => {
                       if (clickedDorm === "All") {
-                        return true;
+                        return true
                       }
                       const normalizedBuildingName = feature.dormBuilding.buildingName
                         .toLowerCase()
                         .replace(/_/g, ' ')
-                        .replace("grad", "graduate");
-                      return normalizedBuildingName === clickedDorm.toLowerCase();
+                        .replace("grad", "graduate")
+                      return normalizedBuildingName === clickedDorm.toLowerCase()
                     })
                     .map((feature: { isSuite: string; roomNumber: string; floorPlanLink: string; roomCapacity: string; bathroomType: string; hasKitchen: boolean; roomSize: number; internalDormRooms: { roomNumber: any; roomCapacity: any; roomCapcity: any }[]; buildingName: string }) => {
                       if (feature.isSuite == "true") {
@@ -99,11 +99,10 @@ function Home() {
                           bathroom={feature.bathroomType}
                           kitchen={feature.hasKitchen}
                           commonAreaSize={feature.roomSize}
-                          dormRooms={
-                            feature.internalDormRooms.map((roomFeature: { roomNumber: any; roomCapacity: any; roomCapcity: any }) => (
-                              { roomNumber: roomFeature.roomNumber, roomType: roomFeature.roomCapacity, roomSize: roomFeature.roomCapcity }
-                            ))}>
-                        </Suite>;
+                          dormRooms={feature.internalDormRooms.map((roomFeature: { roomNumber: any; roomCapacity: any; roomCapcity: any }) => (
+                            { roomNumber: roomFeature.roomNumber, roomType: roomFeature.roomCapacity, roomSize: roomFeature.roomCapcity }
+                          ))}>
+                        </Suite>
                       } else {
                         return <StandardDorm
                           roomNumber={feature.roomNumber}
@@ -113,11 +112,10 @@ function Home() {
                           kitchenType={feature.hasKitchen}
                           roomSize={feature.roomSize}
                           building={feature.buildingName}>
-                        </StandardDorm>;
+                        </StandardDorm>
                       }
                     })}
-              </>
-              <p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
+                </><p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p></>}
             </div>}
         </div>
       </div>
