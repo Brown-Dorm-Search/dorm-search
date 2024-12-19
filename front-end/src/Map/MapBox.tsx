@@ -62,7 +62,7 @@ interface MapboxProps {
 }
 
 export default function Mapbox(props: MapboxProps) {
-
+    const [width, setWidth] = useState<number>(window.innerWidth * 2 / 3);
     /**
      * viewState is significant for zoom and moving aroudn the map
      */
@@ -105,13 +105,18 @@ export default function Mapbox(props: MapboxProps) {
     useEffect(() => {
         setTimeout(() => {
             setMapLoaded(true);
-        }, 800);
+        }, 400);
     }, []);
 
     /**
     * makes the dorm overlay the imported dorm's geojson
     */
-    useEffect(() => { setDormOverlay(geojson); }, []);
+    useEffect(() => {
+        setDormOverlay(geojson);
+        if (props.clickedDorm == "All") {
+            setWidth(window.innerWidth * 31 / 100);
+        }
+    }, []);
 
     /**
     * only gets the features of the filteredDorms, for searching purposes 
@@ -173,7 +178,7 @@ export default function Mapbox(props: MapboxProps) {
                     mapboxAccessToken={MAPBOX_KEY}
                     {...viewState}
 
-                    style={{ width: window.innerWidth * 2 / 3, height: window.innerHeight * 2 / 3 }}
+                    style={{ width: width, height: window.innerHeight * 2 / 3 }}
                     mapStyle={"mapbox://styles/knewlin713/cm43jrtsp002g01rz80qfdre0"}
 
                     onMove={(ev: ViewStateChangeEvent) => {

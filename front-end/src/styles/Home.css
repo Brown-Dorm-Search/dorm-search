@@ -22,14 +22,19 @@
 
 .center {
   background-color: #ffffff;
+}
+
+.alt-center {
+  background-color: #ffffff;
   width: 400px;
 }
 
 .right {
   background-color: #ffffff;
+  overflow-y: auto;
 }
 
-.center img {
+.alt-center img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;

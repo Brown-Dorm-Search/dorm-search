@@ -26,11 +26,11 @@ export default function InfoPage(props: dorm) {
                         </p></div>}
                 {props.clickedDorm === "Andrews Hall" &&
                     <div><img src="../public/assets/Andrews_Hall.jpeg" alt="Andrews Hall" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "Archibald-Bronson" &&
                     <div><img src="../public/assets/Archibald-Bronson.jpeg" alt="Archibald-Bronson" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "Barbour Hall" &&
                     <div><img src="../public/assets/Barbour_Hall.jpeg" alt="Barbour Hall" />
@@ -58,7 +58,7 @@ export default function InfoPage(props: dorm) {
                         </p></div>}
                 {props.clickedDorm === "Champlin Hall" &&
                     <div><img src="../public/assets/Champlin_Hall.jpeg" alt="Champlin Hall" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "Chapin House" &&
                     <div><img src="../public/assets/Chapin_House.jpeg" alt="Chapin House" />
@@ -74,11 +74,11 @@ export default function InfoPage(props: dorm) {
                         </p></div>}
                 {props.clickedDorm === "Chen Family Hall" &&
                     <div><img src="../public/assets/Chen_Family_Hall.jpeg" alt="Chen Family Hall" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "Danoff Hall" &&
                     <div><img src="../public/assets/Danoff_Hall.jpeg" alt="Danoff Hall" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "Diman House" &&
                     <div><img src="../public/assets/Diman_House.jpeg" alt="Diman House" />
@@ -94,19 +94,19 @@ export default function InfoPage(props: dorm) {
                         </p></div>}
                 {props.clickedDorm === "Donovan House" &&
                     <div><img src="../public/assets/Donovan_House.jpeg" alt="Donovan House" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "Emery Hall" &&
                     <div><img src="../public/assets/Emery_Hall.jpeg" alt="Emery Hall" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "Emery Hall" &&
                     <div><img src="../public/assets/Emery_Hall.jpeg" alt="Emery Hall" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "Everett-Poland" &&
                     <div><img src="../public/assets/Everett-Poland.jpeg" alt="Everett-Poland" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "Goddard House" &&
                     <div><img src="../public/assets/Goddard_House.jpeg" alt="Goddard House" />
@@ -120,7 +120,7 @@ export default function InfoPage(props: dorm) {
                             <br />
                             People per Washer: 39.3
                         </p></div>}
-                {props.clickedDorm === "Grad Center A" &&
+                {props.clickedDorm === "Graduate Center A" &&
                     <div><img src="../public/assets/Grad_Center_A.jpeg" alt="Grad Center A" />
                         <p> Address is 40 Charlesfield St, Providence, RI 02906
                             <br />
@@ -132,7 +132,7 @@ export default function InfoPage(props: dorm) {
                             <br />
                             People per Washer: 36.7
                         </p></div>}
-                {props.clickedDorm === "Grad Center B" &&
+                {props.clickedDorm === "Graduate Center B" &&
                     <div><img src="../public/assets/Grad_Center_B.jpeg" alt="Grad Center B" />
                         <p> Address is 44 Charlesfield St, Providence, RI 02906
                             <br />
@@ -144,7 +144,7 @@ export default function InfoPage(props: dorm) {
                             <br />
                             People per Washer: 38.3
                         </p></div>}
-                {props.clickedDorm === "Grad Center C" &&
+                {props.clickedDorm === "Graduate Center C" &&
                     <div><img src="../public/assets/Grad_Center_C.jpeg" alt="Grad Center C" />
                         <p> Address is 82 Thayer St, Providence, RI 02906
                             <br />
@@ -156,7 +156,7 @@ export default function InfoPage(props: dorm) {
                             <br />
                             People per Washer: 36.7
                         </p></div>}
-                {props.clickedDorm === "Grad Center D" &&
+                {props.clickedDorm === "Graduate Center D" &&
                     <div><img src="../public/assets/Grad_Center_D.jpeg" alt="Grad Center D" />
                         <p> Address is 90 Thayer St, Providence, RI 02906
                             <br />
@@ -170,7 +170,7 @@ export default function InfoPage(props: dorm) {
                         </p></div>}
                 {props.clickedDorm === "Harambe House" &&
                     <div><img src="../public/assets/Harambe_House.jpeg" alt="Harambe House" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "Harkness House" &&
                     <div><img src="../public/assets/Harkness_House.jpeg" alt="Harkness House" />
@@ -210,11 +210,11 @@ export default function InfoPage(props: dorm) {
                         </p></div>}
                 {props.clickedDorm === "Jameson-Mead" &&
                     <div><img src="../public/assets/Jameson-Mead.jpeg" alt="Jameson-Mead" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "King House" &&
                     <div><img src="../public/assets/King_House.jpeg" alt="King House" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "Littlefield Hall" &&
                     <div><img src="../public/assets/Littlefield_Hall.jpeg" alt="Littlefield Hall" />
@@ -252,11 +252,11 @@ export default function InfoPage(props: dorm) {
                         </p></div>}
                 {props.clickedDorm === "Metcaf Hall" &&
                     <div><img src="../public/assets/Metcaf_Hall.jpeg" alt="Metcaf Hall" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "Miller Hall" &&
                     <div><img src="../public/assets/Miller_Hall.jpeg" alt="Miller Hall" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "Minden Hall" &&
                     <div><img src="../public/assets/Minden_Hall.jpeg" alt="Minden Hall" />
@@ -272,27 +272,27 @@ export default function InfoPage(props: dorm) {
                         </p></div>}
                 {props.clickedDorm === "Morriss Hall" &&
                     <div><img src="../public/assets/Morriss_Hall.jpeg" alt="Morriss Hall" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "New Pembroke 1" &&
                     <div><img src="../public/assets/New_Pembroke_1.jpeg" alt="New Pembroke 1" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "New Pembroke 2" &&
                     <div><img src="../public/assets/New_Pembroke_2.jpeg" alt="New Pembroke 2" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "New Pembroke 3" &&
                     <div><img src="../public/assets/New_Pembroke_3.jpeg" alt="New Pembroke 3" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "New Pembroke 4" &&
                     <div><img src="../public/assets/New_Pembroke_4.jpeg" alt="New Pembroke 4" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "North House" &&
                     <div><img src="../public/assets/North_House.jpeg" alt="North House" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "Olney House" &&
                     <div><img src="../public/assets/Olney_House.jpeg" alt="Olney House" />
@@ -368,15 +368,15 @@ export default function InfoPage(props: dorm) {
                         </p></div>}
                 {props.clickedDorm === "Wayland House" &&
                     <div><img src="../public/assets/Wayland_House.jpg" alt="Wayland House" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "West House" &&
                     <div><img src="../public/assets/West_House.jpeg" alt="West House" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "Woolley Hall" &&
                     <div><img src="../public/assets/Woolley_Hall.jpeg" alt="Woolley Hall" />
-                        <p> No Information currently, to be updatesd
+                        <p> No Information currently, to be updated
                         </p></div>}
                 {props.clickedDorm === "Young Orchard 2" &&
                     <div><img src="../public/assets/Young_Orchard_2.jpeg" alt="Young Orchard 2" />

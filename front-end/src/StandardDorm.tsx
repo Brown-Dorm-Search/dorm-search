@@ -3,20 +3,28 @@ import './styles/StandardDorm.css'; // Import corresponding CSS for styling
 
 
 export interface StandardDormProps {
-    roomNumber: string;
-    floorPlanLink: string;
-    roomType: string;
-    bathroomType: string;
-    kitchenType: string;
-    roomSize: number;
-    building: string
-  }
+  roomNumber: string;
+  floorPlanLink: string;
+  roomType: string;
+  bathroomType: string;
+  kitchenType: boolean;
+  roomSize: number;
+  building: string
+}
 
 
 export default function StandardDorm({ roomNumber, floorPlanLink, roomType, bathroomType, kitchenType, roomSize, building }: StandardDormProps) {
-    const handleClick = () => {
-        console.log(building);
-      };
+  const handleClick = () => {
+    console.log(building);
+  };
+
+  function kitchen() {
+    if (kitchenType) {
+      return ("Yes")
+    } else {
+      return ("No")
+    }
+  }
 
   return (
     <div className="standard-room-info" onClick={handleClick}>
@@ -31,7 +39,7 @@ export default function StandardDorm({ roomNumber, floorPlanLink, roomType, bath
       {/* Room Details */}
       <div className="room-details">
         <div className="detail">
-          <label>Type</label>
+          <label>Capacity</label>
           <span>{roomType}</span>
         </div>
         <div className="detail">
@@ -39,8 +47,8 @@ export default function StandardDorm({ roomNumber, floorPlanLink, roomType, bath
           <span>{bathroomType}</span>
         </div>
         <div className="detail">
-          <label>Kitchen</label>
-          <span>{kitchenType}</span>
+          <label>Has Kitchen</label>
+          <span>{kitchen()}</span>
         </div>
         <div className="detail">
           <label>Square Feet</label>

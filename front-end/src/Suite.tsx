@@ -12,15 +12,15 @@ export interface DormRoomProps {
 export interface SuiteProps {
   suiteNumber: string;
   floorPlanLink: string;
-  capacity: number;
+  capacity: string;
   bathroom: string;
-  kitchen: string;
+  kitchen: boolean;
   commonAreaSize: number;
   dormRooms: DormRoomProps[]; // List of dorm rooms in the suite
 }
 
 // Dorm Room component
-export function DormRoom({ roomNumber, roomType, roomSize }: DormRoomProps){
+export function DormRoom({ roomNumber, roomType, roomSize }: DormRoomProps) {
   return (
     <div className="dorm-room">
       <div className="dorm-room-header">
@@ -29,7 +29,7 @@ export function DormRoom({ roomNumber, roomType, roomSize }: DormRoomProps){
 
       <div className="dorm-room-details">
         <div className="detail">
-          <label>Type</label>
+          <label>Capacity</label>
           <span>{roomType}</span>
         </div>
         <div className="detail">
@@ -51,6 +51,15 @@ export default function Suite({
   commonAreaSize,
   dormRooms,
 }: SuiteProps) {
+
+  function booleanKitchen() {
+    if (kitchen) {
+      return ("Yes")
+    } else {
+      return ("No")
+    }
+  }
+
   return (
     <div className="suite-info">
       {/* Suite Header */}
@@ -72,8 +81,8 @@ export default function Suite({
           <span>{bathroom}</span>
         </div>
         <div className="detail">
-          <label>Kitchen</label>
-          <span>{kitchen}</span>
+          <label>Has Kitchen</label>
+          <span>{booleanKitchen()}</span>
         </div>
         <div className="detail">
           <label>Common Area</label>

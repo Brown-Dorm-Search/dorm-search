@@ -133,7 +133,7 @@ export default function Dropdowns(props: DropdownsProps) {
     if (filterjson.result === "success") {
       console.log("search successful");
       //console.log(filterjson);
-      //props.setResultStr(JSON.stringify(filterjson));
+      props.setResultStr(filterjson.filteredDormRoomSet);
       props.setFilteredDorms(filteringNames(filterjson.filteredDormRoomSet));
       console.log("setfiltered to ", filteringNames(filterjson.filteredDormRoomSet))
     } else {
