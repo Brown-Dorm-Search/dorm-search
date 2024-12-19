@@ -144,6 +144,6 @@ public class ParserTest {
         assertFalse(room136.isSuite());
         assertEquals(BathroomType.Communal, room136.getBathroomType());
         assertEquals(RoomCapacity.Two, room136.getRoomCapacity());
-        assertEquals("CHAPIN HOUSE", room136.getDormBuilding().getBuildingName());
+        assertEquals("Chapin House", room136.getDormBuilding().buildingName().toString());
     }
 }
