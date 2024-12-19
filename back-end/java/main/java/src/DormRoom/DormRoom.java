@@ -171,6 +171,15 @@ public class DormRoom implements IDormRoom {
         return Integer.parseInt(DormRoom.getFloorNumberHelper(this.roomNumber));
     }
 
+    /**
+     * Extracts the floor number from a room number string by identifying the third-to-last digit.
+     * This method assumes that the floor number is represented by the third-to-last integer in the string.
+     *
+     * @param str The room number string containing digits, where the floor number is represented by the third-to-last digit.
+     * @return A string containing the third-to-last digit, which corresponds to the floor number.
+     * @throws IllegalArgumentException If the room number string does not contain enough digits to determine a floor number
+     *                                  (i.e., fewer than three digits).
+     */
     private static String getFloorNumberHelper(String str) throws IllegalArgumentException{
 
         int count = 0;

@@ -2,6 +2,7 @@ package test;
 
 import static org.junit.jupiter.api.Assertions.*;
 import DormRoom.*;
+import DormRoom.DormRoom;
 import Filtering.*;
 import Filtering.Node_KDTree.*;
 

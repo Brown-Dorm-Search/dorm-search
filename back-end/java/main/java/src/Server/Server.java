@@ -3,9 +3,7 @@ package Server;
 import static spark.Spark.after;
 
 import Parsing.RoomParser;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import spark.Spark;
 import DormRoom.IDormRoom;

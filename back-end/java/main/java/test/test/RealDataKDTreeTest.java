@@ -6,7 +6,6 @@ import DormRoom.*;
 import Filtering.*;
 
 import Filtering.Node_KDTree.KDTreeWrapper;
-import Parsing.Parser;
 import Parsing.RoomParser;
 import java.io.IOException;
 import java.util.*;

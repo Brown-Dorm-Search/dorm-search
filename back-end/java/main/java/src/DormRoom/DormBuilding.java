@@ -60,7 +60,7 @@ public record DormBuilding(
    * It ensures that if you add or modify a building's attributes, they remain grouped in a single,
    * cohesive structure.</p>
    */
-  private static record BuildingData(
+  private record BuildingData(
       float peoplePerWasher,
       int year,
       String address,

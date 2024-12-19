@@ -121,28 +121,102 @@ public class RoomParser {
 
     /**
      * Converts a list of dorm rooms and a common area size into a {@link Suite} instance.
+     * RoomSize is set to be the sum of the common area size and all individual dorm sizes
+     * RoomCapacity is the sum of the individual dorm room capacities
      *
      * @param roomsInSuite A list of dorm rooms that belong to the suite.
      * @param commonAreaSize The size of the common area for the suite.
      * @return A {@link Suite} instance containing the dorm rooms and the common area size.
      */
-    private Suite parseSuite(ArrayList<DormRoom> roomsInSuite, int commonAreaSize) {
+    private static Suite parseSuite(ArrayList<DormRoom> roomsInSuite, int commonAreaSize) {
         DormRoom firstRoom = roomsInSuite.getFirst();
 
         // Get common area data
 
         // Get input data
-        int roomSize = firstRoom.getRoomSize();
-        String roomNumber = firstRoom.getRoomNumber();
-        RoomCapacity capacity = firstRoom.getRoomCapacity();
+        int roomSize = calculateSuiteSize(commonAreaSize, roomsInSuite);
+        String roomNumber = getSuiteNumber(firstRoom.getRoomNumber());
+        RoomCapacity capacity = calculateRoomCapacity(roomsInSuite);
         String floorPlan = firstRoom.getFloorPlanLink();
         boolean hasKitchen = firstRoom.hasKitchen();
         boolean isSuite = firstRoom.isSuite();
         BathroomType bathType = firstRoom.getBathroomType();
         String building = firstRoom.getDormBuilding().buildingName().toString();
 
-        return new Suite(roomSize, roomNumber, capacity, floorPlan, hasKitchen,
+      return new Suite(roomSize, roomNumber, capacity, floorPlan, hasKitchen,
                 isSuite, bathType, building, commonAreaSize, roomsInSuite);
+    }
+
+    /**
+     * Extracts the suite number from a room number string. The suite number is assumed to be the portion of the room number
+     * before the room-specific number, which is represented by the digits following the three suite digits.
+     *
+     * <p>The method works by locating the third-to-last digit in the room number string and removing the room-specific number
+     * (i.e., the digits after this position) to return the suite number.</p>
+     *
+     * @param roomNumber The full room number string, which includes both the suite number and the room-specific number.
+     *                   The suite number is the portion of the string before the room-specific number (i.e., the digits after
+     *                   the third-to-last digit).
+     * @return The suite number, which is a substring of the input room number excluding the room-specific part.
+     * @throws IllegalArgumentException If the room number string is invalid or does not contain enough digits to extract a valid suite number.
+     */
+    private static String getSuiteNumber(String roomNumber) throws IllegalArgumentException{
+        int digitCount = 0;
+
+        int index = -1;
+
+        // Traverse the string in reverse order and find the index where the Suite number ends
+        for (int i = roomNumber.length() - 1; i >= 0; i--) {
+            if (Character.isDigit(roomNumber.charAt(i))) {
+                digitCount++;
+                // If we've found the third-to-last digit, return the index
+                if (digitCount == 3) {
+                    index = i;
+                }
+            }
+        }
+
+        if (index == -1)
+            throw new IllegalArgumentException("Invalid room number: " + roomNumber);
+
+        // Remove index-1 to remove the space between suit and room numbers
+        return roomNumber.substring(0, index-1);
+    }
+
+    /**
+     * Calculates the total room capacity for a suite by summing the individual capacities of each room.
+     * The total capacity is then converted to a corresponding {@link RoomCapacity} enum value.
+     *
+     * @param roomsInSuite An {@link ArrayList} of {@link DormRoom} objects representing the rooms in the suite.
+     *                     Each room's capacity is determined by calling {@link DormRoom#getRoomCapacityInt()}.
+     * @return The corresponding {@link RoomCapacity} enum value representing the total capacity of the suite.
+     * @throws IllegalArgumentException If the calculated total capacity is invalid or not in the expected range (1-6).
+     */
+    private static RoomCapacity calculateRoomCapacity(ArrayList<DormRoom> roomsInSuite) {
+        int capacity = 0;
+
+        for (DormRoom room: roomsInSuite) {
+            capacity += room.getRoomCapacityInt();
+        }
+
+        return ParserUtils.getRoomCapacity(capacity);
+    }
+
+    /**
+     * Calculates the total size of a suite by adding the size of the common area and the sizes of all the rooms in the suite.
+     *
+     * @param commonAreaSize The size of the common area in the suite.
+     * @param roomsInSuite An {@link ArrayList} containing the {@link DormRoom} objects in the suite.
+     * @return The total size of the suite, which is the sum of the common area size and the sizes of all individual rooms.
+     */
+    private static int calculateSuiteSize(int commonAreaSize, ArrayList<DormRoom> roomsInSuite) {
+        int size = commonAreaSize;
+
+        for (DormRoom room: roomsInSuite) {
+            size += room.getRoomSize();
+        }
+
+        return size;
     }
 
     /**
@@ -152,7 +226,7 @@ public class RoomParser {
      * @return A {@link DormRoom} object constructed from the CSV data.
      * @throws IllegalArgumentException If there is an issue parsing the dorm room data.
      */
-    private DormRoom parseDormRoom(CSVRecord room) throws IllegalArgumentException {
+    private static DormRoom parseDormRoom(CSVRecord room) throws IllegalArgumentException {
 
         // Parse CSV row data
         int roomSize = Integer.parseInt(room.get("Room Size"));
@@ -164,7 +238,7 @@ public class RoomParser {
         BathroomType bathType = ParserUtils.getBathroomType(room.get("Has Bathroom?"));
         String building = room.get("Building");
 
-        return new DormRoom(roomSize, roomNumber, capacity, floorPlan, hasKitchen,
+      return new DormRoom(roomSize, roomNumber, capacity, floorPlan, hasKitchen,
                 isSuite, bathType, building);
     }
 }
