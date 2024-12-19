@@ -1,9 +1,13 @@
-1.) Add Buxton, Pembrokes, Chen, Danoff, Sternlight?, Wayland?, Kings House to dorm building and campus locations
+1.) Add Buxton, Chen, Danoff, Sternlight?, Wayland? to dorm building and campus locations
 
-2.) Use Jackson's Parser instead of instatializes the main class with an empty dorm room list.
+2.) Use Jackson's Parser instead of initializes the main class with an empty dorm room list.
 
 3.) Replace the int for floorNumbers with its own enum
 
-4.) Consider adding categorical variables ot KDTreeNode for filtering
+
+4.) Change DormBuilding class to an enum of dormBuilding names, and a record that maps the dormBuildingNames
+to the dormBuildings.
 
 5.) Update getRooms in RoomParser to be a list instead of an iterator to make the code more readable
+
+6.) Make it so API can take 1 or one for roomCapacity.

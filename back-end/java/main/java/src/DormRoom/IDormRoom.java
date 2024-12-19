@@ -1,10 +1,5 @@
 package DormRoom;
 
-import DormRoom.BathroomType;
-import DormRoom.DormBuilding;
-import DormRoom.RoomCapacity;
-import DormRoom.Suite;
-
 /**
  * Interface for a dormRoom. This is used, so a KDTree can filter on both a regular DormRoom and a
  * suite at the same time

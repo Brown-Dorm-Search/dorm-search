@@ -2,6 +2,9 @@ package Server;
 
 import static spark.Spark.after;
 
+import Parsing.RoomParser;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import spark.Spark;
@@ -55,11 +58,16 @@ public class Server {
    * @param args the command-line arguments (not used)
    */
   public static void main(String[] args) {
-    // Create an empty list of dorm rooms
-    List<IDormRoom> dormRoomList = new ArrayList<>();
+    // Parse the dorm list
+    try {
+      RoomParser parser = new RoomParser("data/PartialDataset.csv");
+      List<IDormRoom> dormRoomList = parser.getRooms();
 
-    // Instantiate and start the server
-    Server server = new Server(dormRoomList);
-    System.out.println("Server has been activated");
+      // Instantiate and start the server
+      Server server = new Server(dormRoomList);
+      System.out.println("Server has been activated");
+    } catch (IOException ex) {
+      System.out.println("Error parsing the data. " + ex.getMessage());
+    }
   }
 }

@@ -1,7 +1,7 @@
-package src.Parsing;
+package Parsing;
 
-import src.DormRoom.BathroomType;
-import src.DormRoom.RoomCapacity;
+import DormRoom.BathroomType;
+import DormRoom.RoomCapacity;
 
 /**
  * Utility class that provides methods to parse and convert various string inputs
