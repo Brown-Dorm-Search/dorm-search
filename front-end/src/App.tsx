@@ -47,7 +47,9 @@ function App() {
               <div className="header-top">
                 <div className="title">Brown Dorm Finder</div>
                 <Navbar />
-                <SignOutButton className="cta-button">Sign Out</SignOutButton>
+                <div className="pfp">
+                  <UserButton></UserButton>
+                </div>
               </div>
               <div className="content">
                 <Routes>

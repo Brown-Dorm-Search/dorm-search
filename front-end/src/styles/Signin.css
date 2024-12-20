@@ -58,7 +58,7 @@
   background-color: #6c4e31;
   color: white;
   font-size: 1rem;
-  padding: 4px 12px;
+  padding: 12px 24px;
   border: none;
   border-radius: 30px;
   /* Rounded corners */
@@ -81,4 +81,15 @@
   /* Slight press effect on click */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   /* Active button shadow */
+}
+
+.pfp {
+padding: 20px;
+height: 28px;
+transition: all 0.3s ease-in-out;
+}
+
+.pfp:hover {
+  transform: translateY(-2px);
+  
 }
