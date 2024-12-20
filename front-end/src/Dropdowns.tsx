@@ -241,6 +241,7 @@ export default function Dropdowns(props: DropdownsProps) {
         <label htmlFor="FloorNumber">Floors</label>
         <Select
           id="FloorNumber"
+          color={'brown'}
           options={optionsFloor}
           isMulti
           value={floor.map((value) =>
