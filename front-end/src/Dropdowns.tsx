@@ -401,13 +401,13 @@ export default function Dropdowns(props: DropdownsProps) {
         <label htmlFor="RoomSize">Room Size</label>
         <MultiRangeSlider
           min={0}
-          ruler={'false'}
+          ruler={"false"}
           max={1000}
-          barInnerColor={'#6C4E31'}
+          barInnerColor={"#FFDBB5"}
           step={20}
           minValue={minRoomSize}
           maxValue={maxRoomSize}
-          boxShadow='none'
+          boxShadow="none"
           onInput={(e: { minValue: any; maxValue: any }) => {
             setMaxRoomSize(e.maxValue);
             setMinRoomSize(e.minValue);
