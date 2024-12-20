@@ -43,8 +43,8 @@ export default function Dropdowns(props: DropdownsProps) {
   /* option values for hasKitchen and isSuite dropdowns */
   const options = [
     { value: 'All', label: 'All' },
-    { value: 'Yes', label: 'Yes' },
-    { value: 'No', label: 'No' },
+    { value: true, label: 'Yes' },
+    { value: false, label: 'No' },
   ];
 
   /* option values for floor dropdowns */
@@ -72,12 +72,12 @@ export default function Dropdowns(props: DropdownsProps) {
   /* option values for roomCapacity dropdowns */
   const optionsRoomCap = [
     { value: 'All', label: 'All' },
-    { value: 'one', label: '1' },
-    { value: 'two', label: '2' },
-    { value: 'three', label: '3' },
-    { value: 'four', label: '4' },
-    { value: 'five', label: '5' },
-    { value: 'six', label: '6' },
+    { value: 'One', label: '1' },
+    { value: 'Two', label: '2' },
+    { value: 'Three', label: '3' },
+    { value: 'Four', label: '4' },
+    { value: 'Five', label: '5' },
+    { value: 'Six', label: '6' },
   ];
 
   /* option values for campusLocation dropdowns */
@@ -163,7 +163,8 @@ export default function Dropdowns(props: DropdownsProps) {
       //console.log(filterjson);
       props.setResultStr(filterjson.filteredDormRoomSet);
       props.setFilteredDorms(filteringNames(filterjson.filteredDormRoomSet));
-      console.log("setfiltered to ", filteringNames(filterjson.filteredDormRoomSet))
+      console.log("setfiltered to ", filteringNames(filterjson.filteredDormRoomSet));
+      //console.log("filterdormsjson ", filterjson.filteredDormRoomSet);
     } else {
       console.error("Invalid data from API:", filterjson);
     }
@@ -194,7 +195,7 @@ export default function Dropdowns(props: DropdownsProps) {
           onChange={(newSelectedOptions: any) => {
             const allClicked = newSelectedOptions[newSelectedOptions.length - 1]?.value === 'All';
             const hasAllOption = newSelectedOptions[0]?.value === 'All';
-            if (allClicked) {
+            if (allClicked || newSelectedOptions.length == 0) {
               setCampusLocation(['All']);
             } else if (hasAllOption) {
               setCampusLocation([newSelectedOptions[1]?.value]);
@@ -220,7 +221,7 @@ export default function Dropdowns(props: DropdownsProps) {
           onChange={(newSelectedOptions: any) => {
             const allClicked = newSelectedOptions[newSelectedOptions.length - 1]?.value === 'All';
             const hasAllOption = newSelectedOptions[0]?.value === 'All';
-            if (allClicked) {
+            if (allClicked || newSelectedOptions.length == 0) {
               setFloor(['All']);
             } else if (hasAllOption) {
               setFloor([newSelectedOptions[1]?.value]);
@@ -246,7 +247,7 @@ export default function Dropdowns(props: DropdownsProps) {
           onChange={(newSelectedOptions: any) => {
             const allClicked = newSelectedOptions[newSelectedOptions.length - 1]?.value === 'All';
             const hasAllOption = newSelectedOptions[0]?.value === 'All';
-            if (allClicked) {
+            if (allClicked || newSelectedOptions.length == 0) {
               setPartOfSuite(['All']);
             } else if (hasAllOption) {
               setPartOfSuite([newSelectedOptions[1]?.value]);
@@ -272,7 +273,7 @@ export default function Dropdowns(props: DropdownsProps) {
           onChange={(newSelectedOptions: any) => {
             const allClicked = newSelectedOptions[newSelectedOptions.length - 1]?.value === 'All';
             const hasAllOption = newSelectedOptions[0]?.value === 'All';
-            if (allClicked) {
+            if (allClicked || newSelectedOptions.length == 0) {
               setRoomCapacity(['All']);
             } else if (hasAllOption) {
               setRoomCapacity([newSelectedOptions[1]?.value]);
@@ -298,7 +299,7 @@ export default function Dropdowns(props: DropdownsProps) {
           onChange={(newSelectedOptions: any) => {
             const allClicked = newSelectedOptions[newSelectedOptions.length - 1]?.value === 'All';
             const hasAllOption = newSelectedOptions[0]?.value === 'All';
-            if (allClicked) {
+            if (allClicked || newSelectedOptions.length == 0) {
               setHasBathroom(['All']);
             } else if (hasAllOption) {
               setHasBathroom([newSelectedOptions[1]?.value]);
@@ -324,7 +325,7 @@ export default function Dropdowns(props: DropdownsProps) {
           onChange={(newSelectedOptions: any) => {
             const allClicked = newSelectedOptions[newSelectedOptions.length - 1]?.value === 'All';
             const hasAllOption = newSelectedOptions[0]?.value === 'All';
-            if (allClicked) {
+            if (allClicked || newSelectedOptions.length == 0) {
               setHasKitchen(['All']);
             } else if (hasAllOption) {
               setHasKitchen([newSelectedOptions[1]?.value]);
@@ -342,7 +343,7 @@ export default function Dropdowns(props: DropdownsProps) {
         <label htmlFor="RoomSize">Room Size</label>
         <MultiRangeSlider
           min={0}
-          max={500}
+          max={1000}
           step={20}
           minValue={minRoomSize}
           maxValue={maxRoomSize}

@@ -91,7 +91,7 @@ function Home() {
                       return normalizedBuildingName === clickedDorm.toLowerCase()
                     })
                     .map((feature: { isSuite: string; roomNumber: string; floorPlanLink: string; roomCapacity: string; bathroomType: string; hasKitchen: boolean; roomSize: number; internalDormRooms: { roomNumber: any; roomCapacity: any; roomCapcity: any }[]; buildingName: string }) => {
-                      if (feature.isSuite == "true") {
+                      if (feature.isSuite) {
                         return <Suite
                           suiteNumber={feature.roomNumber}
                           floorPlanLink={feature.floorPlanLink}
