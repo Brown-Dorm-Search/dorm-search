@@ -60,7 +60,7 @@ body {
 
 .grey-button:hover {
   background-color: #F49690;
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
 .grey-button:active {

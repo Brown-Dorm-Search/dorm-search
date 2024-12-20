@@ -151,7 +151,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 4px; /* Space out the list items horizontally */ /* Reduce for smaller width of navbar */
+  margin: 10px; /* Space out the list items horizontally */ /* Reduce for smaller width of navbar */
 }
 
 /* Style the navbar links */
@@ -160,12 +160,16 @@ nav ul li a {
   text-decoration: none;
   padding: 4px 12px; /* Reduce for spacing */
   display: block;
-  background-color: #444; /* Darker background for the links */
-  border-radius: 3px; /* Rounded corners for the links */
+  background-color: #6c4e31; /* Darker background for the links */
+  border-radius: 30px; /* Rounded corners for the links */
+  transition: all 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-  background-color: #555; /* Slightly lighter when hovering */
+  background-color: #F49690;
+  /* Lighter blue on hover */
+  transform: translateY(-2px);
+  /* Slight lift effect on hover */
 }
 
 /* Add some padding to the main content so it's not hidden behind the fixed navbar */
