@@ -25,7 +25,19 @@ export default function StandardDorm({ roomNumber, floorPlanLink, roomType, bath
       return ("No")
     }
   }
-
+  function type() {
+    if (roomType == "One") {
+      return ("Single")
+    } else if (roomType == "Two") {
+      return ("Double")
+    } else if (roomType == "Three") {
+      return ("Triple")
+    } else if (roomType == "Four") {
+      return ("Quad")
+    } else {
+      return (roomType)
+    }
+  }
   return (
     <div className="standard-room-info" onClick={handleClick}>
       {/* Room Number and Floor Plan Link */}
@@ -39,8 +51,8 @@ export default function StandardDorm({ roomNumber, floorPlanLink, roomType, bath
       {/* Room Details */}
       <div className="room-details">
         <div className="detail">
-          <label>Capacity</label>
-          <span>{roomType}</span>
+          <label>Type</label>
+          <span>{type()}</span>
         </div>
         <div className="detail">
           <label>Bathroom</label>

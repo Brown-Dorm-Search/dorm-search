@@ -72,12 +72,12 @@ export default function Dropdowns(props: DropdownsProps) {
   /* option values for roomCapacity dropdowns */
   const optionsRoomCap = [
     { value: 'All', label: 'All' },
-    { value: 'One', label: '1' },
-    { value: 'Two', label: '2' },
-    { value: 'Three', label: '3' },
-    { value: 'Four', label: '4' },
-    { value: 'Five', label: '5' },
-    { value: 'Six', label: '6' },
+    { value: 'One', label: 'Single' },
+    { value: 'Two', label: 'Double' },
+    { value: 'Three', label: 'Triple' },
+    { value: 'Four', label: 'Quad' },
+    { value: 'Five', label: 'Quintuple' },
+    { value: 'Six', label: 'Sextuple' },
   ];
 
   /* option values for campusLocation dropdowns */
@@ -262,7 +262,7 @@ export default function Dropdowns(props: DropdownsProps) {
       </div>
 
       <div className="multi-select">
-        <label htmlFor="RoomCapacity">People in Room</label>
+        <label htmlFor="RoomCapacity">Capcity / Room Type</label>
         <Select
           id="RoomCapacity"
           options={optionsRoomCap}

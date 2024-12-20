@@ -22,17 +22,92 @@ function Home() {
   const [filteredDorms, setFilteredDorms] = useState<Array<string>>([]);
   //clickedDorm is the dorm ui that was clicked most recently, on the map or left pannel.
   const [clickedDorm, setClickedDorms] = useState<string>('');
+  //how dorms on rigth panel are sorted.
+  const [sortCriterion, setSortCriterion] = useState('roomSize');
+
+  function Cap(roomCap: any) {
+    if (roomCap == "One") {
+      return (1);
+    }
+    if (roomCap == "Two") {
+      return (2);
+    }
+    if (roomCap == "Three") {
+      return (3);
+    }
+    if (roomCap == "Four") {
+      return (4);
+    }
+    if (roomCap == "Five") {
+      return (5);
+    }
+    if (roomCap == "Six") {
+      return (6);
+    }
+    else {
+      return (roomCap)
+    }
+  }
+  // Function to handle sorting based on selected criterion
+  const sortDorms = (dorms: any[]) => {
+    switch (sortCriterion) {
+      case 'roomCapacity':
+        return dorms.sort((a, b) => Cap(a.roomCapacity) - Cap(b.roomCapacity));
+      case 'floor':
+        return dorms.sort((a, b) => {
+          const getFloorNumber = (roomNumber: string) => {
+            const match = roomNumber.match(/\d+/);
+            return match ? parseInt(match[0]) : Infinity;
+          };
+          const floorA = getFloorNumber(a.roomNumber);
+          const floorB = getFloorNumber(b.roomNumber);
+          return floorA - floorB;
+        });
+      case 'roomSize':
+        return dorms.sort((b, a) => {
+          if (a.isSuite && b.isSuite) {
+            return a.commonAreaSize - b.commonAreaSize;
+          }
+          if (a.isSuite && !b.isSuite) {
+            return a.commonAreaSize - b.roomSize;
+          }
+          if (!a.isSuite && b.isSuite) {
+            return a.roomSize - b.commonAreaSize;
+          }
+          return a.roomSize - b.roomSize;
+        });
+      default:
+        return dorms;
+    }
+  };
+
+  // Filter and map the resultString based on clickedDorm
+  const filteringDorms = (Array.isArray(resultString) ? resultString : [])
+    .filter((feature: { dormBuilding: { buildingName: string } }) => {
+      if (clickedDorm === 'All') {
+        return true;
+      }
+      const normalizedBuildingName = feature.dormBuilding.buildingName
+        .toLowerCase()
+        .replace(/_/g, ' ')
+        .replace('grad', 'graduate');
+      return normalizedBuildingName === clickedDorm.toLowerCase();
+    });
+
+  // Apply sorting to filtered dorms
+  const sortedDorms = sortDorms(filteringDorms);
 
   /**
-   * handleButtonClick sets the clickedDorm
-   * in the case that a dorm button is pressed
-   * on the left pannel.
-   * 
-   * @param name is the name of the dorm building clicked.
-   */
+  * handleButtonClick sets the clickedDorm
+  * in the case that a dorm button is pressed
+  * on the left pannel.
+  * 
+  * @param name is the name of the dorm building clicked.
+  */
   function handleButtonClick(name: SetStateAction<string>) {
     setClickedDorms(name);
   }
+
 
   return (
     <>
@@ -78,45 +153,49 @@ function Home() {
             <div className="panel right">
               {resultString === "" && <p>Nothing Searched Yet</p>}
               {resultString !== "" &&
-                <><p>Below are dorms in {clickedDorm} that meet your search options</p><>
-                  {resultString
-                    .filter((feature: { dormBuilding: { buildingName: string } }) => {
-                      if (clickedDorm === "All") {
-                        return true
-                      }
-                      const normalizedBuildingName = feature.dormBuilding.buildingName
-                        .toLowerCase()
-                        .replace(/_/g, ' ')
-                        .replace("grad", "graduate")
-                      return normalizedBuildingName === clickedDorm.toLowerCase()
-                    })
-                    .map((feature: {
-                      commonAreaSize: number; isSuite: string; roomNumber: string; floorPlanLink: string; roomCapacity: string; bathroomType: string; hasKitchen: boolean; roomSize: number; internalDormRooms: { roomNumber: any; roomCapacity: any; roomSize: any }[]; buildingName: string
-                    }) => {
+                <><>
+                  <div>
+                    <div>
+                      <button onClick={() => setSortCriterion('roomCapacity')}>Sort by Room Capacity</button>
+                      <button onClick={() => setSortCriterion('floor')}>Sort by Floor</button>
+                      <button onClick={() => setSortCriterion('roomSize')}>Sort by Room Size</button>
+                    </div>
+                    {clickedDorm == "All" && <p>Below are all dorms that meet your search options</p>}
+                    {clickedDorm !== "All" && <p>Below are dorms in {clickedDorm} that meet your search options</p>}
+                    {sortedDorms.map((feature) => {
                       if (feature.isSuite) {
-                        return <Suite
-                          suiteNumber={feature.roomNumber}
-                          floorPlanLink={feature.floorPlanLink}
-                          capacity={feature.roomCapacity}
-                          bathroom={feature.bathroomType}
-                          kitchen={feature.hasKitchen}
-                          commonAreaSize={feature.commonAreaSize}
-                          dormRooms={feature.internalDormRooms.map((roomFeature: { roomNumber: any; roomCapacity: any; roomSize: any }) => (
-                            { roomNumber: roomFeature.roomNumber, roomType: roomFeature.roomCapacity, roomSize: roomFeature.roomSize }
-                          ))}>
-                        </Suite>
+                        return (
+                          <Suite
+                            key={feature.roomNumber}
+                            suiteNumber={feature.roomNumber}
+                            floorPlanLink={feature.floorPlanLink}
+                            capacity={feature.roomCapacity}
+                            bathroom={feature.bathroomType}
+                            kitchen={feature.hasKitchen}
+                            commonAreaSize={feature.commonAreaSize}
+                            dormRooms={feature.internalDormRooms.map((roomFeature: { roomNumber: any; roomCapacity: any; roomSize: any }) => ({
+                              roomNumber: roomFeature.roomNumber,
+                              roomType: roomFeature.roomCapacity,
+                              roomSize: roomFeature.roomSize,
+                            }))}
+                          />
+                        );
                       } else {
-                        return <StandardDorm
-                          roomNumber={feature.roomNumber}
-                          floorPlanLink={feature.floorPlanLink}
-                          roomType={feature.roomCapacity}
-                          bathroomType={feature.bathroomType}
-                          kitchenType={feature.hasKitchen}
-                          roomSize={feature.roomSize}
-                          building={feature.buildingName}>
-                        </StandardDorm>
+                        return (
+                          <StandardDorm
+                            key={feature.roomNumber}
+                            roomNumber={feature.roomNumber}
+                            floorPlanLink={feature.floorPlanLink}
+                            roomType={feature.roomCapacity}
+                            bathroomType={feature.bathroomType}
+                            kitchenType={feature.hasKitchen}
+                            roomSize={feature.roomSize}
+                            building={feature.buildingName}
+                          />
+                        );
                       }
                     })}
+                  </div>
                 </><p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p></>}
             </div>}
         </div>
