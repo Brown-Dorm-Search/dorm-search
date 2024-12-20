@@ -401,6 +401,7 @@ export default function Dropdowns(props: DropdownsProps) {
         <label htmlFor="RoomSize">Room Size</label>
         <MultiRangeSlider
           min={0}
+          ruler={'false'}
           max={1000}
           step={20}
           minValue={minRoomSize}
