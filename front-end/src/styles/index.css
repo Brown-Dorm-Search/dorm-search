@@ -4,7 +4,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #FFEAC5;
+  background-color: #ffeac5;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: #FFDBB5;
+  color: #ffdbb5;
 }
 
 body {
@@ -46,7 +46,7 @@ button {
 }
 
 button:hover {
-  border-color: #F49690;
+  border-color: #f49690;
 }
 
 button:focus,
@@ -57,7 +57,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #603f26;
-    background-color: #FFEAC5;
+    background-color: #ffeac5;
   }
 
   a:hover {
@@ -92,7 +92,7 @@ button:focus-visible {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #603F26;
+  background-color: #603f26;
   z-index: 10;
   /* Ensure header stays on top */
 }
@@ -183,15 +183,15 @@ nav ul li a {
   /* Reduce for spacing */
   display: block;
   background-color: #6c4e31;
-  /* Darker background for the links */
+  /* Lighter background for the links */
   border-radius: 30px;
   /* Rounded corners for the links */
   transition: all 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-  background-color: #F49690;
-  /* Lighter blue on hover */
+  background-color: #f49690;
+  /* Lighter red on hover */
   transform: translateY(-2px);
   /* Slight lift effect on hover */
 }
