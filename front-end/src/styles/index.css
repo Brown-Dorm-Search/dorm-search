@@ -17,6 +17,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #FFDBB5;
 }
@@ -43,9 +44,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #F49690;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -56,9 +59,11 @@ button:focus-visible {
     color: #603f26;
     background-color: #FFEAC5;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
@@ -88,7 +93,8 @@ button:focus-visible {
   left: 0;
   width: 100%;
   background-color: #603F26;
-  z-index: 10; /* Ensure header stays on top */
+  z-index: 10;
+  /* Ensure header stays on top */
 }
 
 /* Top header bar (thin bar with title and navbar) */
@@ -102,15 +108,18 @@ button:focus-visible {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0; /* Adjust this is below for thin bar height */
+  padding: 0;
+  /* Adjust this is below for thin bar height */
   background-color: #603f26;
-  min-height: 5vh; /* Adjust this is above for thin bar height */
+  min-height: 5vh;
+  /* Adjust this is above for thin bar height */
   max-height: 5vh;
 }
 
 .header-top .title {
   font-family: "Poppins", serif;
-  font-weight: 800; /* For font weight*/
+  font-weight: 800;
+  /* For font weight*/
   font-style: normal;
   font-size: 1.5em;
   padding: 15px;
@@ -119,12 +128,18 @@ button:focus-visible {
 
 .header-top nav {
   background-color: #603f26;
-  padding: 2px 8px; /* Reduced padding for thinner navbar */
-  border-radius: 5px 0 0 5px; /* Rounded corners */
-  display: flex; /* Ensure flex layout */
-  align-items: center; /* Vertically align the navbar */
-  min-height: 3vh; /* Make navbar thinner */
-  max-height: 3vh; /* Keep navbar height small */
+  padding: 2px 8px;
+  /* Reduced padding for thinner navbar */
+  border-radius: 5px 0 0 5px;
+  /* Rounded corners */
+  display: flex;
+  /* Ensure flex layout */
+  align-items: center;
+  /* Vertically align the navbar */
+  min-height: 3vh;
+  /* Make navbar thinner */
+  max-height: 3vh;
+  /* Keep navbar height small */
 }
 
 /* NavBar CSS */
@@ -135,8 +150,10 @@ nav {
   top: 0;
   right: 0;
   background-color: #333;
-  padding: 4px 15px; /* Reduce for size */
-  border-radius: 5px 0 0 5px; /* Rounded corners for the navbar */
+  padding: 4px 15px;
+  /* Reduce for size */
+  border-radius: 5px 0 0 5px;
+  /* Rounded corners for the navbar */
   min-height: 4vh;
   max-height: 4vh;
 }
@@ -146,22 +163,28 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Flex container, makes the list horizontal */
-  align-items: center; /* Vertically center the items */
+  display: flex;
+  /* Flex container, makes the list horizontal */
+  align-items: center;
+  /* Vertically center the items */
 }
 
 nav ul li {
-  margin: 10px; /* Space out the list items horizontally */ /* Reduce for smaller width of navbar */
+  margin: 10px;
+  /* Space out the list items horizontally */
+  /* Reduce for smaller width of navbar */
 }
 
 /* Style the navbar links */
 nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 4px 12px; /* Reduce for spacing */
+  /* Reduce for spacing */
   display: block;
-  background-color: #6c4e31; /* Darker background for the links */
-  border-radius: 30px; /* Rounded corners for the links */
+  background-color: #6c4e31;
+  /* Darker background for the links */
+  border-radius: 30px;
+  /* Rounded corners for the links */
   transition: all 0.3s ease-in-out;
 }
 

@@ -66,3 +66,8 @@ body {
 .grey-button:active {
   background-color: #F49690;
 }
+
+img {
+  border-radius: 10px;
+  border: 5px solid #6C4E31;
+}
