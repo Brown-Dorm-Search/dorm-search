@@ -5,27 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d53b90e-8e66-48de-8f58-4d54bda5f40e" name="Changes" comment="feat: Added FilteringCriteria Class for all filtering criteria">
-      <change afterPath="$PROJECT_DIR$/java/dorm-search.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/Filtering/FilteringCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/back-end.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java/java.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/DormRoom/BathroomType.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/DormRoom/BathroomType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/DormRoom/CampusLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/DormRoom/CampusLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/DormRoom/DormBuilding.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/DormRoom/DormBuilding.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/DormRoom/DormRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/DormRoom/DormRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/Filtering/FilteringCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/Filtering/FilteringCriteria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/Filtering/IDormFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/Filtering/IDormFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/Filtering/Node_KDTree/KDTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/Filtering/Node_KDTree/KDTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/Filtering/Node_KDTree/KDTreeCache.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/Filtering/Node_KDTree/KDTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/Filtering/Node_KDTree/KDTreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/Filtering/Node_KDTree/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/main/java/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/main/java/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/main/java/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/main/java/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "KeyanTheGreat"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/KeyanTheGreat/dorm-search.git",
+    "accountId": "a174f0d2-ddc0-4cdb-a24c-eb9157c92790"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -56,6 +51,7 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.Main.executor": "Run",
+    "Application.Server.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "OverrideImplement.generate.javadoc": "true",
     "Repository.Attach.Annotations": "false",
@@ -64,11 +60,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "David",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/12673/cs320/dorm-search/back-end/java/pom.xml",
+    "last_opened_file_path": "C:/cs320/dorm-search/back-end",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,7 +74,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "project.propCompiler",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -106,7 +102,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-f644763e9732-c0c073db" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
       </set>
     </attachedChunks>
   </component>
@@ -123,6 +120,7 @@
       <workItem from="1733590391867" duration="3574000" />
       <workItem from="1733594448841" duration="1279000" />
       <workItem from="1733612237498" duration="1505000" />
+      <workItem from="1734679680311" duration="132000" />
     </task>
     <task id="LOCAL-00001" summary="feat: implemented the wrest of the KDTreeNode wrapper.">
       <option name="closed" value="true" />
@@ -150,5 +148,9 @@
     <MESSAGE value="feat: implemented the wrest of the KDTreeNode wrapper." />
     <MESSAGE value="feat: Added FilteringCriteria Class for all filtering criteria" />
     <option name="LAST_COMMIT_MESSAGE" value="feat: Added FilteringCriteria Class for all filtering criteria" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

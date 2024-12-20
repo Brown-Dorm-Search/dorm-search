@@ -1,3 +1,10 @@
+body {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #603F26;
+}
+
 .panel-container {
   display: flex;
   /* Use flexbox to create a row layout */
@@ -8,29 +15,29 @@
 .panel {
   flex: 1;
   /* Distribute space equally */
-  border: 1px solid #ccc;
+  border: 2px solid #6c4e31;
   /* Optional, to make the panels visible */
   padding: 20px;
   box-sizing: border-box;
-  color: black;
+  color: #603f26;
   /* Ensure padding is included in the width/height calculation */
 }
 
 .left {
-  background-color: #ffffff;
+  background-color: #ffeac5;
 }
 
 .center {
-  background-color: #ffffff;
+  background-color: #ffeac5;
 }
 
 .alt-center {
-  background-color: #ffffff;
+  background-color: #ffeac5;
   width: 400px;
 }
 
 .right {
-  background-color: #ffffff;
+  background-color: #ffeac5;
   overflow-y: auto;
 }
 
@@ -41,19 +48,19 @@
 }
 
 .grey-button {
-  background-color: #808080;
+  background-color: #6C4E31;
   color: white;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
 }
 
 .grey-button:hover {
-  background-color: #696969;
+  background-color: #F49690;
 }
 
 .grey-button:active {
-  background-color: #505050;
+  background-color: #F49690;
 }
