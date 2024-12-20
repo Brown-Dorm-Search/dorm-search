@@ -1,33 +1,37 @@
-import React from 'react';
-import './styles/About.css'; // Create and import the corresponding CSS for styling
+import React from "react";
+import "./styles/About.css"; // Create and import the corresponding CSS for styling
 
 /*
 Information about the people who made this project possible
 */
 const teamMembers = [
   {
-    name: 'David Chanin',
-    role: 'Backend Programmer and Product Design',
-    image: 'https://media.licdn.com/dms/image/v2/D4E03AQGcmzaRMPKvHw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1692817995449?e=1739404800&v=beta&t=6mjybPmMf0PNlJJLfbZ8bXVpZ101j34K4uf_aATpuuY',
-    linkedin: 'https://www.linkedin.com/in/david-chanin/',
+    name: "David Chanin",
+    role: "Backend Programmer and Product Design",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4E03AQGcmzaRMPKvHw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1692817995449?e=1739404800&v=beta&t=6mjybPmMf0PNlJJLfbZ8bXVpZ101j34K4uf_aATpuuY",
+    linkedin: "https://www.linkedin.com/in/david-chanin/",
   },
   {
-    name: 'Kaley Newlin',
-    role: 'Frontend Programmer and Outreach',
-    image: 'https://media.licdn.com/dms/image/v2/D4E03AQEWbIQOT6wq2Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1697987028624?e=1739404800&v=beta&t=-5TUDJL75BdIfFl0ygS4KNNvjTQ1APW-sd6FsuJ-9aM',
-    linkedin: 'https://www.linkedin.com/in/kaley-newlin/',
+    name: "Kaley Newlin",
+    role: "Frontend Programmer and Outreach",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4E03AQEWbIQOT6wq2Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1697987028624?e=1739404800&v=beta&t=-5TUDJL75BdIfFl0ygS4KNNvjTQ1APW-sd6FsuJ-9aM",
+    linkedin: "https://www.linkedin.com/in/kaley-newlin/",
   },
   {
-    name: 'Jackson Osterhus',
-    role: 'Backend Programmer and Data Engineer',
-    image: 'https://media.licdn.com/dms/image/v2/D4D03AQHlnj6KFSOrpA/profile-displayphoto-shrink_200_200/B4DZOynZ3rHYAg-/0/1733868494587?e=1739404800&v=beta&t=dSb-Bz7sNjoroqYFMQ_Ar7YlvQ8kVlQPZYIeZzeSGzo',
-    linkedin: 'https://www.linkedin.com/in/jackson-osterhus',
+    name: "Jackson Osterhus",
+    role: "Backend Programmer and Data Engineer",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQHlnj6KFSOrpA/profile-displayphoto-shrink_200_200/B4DZOynZ3rHYAg-/0/1733868494587?e=1739404800&v=beta&t=dSb-Bz7sNjoroqYFMQ_Ar7YlvQ8kVlQPZYIeZzeSGzo",
+    linkedin: "https://www.linkedin.com/in/jackson-osterhus",
   },
   {
-    name: 'Keyan Rahimi',
-    role: 'UI/UX Designer and Programmer',
-    image: 'https://media.licdn.com/dms/image/v2/D4E03AQGcgalh-lXwRQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1716389609064?e=1739404800&v=beta&t=4KVR3J27Q-G8Nq25YRCy9-Luq4NuEs51ejND7O2-p60',
-    linkedin: 'https://www.linkedin.com/in/keyanrahimi/',
+    name: "Keyan Rahimi",
+    role: "UI/UX Designer and Programmer",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4E03AQGcgalh-lXwRQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1716389609064?e=1739404800&v=beta&t=4KVR3J27Q-G8Nq25YRCy9-Luq4NuEs51ejND7O2-p60",
+    linkedin: "https://www.linkedin.com/in/keyanrahimi/",
   },
 ];
 
@@ -43,16 +47,7 @@ const About = () => {
           University dormitories for students to find their perfect match! We
           have created a secure website for Brown students to filter through the
           thousands of dorm rooms on campus in order to be prepared for the
-          housing lottery and have all their dorm info in one place.A complete
-          encyclopedia of Brown University dormitories for students to find
-          their perfect match! We have created a secure website for Brown
-          students to filter through the thousands of dorm rooms on campus in
-          order to be prepared for the housing lottery and have all their dorm
-          info in one place.A complete encyclopedia of Brown University
-          dormitories for students to find their perfect match! We have created
-          a secure website for Brown students to filter through the thousands of
-          dorm rooms on campus in order to be prepared for the housing lottery
-          and have all their dorm info in one place.
+          housing lottery and have all their dorm info in one place.
         </p>
       </section>
 
