@@ -65,15 +65,6 @@ function Home() {
         });
       case 'roomSize':
         return dorms.sort((b, a) => {
-          if (a.isSuite && b.isSuite) {
-            return a.commonAreaSize - b.commonAreaSize;
-          }
-          if (a.isSuite && !b.isSuite) {
-            return a.commonAreaSize - b.roomSize;
-          }
-          if (!a.isSuite && b.isSuite) {
-            return a.roomSize - b.commonAreaSize;
-          }
           return a.roomSize - b.roomSize;
         });
       default:
