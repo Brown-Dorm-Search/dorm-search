@@ -38,7 +38,21 @@ const About = () => {
       <section className="description">
         <h1>About Brown Dorm Search</h1>
         <p>
-          Welcome! Brown Dorm Search aims to streamlize the housing lottery process at Brown University.
+          Welcome! Brown Dorm Search aims to streamlize the housing lottery
+          process at Brown University. It is a complete encyclopedia of Brown
+          University dormitories for students to find their perfect match! We
+          have created a secure website for Brown students to filter through the
+          thousands of dorm rooms on campus in order to be prepared for the
+          housing lottery and have all their dorm info in one place.A complete
+          encyclopedia of Brown University dormitories for students to find
+          their perfect match! We have created a secure website for Brown
+          students to filter through the thousands of dorm rooms on campus in
+          order to be prepared for the housing lottery and have all their dorm
+          info in one place.A complete encyclopedia of Brown University
+          dormitories for students to find their perfect match! We have created
+          a secure website for Brown students to filter through the thousands of
+          dorm rooms on campus in order to be prepared for the housing lottery
+          and have all their dorm info in one place.
         </p>
       </section>
 
@@ -48,10 +62,19 @@ const About = () => {
         <div className="team-members">
           {teamMembers.map((member, index) => (
             <div key={index} className="team-member">
-              <img src={member.image} alt={member.name} className="team-member-image" />
+              <img
+                src={member.image}
+                alt={member.name}
+                className="team-member-image"
+              />
               <h3>{member.name}</h3>
               <p>{member.role}</p>
-              <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="linkedin-link">
+              <a
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="linkedin-link"
+              >
                 LinkedIn
               </a>
             </div>
