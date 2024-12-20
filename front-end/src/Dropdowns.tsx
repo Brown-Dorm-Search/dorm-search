@@ -407,6 +407,7 @@ export default function Dropdowns(props: DropdownsProps) {
           step={20}
           minValue={minRoomSize}
           maxValue={maxRoomSize}
+          boxShadow='none'
           onInput={(e: { minValue: any; maxValue: any }) => {
             setMaxRoomSize(e.maxValue);
             setMinRoomSize(e.minValue);
