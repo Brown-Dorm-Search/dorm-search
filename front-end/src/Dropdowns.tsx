@@ -262,7 +262,7 @@ export default function Dropdowns(props: DropdownsProps) {
       </div>
 
       <div className="multi-select">
-        <label htmlFor="RoomCapacity">Capcity / Room Type</label>
+        <label htmlFor="RoomCapacity">Capacity / Room Type</label>
         <Select
           id="RoomCapacity"
           options={optionsRoomCap}
