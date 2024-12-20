@@ -1,8 +1,14 @@
-1.) Add Buxton, Chen, Danoff, Sternlight?, Wayland? to dorm building and campus locations
+1.) For the list of possible dorm buildings and campus locations, add Buxton, 
+    Chen, DanOff, Sternlight, and Wayland.
 
-3.) Replace the int for floorNumbers with its own enum
+2.) For the underlying data structure for floorNumbers, use a specific enum instead
+    of an int.
 
+3.) In the RoomParser, update getRooms to work on a lsit instead of an interator to
+    increase code readability.
 
-5.) Update getRooms in RoomParser to be a list instead of an iterator to make the code more readable
+4.) Enable the backend API to take different parameter types for roomCapacity. For example,
+    allow roomCapacity=1 or roomCapacity=one.
 
-6.) Make it so API can take 1 or one for roomCapacity.
+5.) Change the floorPlanLink for dorm rooms to be in the BearDens link. This enforces
+    that students are logged into Brown before opening the floorPlanLink.
