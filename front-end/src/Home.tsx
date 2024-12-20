@@ -137,7 +137,7 @@ function Home() {
             </div>}
           {(clickedDorm !== "All" && clickedDorm !== "") &&
             <div className="panel alt-center">
-              <><p>Information Page</p><InfoPage clickedDorm={clickedDorm} setClickedDorm={setClickedDorms}></InfoPage></>
+              <><h2>Information Page</h2><InfoPage clickedDorm={clickedDorm} setClickedDorm={setClickedDorms}></InfoPage></>
             </div>}
 
           {clickedDorm !== "" &&
