@@ -21,6 +21,19 @@ export interface SuiteProps {
 
 // Dorm Room component
 export function DormRoom({ roomNumber, roomType, roomSize }: DormRoomProps) {
+  function type() {
+    if (roomType == "One") {
+      return ("Single")
+    } else if (roomType == "Two") {
+      return ("Double")
+    } else if (roomType == "Three") {
+      return ("Triple")
+    } else if (roomType == "Four") {
+      return ("Quad")
+    } else {
+      return (roomType)
+    }
+  }
   return (
     <div className="dorm-room">
       <div className="dorm-room-header">
@@ -29,8 +42,8 @@ export function DormRoom({ roomNumber, roomType, roomSize }: DormRoomProps) {
 
       <div className="dorm-room-details">
         <div className="detail">
-          <label>Capacity</label>
-          <span>{roomType}</span>
+          <label>Type</label>
+          <span>{type()}</span>
         </div>
         <div className="detail">
           <label>Square Feet</label>
