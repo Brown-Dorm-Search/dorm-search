@@ -78,7 +78,7 @@ select {
   border: none;
 
   cursor: pointer;
-  transition: background-color 0.5s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .title {
@@ -88,6 +88,7 @@ select {
 /* Search button hover effect */
 .search-button:hover {
   background-color: #F49690;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Adjust for larger screens if necessary */
