@@ -37,7 +37,7 @@ export default function Dropdowns(props: DropdownsProps) {
   const [hasBathroom, setHasBathroom] = useState<Array<string>>(['All']);
   const [hasKitchen, setHasKitchen] = useState<Array<string>>(['All']);
   const [minRoomSize, setMinRoomSize] = useState<string>('0');
-  const [maxRoomSize, setMaxRoomSize] = useState<string>('500');
+  const [maxRoomSize, setMaxRoomSize] = useState<string>('1000');
 
 
   /* option values for hasKitchen and isSuite dropdowns */
