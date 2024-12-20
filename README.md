@@ -147,3 +147,22 @@ in the right panel.
     * Displays Dorm rooms of Suite in sub-containers
 
 # Tests
+**Front-end tests**
+* located in front-end/Tests/Front.ts
+    *   test sign in and sign out
+    *   test sign in with non brown account
+    *   test pressing on map after signing in gets you dorm information but nothing in right panel
+    *   test multiple dorm building information from search and map, also tests back to map button. 
+    *   tests settings other than all
+    *   tests that dorm rooms come back, for suite, room
+    *   after pressing something that doesn't match search request, there should be no dorms
+    *   pressing the all dorms button
+    *   multi select in drop downs work properly, including "all" option being singular select
+    *   navigation bar works
+    *   scroll rooms works
+
+**Back-end tests**
+*   located in back-end/java/main/java/test
+*   KDTreeTest.java:
+*   ParserTest.java:
+*   RealDataKDTreeTest.java:
