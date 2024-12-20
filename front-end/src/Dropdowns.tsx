@@ -403,6 +403,7 @@ export default function Dropdowns(props: DropdownsProps) {
           min={0}
           ruler={'false'}
           max={1000}
+          barInnerColor={'brown'}
           step={20}
           minValue={minRoomSize}
           maxValue={maxRoomSize}
