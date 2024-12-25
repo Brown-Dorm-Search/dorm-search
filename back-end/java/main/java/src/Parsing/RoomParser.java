@@ -40,13 +40,11 @@ public class RoomParser {
      */
     public ArrayList<IDormRoom> getRooms() throws NumberFormatException, NullPointerException {
         ArrayList<IDormRoom> result = new ArrayList<>();
-        List<CSVRecord> roomsList = this.parser.getRecords();  // Using List instead of Iterator
+        List<CSVRecord> roomsList = this.parser.getRecords();
 
-        // Traverse through the list using an index
         for (int i = 0; i < roomsList.size(); i++) {
             CSVRecord room = roomsList.get(i);
 
-            // If the room is not part of a suite, just add it directly
             if (room.get("Is Suite?").equals("No")) {
                 result.add(parseDormRoom(room));
             } else {
@@ -63,7 +61,7 @@ public class RoomParser {
                     CSVRecord nextRoom = roomsList.get(i + 1);
                     if (nextRoom.get("Suite").equals(suiteNumber)) {
                         roomsInSuite.add(parseDormRoom(nextRoom));
-                        i++;  // Increment index as we have processed this room
+                        i++;
                     } else {
                         break;  // Break the loop, as we've finished processing this suite
                     }
