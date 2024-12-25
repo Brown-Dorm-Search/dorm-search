@@ -9,6 +9,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
 import java.util.Iterator;
+import java.util.List;
 
 /**
  * A utility class for parsing CSV files related to dorm rooms.
@@ -34,12 +35,11 @@ public class Parser {
     }
 
     /**
-     * Returns an iterator over the records in the CSV file.
-     * The iterator allows iteration over each record in the CSV file.
+     * Returns a list of the records in the CSV file.
      *
-     * @return An iterator for iterating through the CSV records.
+     * @return A list of the CSV records.
      */
-    public Iterator<CSVRecord> iterator() {
-        return this.csvParser.iterator();
+    public List<CSVRecord> getRecords() {
+        return this.csvParser.getRecords();
     }
 }

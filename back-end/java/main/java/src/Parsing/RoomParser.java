@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 import org.apache.commons.csv.CSVRecord;
 import DormRoom.*;
@@ -39,51 +40,14 @@ public class RoomParser {
      */
     public ArrayList<IDormRoom> getRooms() throws NumberFormatException, NullPointerException {
         ArrayList<IDormRoom> result = new ArrayList<>();
+        List<CSVRecord> roomsList = this.parser.getRecords();  // Using List instead of Iterator
 
-        Iterator<CSVRecord> roomsIterator = this.parser.iterator();
+        // Traverse through the list using an index
+        for (int i = 0; i < roomsList.size(); i++) {
+            CSVRecord room = roomsList.get(i);
 
-        // For handling consecutive suites
-        CSVRecord temp = null;
-
-        while (roomsIterator.hasNext()) {
-            CSVRecord room = roomsIterator.next();
-
-            // Consecutive suite case
-            if (temp != null) {
-                // List to keep track of dorm rooms that belong to this suite
-                ArrayList<DormRoom> roomsInSuite = new ArrayList<>();
-                roomsInSuite.add(parseDormRoom(temp));
-                String suiteNumber = temp.get("Suite");
-
-                int commonAreaSize = Integer.parseInt(temp.get("Common Area Size"));
-
-                // Add current room to suite if possible
-                if (room.get("Suite").equals(suiteNumber)) {
-                    roomsInSuite.add(parseDormRoom(room));
-                }
-
-                while (roomsIterator.hasNext()) {
-                    CSVRecord nextRoom = roomsIterator.next();
-                    if (nextRoom.get("Suite").equals(suiteNumber)) {
-                        roomsInSuite.add(parseDormRoom(nextRoom));
-                    } else {
-                        // We have reached the end of this suite
-                        temp = null;
-                        // If next room is the end or is a dorm room we are done
-                        if (!roomsIterator.hasNext() || nextRoom.get("Is Suite?").equals("No")) {
-                            result.add(parseDormRoom(nextRoom));
-                            break;
-                        }
-
-                        // Otherwise, nextRoom is a suite, so we assign it to temp
-                        temp = nextRoom;
-                        break;
-                    }
-                }
-
-                result.add(parseSuite(roomsInSuite, commonAreaSize));
-
-            } else if (room.get("Is Suite?").equals("No")) {
+            // If the room is not part of a suite, just add it directly
+            if (room.get("Is Suite?").equals("No")) {
                 result.add(parseDormRoom(room));
             } else {
                 // List to keep track of dorm rooms that belong to this suite
@@ -94,30 +58,25 @@ public class RoomParser {
                 // Common area size to be added to suite
                 int commonAreaSize = Integer.parseInt(room.get("Common Area Size"));
 
-                while (roomsIterator.hasNext()) {
-                    CSVRecord nextRoom = roomsIterator.next();
+                // Process subsequent rooms that belong to the same suite
+                while (i + 1 < roomsList.size()) {
+                    CSVRecord nextRoom = roomsList.get(i + 1);
                     if (nextRoom.get("Suite").equals(suiteNumber)) {
                         roomsInSuite.add(parseDormRoom(nextRoom));
+                        i++;  // Increment index as we have processed this room
                     } else {
-                        // We have reached the end of this suite
-                        // If next room is the end or is a dorm room we are done
-                        if (!roomsIterator.hasNext() || nextRoom.get("Is Suite?").equals("No")) {
-                            result.add(parseDormRoom(nextRoom));
-                            break;
-                        }
-
-                        // Otherwise, nextRoom is a suite, so we assign it to temp
-                        temp = nextRoom;
-                        break;
+                        break;  // Break the loop, as we've finished processing this suite
                     }
                 }
 
+                // After processing all rooms for this suite, add the suite to the result
                 result.add(parseSuite(roomsInSuite, commonAreaSize));
             }
         }
 
         return result;
     }
+
 
     /**
      * Converts a list of dorm rooms and a common area size into a {@link Suite} instance.
