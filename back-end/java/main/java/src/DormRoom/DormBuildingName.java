@@ -21,6 +21,7 @@ public enum DormBuildingName {
   MARCY_HOUSE,
   OLNEY_HOUSE,
   SEARS_HOUSE,
+  WAYLAND_HOUSE,
 
   // MainGreen
   HOPE_COLLEGE,
@@ -56,9 +57,17 @@ public enum DormBuildingName {
   YOUNG_ORCHARD_2,
   YOUNG_ORCHARD_4,
   YOUNG_ORCHARD_10,
+//  CHEN,
+//  DANOFF,
 
   // Machado
   MACHADO_HOUSE;
+
+  // North Campus
+  // WELLNESS;
+  // STERNLIGHT_COMMONS;
+
+
 
   /**
    * Returns the corresponding {@link DormBuildingName} enum constant for the given building name string.

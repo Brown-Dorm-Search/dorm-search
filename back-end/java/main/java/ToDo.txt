@@ -1,5 +1,5 @@
 1.) For the list of possible dorm buildings and campus locations, add Buxton, 
-    Chen, DanOff, Sternlight, and Wayland.
+    Chen, DanOff, Sternlight.
 
 5.) Change the floorPlanLink for dorm rooms to be in the BearDens link. This enforces
     that students are logged into Brown before opening the floorPlanLink.

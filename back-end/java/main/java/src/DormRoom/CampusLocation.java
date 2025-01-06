@@ -30,7 +30,8 @@ public enum CampusLocation {
           new DormBuilding(DormBuildingName.fromString("Harkness House")),
           new DormBuilding(DormBuildingName.fromString("Marcy House")),
           new DormBuilding(DormBuildingName.fromString("Olney House")),
-          new DormBuilding(DormBuildingName.fromString("Sears House"))
+          new DormBuilding(DormBuildingName.fromString("Sears House")),
+          new DormBuilding(DormBuildingName.fromString("Wayland House"))
       );
       case MainGreen -> Set.of(new DormBuilding(DormBuildingName.fromString("Hope College")),
           new DormBuilding(DormBuildingName.fromString("Slater Hall")));
@@ -53,7 +54,10 @@ public enum CampusLocation {
           new DormBuilding(DormBuildingName.fromString("Perkins Hall")),
           new DormBuilding(DormBuildingName.fromString("Young Orchard 10")),
           new DormBuilding(DormBuildingName.fromString("Young Orchard 2")),
-          new DormBuilding(DormBuildingName.fromString("Young Orchard 4")));
+          new DormBuilding(DormBuildingName.fromString("Young Orchard 4")),
+          new DormBuilding(DormBuildingName.fromString("Chen")),
+          new DormBuilding(DormBuildingName.fromString("Danoff"))
+      );
       case Machado -> Set.of(new DormBuilding(DormBuildingName.fromString("Machado House")));
     };
   }

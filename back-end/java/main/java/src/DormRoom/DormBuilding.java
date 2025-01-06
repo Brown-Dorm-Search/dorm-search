@@ -93,6 +93,7 @@ public record DormBuilding(
       case MARCY_HOUSE -> new BuildingData(58f, 1951, "115 George St, Providence, RI 02906", CampusLocation.WristonQuad, false);
       case OLNEY_HOUSE -> new BuildingData(39.3333333f, 1951, "29 Brown St, Providence, RI 02906", CampusLocation.WristonQuad, false);
       case SEARS_HOUSE -> new BuildingData(23f, 1951, "113 George St, Providence, RI 02906", CampusLocation.WristonQuad, false);
+      case WAYLAND_HOUSE -> new BuildingData(0, 1951, "31 Brown StNorth Providence, RI 02904", CampusLocation.WristonQuad, false);
 
       // MainGreen
       case HOPE_COLLEGE -> new BuildingData(39f, 1822, "71 Waterman St, Providence, RI 02906", CampusLocation.MainGreen, false);
@@ -128,6 +129,8 @@ public record DormBuilding(
       case YOUNG_ORCHARD_2 -> new BuildingData(28f, 1973, "Young Orchard Ave #2, Providence, RI 02906", CampusLocation.EastCampus, false);
       case YOUNG_ORCHARD_4 -> new BuildingData(28f, 1973, "Young Orchard Ave #4, Providence, RI 02906", CampusLocation.EastCampus, false);
       case YOUNG_ORCHARD_10 -> new BuildingData(18.6666667f, 1973, "Young Orchard Ave #10, Providence, RI 02906", CampusLocation.EastCampus, false);
+//      case CHEN -> new BuildingData(0, )
+//      case DANOFF -> new BuildingData()
 
       // Machado
       case MACHADO_HOUSE -> new BuildingData(425f, 1912, "87 Prospect St, Providence, RI 02906", CampusLocation.Machado, false);
