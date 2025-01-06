@@ -1,5 +1,6 @@
 package Filtering.Node_KDTree;
 
+import DormRoom.FloorNumber;
 import Filtering.FilteringCriteria;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -115,7 +116,7 @@ public class KDTreeNode {
       case 0 -> Comparator.comparingInt(IDormRoom::getRoomSize);
       case 1 -> Comparator.comparingInt(IDormRoom::getRoomCapacityInt);
       case 2 -> Comparator.comparing(IDormRoom::getRoomNumber);
-      case 3 -> Comparator.comparingInt(IDormRoom::getFloorNumber);
+      case 3 -> Comparator.comparingInt(IDormRoom::getFloorNumberInt);
       default -> throw new IllegalArgumentException("Invalid axis: " + axis + ". Axis must be 0,1,2, or 3.");
     };
   }
@@ -220,7 +221,7 @@ public class KDTreeNode {
    * @return a set of matching rooms
    */
   private Set<IDormRoom> floorNumberFilter(FilteringCriteria filteringCriteria, int axis) {
-    Set<Integer> floors = filteringCriteria.floorNumberCriteria();
+    Set<FloorNumber> floors = filteringCriteria.floorNumberCriteria();
 
     // Empty floor set means no possible rooms
     if (floors.isEmpty()) {
@@ -229,12 +230,12 @@ public class KDTreeNode {
 
     int min = Integer.MAX_VALUE;
     int max = Integer.MIN_VALUE;
-    for (Integer floor : floors) {
-      min = Math.min(min, floor);
-      max = Math.max(max, floor);
+    for (FloorNumber floor : floors) {
+      min = Math.min(min, floor.toInteger());
+      max = Math.max(max, floor.toInteger());
     }
 
-    return this.rangeFilter(filteringCriteria, axis, this.value.getFloorNumber(), min, max, filteringCriteria, filteringCriteria);
+    return this.rangeFilter(filteringCriteria, axis, this.value.getFloorNumberInt(), min, max, filteringCriteria, filteringCriteria);
   }
 
   /**

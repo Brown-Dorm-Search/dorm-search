@@ -1,7 +1,6 @@
 package test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.testng.AssertJUnit.assertTrue;
 
 
@@ -11,14 +10,10 @@ import Filtering.IDormFilter;
 import Filtering.Node_KDTree.KDTreeWrapper;
 import Parsing.RoomParser;
 import Server.FilteringHandler;
-import com.squareup.moshi.JsonAdapter;
-import com.squareup.moshi.Moshi;
-import com.squareup.moshi.Types;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
-import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import okio.Buffer;
@@ -266,7 +261,7 @@ public class ServerTest {
 
   @Test
   public void testMultipleFloors() throws IOException {
-    HttpURLConnection connection = tryRequest("filter?campusLocation=MainGreen&isSuite=true&hasKitchen=true&bathroomType=Private&minRoomSize=100&maxRoomSize=300&roomCapacity=One&floorNumber=1,2,3,4,5,6,7,8,9,10");
+    HttpURLConnection connection = tryRequest("filter?campusLocation=MainGreen&isSuite=true&hasKitchen=true&bathroomType=Private&minRoomSize=100&maxRoomSize=300&roomCapacity=One&floorNumber=1,2,3,4,5,6,7,8");
     assertEquals(200, connection.getResponseCode());
     String responseBody = new Buffer().readFrom(connection.getInputStream()).readUtf8();
     assertTrue(responseBody.contains("result"));

@@ -1,5 +1,6 @@
 package Server;
 
+import DormRoom.FloorNumber;
 import com.squareup.moshi.JsonAdapter;
 import com.squareup.moshi.Moshi;
 import com.squareup.moshi.Types;
@@ -75,7 +76,7 @@ public class FilteringHandler implements Route {
     int minRoomSizeCriteria;
     int maxRoomSizeCriteria;
     Set<RoomCapacity> roomCapacityCriteria;
-    Set<Integer> floorNumberCriteria;
+    Set<FloorNumber> floorNumberCriteria;
 
     try {
       // Validate and parse query parameters
@@ -325,14 +326,22 @@ public class FilteringHandler implements Route {
     // Every other case
     Set<RoomCapacity> capacities = new HashSet<>();
     for (String capacity : roomCapacity.split(",")) {
+      // Test numeric words roomCapacity. Example: "one", "Two", "THREE"
       try {
-        capacities.add(RoomCapacity.valueOf(capacity.trim()));
-      } catch (IllegalArgumentException e) {
-        throw new IllegalArgumentException(
-            "Invalid value for roomCapacity: " + capacity + ". Valid values are: "
-                + Set.of(RoomCapacity.values()));
+        capacities.add(RoomCapacity.valueOf(capacity.trim().toUpperCase()));
+      } catch (IllegalArgumentException e1) {
+
+        // Test integer values for roomCapacity. Example: "1", "2","3"
+        try {
+          capacities.add(RoomCapacity.fromInteger(Integer.parseInt(roomCapacity)));
+        } catch(IllegalArgumentException e2){
+          throw new IllegalArgumentException(
+              "Invalid value for roomCapacity: " + capacity + ". Valid values are: "
+                  + Set.of(RoomCapacity.values()));
+        }
       }
     }
+
     return capacities;
   }
 
@@ -344,8 +353,8 @@ public class FilteringHandler implements Route {
    * @return a set of integer values
    * @throws IllegalArgumentException if the input is invalid or missing
    */
-  private Set<Integer> validateFloorNumberString(String floorNumber) throws
-      IllegalArgumentException{
+  private Set<FloorNumber> validateFloorNumberString(String floorNumber) throws
+      IllegalArgumentException {
     // Empty case
     if (floorNumber == null || floorNumber.isEmpty()) {
       throw new IllegalArgumentException("floorNumber parameter is missing or empty.");
@@ -353,24 +362,33 @@ public class FilteringHandler implements Route {
 
     // "All case
     if ("all".equalsIgnoreCase(floorNumber.trim())) {
-      // Assume all floor numbers up to a reasonable limit (e.g., 100)
-      Set<Integer> allFloors = new HashSet<>();
-      for (int i = 1; i <= 10; i++) {
-        allFloors.add(i);
+      Set<FloorNumber> allFloors = new HashSet<>();
+      for (int i = 0; i <= (FloorNumber.values().length - 1); i++) {
+        allFloors.add(FloorNumber.fromInteger(i));
       }
       return allFloors;
     }
 
     // Every other case
-    Set<Integer> floors = new HashSet<>();
+    Set<FloorNumber> floors = new HashSet<>();
     for (String floor : floorNumber.split(",")) {
+
+      // Test numeric words for floorNumbers. Example: "one", "Two", "THREE", "zero"
       try {
-        floors.add(Integer.parseInt(floor.trim()));
-      } catch (NumberFormatException e) {
-        throw new IllegalArgumentException(
-            "Invalid value for floorNumber: " + floor + ". It must be an integer.");
+        floors.add(FloorNumber.valueOf(floorNumber.trim().toUpperCase()));
+      } catch (IllegalArgumentException e1) {
+
+        // Test integer values for floorNumbers. Examples: "1", "2", "3"
+        try {
+          floors.add(FloorNumber.fromInteger(Integer.parseInt(floor.trim())));
+        } catch (NumberFormatException e) {
+          throw new
+              IllegalArgumentException(
+              "Invalid value for floorNumber: " + floor + ". It must be an integer.");
+        }
       }
     }
+
     return floors;
   }
 }

@@ -37,9 +37,10 @@ public class RealDataKDTreeTest {
         Set.of(true, false),
         Set.of(BathroomType.Communal, BathroomType.SemiPrivate, BathroomType.Private),
         0, 200100,
-        Set.of(RoomCapacity.One, RoomCapacity.Two, RoomCapacity.Three, RoomCapacity.Four,
-            RoomCapacity.Five, RoomCapacity.Six),
-        Set.of(0,1,2,3,4,5,6,7,8,9)
+        Set.of(RoomCapacity.ONE, RoomCapacity.TWO, RoomCapacity.THREE, RoomCapacity.FOUR,
+            RoomCapacity.FIVE, RoomCapacity.SIX),
+        Set.of(FloorNumber.ZERO, FloorNumber.ONE, FloorNumber.TWO, FloorNumber.THREE, FloorNumber.FOUR,
+            FloorNumber.FIVE, FloorNumber.SIX, FloorNumber.SEVEN, FloorNumber.EIGHT)
     );
 
     KDTreeWrapper kd = new KDTreeWrapper(this.dormList);

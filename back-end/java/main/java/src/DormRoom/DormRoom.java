@@ -118,11 +118,11 @@ public class DormRoom implements IDormRoom {
         return roomCapacity;
     }
 
-//    /**
-//     * Returns the URL of the floor plan that includes this room.
-//     *
-//     * @return the floor plan URL
-//     */
+    /**
+     * Returns the URL of the floor plan that includes this room.
+     *
+     * @return the floor plan URL
+     */
     public String getFloorPlanLink() {
         return floorPlanLink;
     }
@@ -162,13 +162,17 @@ public class DormRoom implements IDormRoom {
     public DormBuilding getDormBuilding() {
         return dormBuilding;
     }
+
     /**
-     * Returns the floor number of the dorm room
+     * Returns a {@code FloorNumber} that represents the inputted floorNumberInt
      *
-     * @return the floor number of the dorm room
+     * @throws IllegalArgumentException if the number is not in the range of valid floor numbers
+     *                                  [0, 8].
      */
-    public int getFloorNumber(){
-        return Integer.parseInt(DormRoom.getFloorNumberHelper(this.roomNumber));
+    @Override
+    public FloorNumber getFloorNumber() throws IllegalArgumentException{
+        // Floor Number
+        return FloorNumber.fromInteger(this.getFloorNumberHelper(this.roomNumber));
     }
 
     /**
@@ -180,7 +184,7 @@ public class DormRoom implements IDormRoom {
      * @throws IllegalArgumentException If the room number string does not contain enough digits to determine a floor number
      *                                  (i.e., fewer than three digits).
      */
-    private static String getFloorNumberHelper(String str) throws IllegalArgumentException{
+    private int getFloorNumberHelper(String str) throws IllegalArgumentException{
 
         int count = 0;
 
@@ -189,12 +193,24 @@ public class DormRoom implements IDormRoom {
             if (Character.isDigit(str.charAt(i))) {
                 count++;
                 if (count == 3)
-                    return String.valueOf(str.charAt(i));
+                    return Integer.parseInt(String.valueOf(str.charAt(i)));
             }
 
         }
         // Return null character if no digit is found
         throw new IllegalArgumentException("Could not parse floor number for floor: " + str);
+    }
+
+    /**
+     * Returns the floor number of the dorm room
+     *
+     * @throws IllegalArgumentException if the number is not in the range of valid floor numbers
+     *                                  [0, 8].
+     */
+    @Override
+    public int getFloorNumberInt() throws IllegalArgumentException {
+        FloorNumber floorNumber = this.getFloorNumber();
+        return floorNumber.toInteger();
     }
 
     @Override

@@ -2,6 +2,7 @@ package Filtering;
 
 import DormRoom.BathroomType;
 import DormRoom.CampusLocation;
+import DormRoom.FloorNumber;
 import java.util.Set;
 import DormRoom.RoomCapacity;
 
@@ -52,7 +53,7 @@ import DormRoom.RoomCapacity;
  *  *                             capacities of dorm rooms. If {@code roomCapacityCriteria} is
  *                                non-empty, only rooms whose roomCapacity is included in this set
  *                                should pass the filtering criteria.
- * @param floorNumberCriteria     A set of integer values indicating what floor a dorm room should
+ * @param floorNumberCriteria     A set of {@link FloorNumber} indicating what floor a dorm room should
  *                                be on. If this set is non-empty, only rooms whose floor matches
  *                                one of the values in this set should be considered.
  *
@@ -61,4 +62,4 @@ public record FilteringCriteria(Set<CampusLocation> campusLocationCriteria,
                                 Set<Boolean> isSuiteCriteria, Set<Boolean> hasKitchenCriteria,
                                 Set<BathroomType> bathroomTypeCriteria, int minRoomSizeCriteria,
                                 int maxRoomSizeCriteria, Set<RoomCapacity> roomCapacityCriteria,
-                                Set<Integer> floorNumberCriteria) {}
+                                Set<FloorNumber> floorNumberCriteria) {}

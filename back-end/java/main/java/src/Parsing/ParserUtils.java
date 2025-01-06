@@ -18,12 +18,12 @@ public class ParserUtils {
      */
     public static RoomCapacity getRoomCapacity(String capacity) throws IllegalArgumentException {
       return switch (capacity.toLowerCase()) {
-        case "one" -> RoomCapacity.One;
-        case "two" -> RoomCapacity.Two;
-        case "three" -> RoomCapacity.Three;
-        case "four" -> RoomCapacity.Four;
-        case "five" -> RoomCapacity.Five;
-        case "six" -> RoomCapacity.Six;
+        case "one" -> RoomCapacity.ONE;
+        case "two" -> RoomCapacity.TWO;
+        case "three" -> RoomCapacity.THREE;
+        case "four" -> RoomCapacity.FOUR;
+        case "five" -> RoomCapacity.FIVE;
+        case "six" -> RoomCapacity.SIX;
         case null, default ->
             throw new IllegalArgumentException("Room capacity must be a number from 1 to 6");
       };
@@ -38,12 +38,12 @@ public class ParserUtils {
      */
     public static RoomCapacity getRoomCapacity(int capacity) throws IllegalArgumentException {
       return switch (capacity) {
-        case 1 -> RoomCapacity.One;
-        case 2 -> RoomCapacity.Two;
-        case 3 -> RoomCapacity.Three;
-        case 4 -> RoomCapacity.Four;
-        case 5 -> RoomCapacity.Five;
-        case 6 -> RoomCapacity.Six;
+        case 1 -> RoomCapacity.ONE;
+        case 2 -> RoomCapacity.TWO;
+        case 3 -> RoomCapacity.THREE;
+        case 4 -> RoomCapacity.FOUR;
+        case 5 -> RoomCapacity.FIVE;
+        case 6 -> RoomCapacity.SIX;
         default ->
             throw new IllegalArgumentException("Room capacity must be an integer between 1 and 6");
       };

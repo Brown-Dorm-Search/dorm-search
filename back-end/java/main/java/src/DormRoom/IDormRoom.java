@@ -46,11 +46,18 @@ public interface IDormRoom {
    */
   DormBuilding getDormBuilding();
   /**
-   * Returns the floor number of the dorm room
+   * Returns the floor number of the dorm room in {@code FloorNumber} format
    *
-   * @return the floor number of the dorm room
+   * @return the floor number of the dorm room in {@code FloorNumber} format
    */
-  int getFloorNumber();
+  FloorNumber getFloorNumber() throws IllegalArgumentException;
+
+  /**
+   * Returns the floor number of the dorm room in int format
+   *
+   * @return the floor number of the dorm room in int format
+   */
+  int getFloorNumberInt();
   /**
    * Indicates whether the room is equipped with a kitchen.
    *
