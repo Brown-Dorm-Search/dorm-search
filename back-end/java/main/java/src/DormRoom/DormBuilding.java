@@ -1,5 +1,8 @@
 package DormRoom;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * A record representing a dormitory building on campus, providing comprehensive information such as:
  * <ul>
@@ -35,30 +38,8 @@ public record DormBuilding(
 ) {
 
   /**
-   * Constructs a new {@code DormBuilding} by looking up all attributes based on the provided
-   * {@link DormBuildingName} constant.
-   *
-   * <p>The underlying data (such as year, address, etc.) is determined automatically.
-   * If you provide a building name that is not recognized, a {@link RuntimeException} is thrown.</p>
-   *
-   * @param buildingName the enum constant representing the dorm building
-   * @throws RuntimeException if {@code buildingName} does not match a known building
-   */
-  public DormBuilding(DormBuildingName buildingName) {
-    this(buildingName, getBuildingData(buildingName).peoplePerWasher(),
-        getBuildingData(buildingName).year(),
-        getBuildingData(buildingName).address(),
-        getBuildingData(buildingName).campusLocation(),
-        getBuildingData(buildingName).hasElevatorAccess());
-  }
-
-  /**
-   * A private record that encapsulates the attribute data for a building.
-   *
-   * <p>This record is used internally by {@link #getBuildingData(DormBuildingName)}
-   * to simplify the retrieval of all building attributes and pass them back as a single unit.
-   * It ensures that if you add or modify a building's attributes, they remain grouped in a single,
-   * cohesive structure.</p>
+   * A private record that encapsulates the attribute data for a building, excluding
+   * the building name (because we already have it in {@code DormBuildingName}).
    */
   private record BuildingData(
       float peoplePerWasher,
@@ -67,6 +48,32 @@ public record DormBuilding(
       CampusLocation campusLocation,
       boolean hasElevatorAccess
   ) { }
+
+  /**
+   * Constructs a new {@code DormBuilding} from a {@link BuildingData} plus the given
+   * {@link DormBuildingName}.
+   */
+  private DormBuilding(BuildingData data, DormBuildingName buildingName) {
+    this(
+        buildingName,
+        data.peoplePerWasher,
+        data.year,
+        data.address,
+        data.campusLocation,
+        data.hasElevatorAccess
+    );
+  }
+
+  /**
+   * Constructs a new {@code DormBuilding} by looking up all attributes based on the provided
+   * {@link DormBuildingName} constant.
+   *
+   * @param buildingName the enum constant representing the dorm building
+   * @throws RuntimeException if {@code buildingName} does not match a known building
+   */
+  public DormBuilding(DormBuildingName buildingName) {
+    this(getBuildingData(buildingName), buildingName);
+  }
 
   /**
    * Returns the {@link BuildingData} for a given {@link DormBuildingName}.
@@ -93,7 +100,7 @@ public record DormBuilding(
       case MARCY_HOUSE -> new BuildingData(58f, 1951, "115 George St, Providence, RI 02906", CampusLocation.WristonQuad, false);
       case OLNEY_HOUSE -> new BuildingData(39.3333333f, 1951, "29 Brown St, Providence, RI 02906", CampusLocation.WristonQuad, false);
       case SEARS_HOUSE -> new BuildingData(23f, 1951, "113 George St, Providence, RI 02906", CampusLocation.WristonQuad, false);
-      case WAYLAND_HOUSE -> new BuildingData(0, 1951, "31 Brown StNorth Providence, RI 02904", CampusLocation.WristonQuad, false);
+      case WAYLAND_HOUSE -> new BuildingData(0f, 1951, "31 Brown StNorth Providence, RI 02904", CampusLocation.WristonQuad, false);
 
       // MainGreen
       case HOPE_COLLEGE -> new BuildingData(39f, 1822, "71 Waterman St, Providence, RI 02906", CampusLocation.MainGreen, false);
@@ -110,9 +117,9 @@ public record DormBuilding(
       case VARTAN_GREGORIAN_QUAD_B -> new BuildingData(28.5f, 1991, "101 Thayer St, Providence, RI 02906", CampusLocation.GregorianQuad, true);
 
       // Pembroke (commented out as requested)
-//            case NEW_PEMBROKE_1 -> new BuildingData(Float.parseFloat(null), 0, null, CampusLocation.Pembroke, Boolean.getBoolean("null"));
-//            case NEW_PEMBROKE_2 -> new BuildingData(Float.parseFloat(null), 0, null, CampusLocation.Pembroke, Boolean.getBoolean("null"));
-//            case NEW_PEMBROKE_3 -> new BuildingData(Float.parseFloat(null), 0, null, CampusLocation.Pembroke, Boolean.getBoolean("null"));
+//            case NEW_PEMBROKE_1 -> new BuildingData(...);
+//            case NEW_PEMBROKE_2 -> new BuildingData(...);
+//            case NEW_PEMBROKE_3 -> new BuildingData(...);
 
       // RuthJSimmons
       case HEGEMAN_HALL -> new BuildingData(56.5f, 1991, "128 George St, Providence, RI 02906", CampusLocation.RuthJSimmons, true);
@@ -129,11 +136,30 @@ public record DormBuilding(
       case YOUNG_ORCHARD_2 -> new BuildingData(28f, 1973, "Young Orchard Ave #2, Providence, RI 02906", CampusLocation.EastCampus, false);
       case YOUNG_ORCHARD_4 -> new BuildingData(28f, 1973, "Young Orchard Ave #4, Providence, RI 02906", CampusLocation.EastCampus, false);
       case YOUNG_ORCHARD_10 -> new BuildingData(18.6666667f, 1973, "Young Orchard Ave #10, Providence, RI 02906", CampusLocation.EastCampus, false);
-//      case CHEN -> new BuildingData(0, )
-//      case DANOFF -> new BuildingData()
 
       // Machado
       case MACHADO_HOUSE -> new BuildingData(425f, 1912, "87 Prospect St, Providence, RI 02906", CampusLocation.Machado, false);
     };
+  }
+
+  /**
+   * Returns a list of all known dorm buildings by iterating through every value of
+   * {@link DormBuildingName} and constructing a corresponding {@code DormBuilding} instance.
+   *
+   * <p>This method provides a convenient way to retrieve all possible dorm buildings at once.
+   * It collects them into a {@link List} for easy iteration and processing in other parts
+   * of the application.</p>
+   *
+   * @return a {@link List} of {@code DormBuilding} objects, one for each {@link DormBuildingName}
+   */
+  public static List<DormBuilding> dormBuildingList() {
+    List<DormBuilding> output = new ArrayList<>();
+    DormBuildingName[] dormBuildingNameList = DormBuildingName.values();
+
+    for (DormBuildingName dormBuildingName : dormBuildingNameList) {
+      output.add(new DormBuilding(dormBuildingName));
+    }
+
+    return output;
   }
 }

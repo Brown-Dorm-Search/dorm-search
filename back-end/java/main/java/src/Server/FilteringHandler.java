@@ -1,5 +1,6 @@
 package Server;
 
+import DormRoom.DormBuilding;
 import DormRoom.FloorNumber;
 import com.squareup.moshi.JsonAdapter;
 import com.squareup.moshi.Moshi;
@@ -106,6 +107,7 @@ public class FilteringHandler implements Route {
     // Return success response with filtered results
     output.put("result", "success");
     output.put("filteredDormRoomSet", filteredDormRoomSet);
+    output.put("dormBuildingList", DormBuilding.dormBuildingList());
     return this.serialize(output);
   }
 
