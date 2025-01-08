@@ -7,38 +7,41 @@ body {
 
 .panel-container {
   display: flex;
-  /* Use flexbox to create a row layout */
   height: 100vh;
-  /* Full viewport height */
+  /* Use flexbox to create a row layout */
 }
 
 .panel {
-  flex: 1;
-  /* Distribute space equally */
   border: 2px solid #6c4e31;
+  min-height: 10px;
   /* Optional, to make the panels visible */
   padding: 20px;
   box-sizing: border-box;
   color: #603f26;
+  overflow-y: auto;
   /* Ensure padding is included in the width/height calculation */
 }
 
 .left {
   background-color: #ffeac5;
+  flex: 1;
+  padding-bottom: 200px;
 }
 
 .center {
   background-color: #ffeac5;
+  width: 70vw;
+  padding-bottom: 15px;
 }
 
 .alt-center {
   background-color: #ffeac5;
-  width: 400px;
+  width: 30vw;
+  padding-bottom: 200px;
 }
 
 .right {
   background-color: #ffeac5;
-  overflow-y: auto;
 }
 
 .alt-center img {
@@ -69,5 +72,24 @@ body {
 
 img {
   border-radius: 10px;
-  border: 5px solid #6C4E31;
+}
+
+.left-panel-buttons {
+  width: 100%;
+  background-color: #ffeac5;
+  color: #6C4E31;
+}
+
+.left-panel-buttons:hover {
+  background-color: #6C4E31;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  background-color: #ffeac5;
+  padding: 40px 40px;
+  width: inherit;
+  border-radius: 15px;
+  box-sizing: border-box;
 }

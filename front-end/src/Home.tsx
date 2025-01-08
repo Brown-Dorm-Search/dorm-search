@@ -9,6 +9,7 @@ import StandardDorm from './StandardDorm'
 import Suite, { DormRoomProps } from './Suite'
 import InfoPage from './InfoPage'
 
+
 /**
 Home() displays the panels that are shown in the website. 
 This includes the dorm building information on the right, the map in the middle,
@@ -108,22 +109,24 @@ function Home() {
         </div>
         <div className="panel-container">
           <div className="panel left">{resultString === '' && <p>Press Search to see more results</p>}
-            {filteredDorms && <div>
-              <p>There are matches in the following buildings:</p>
+            {filteredDorms && <div className="container">
+              <h4>There are matches in the following buildings:</h4>
               {filteredDorms.length !== 0 && <button
                 onClick={() => handleButtonClick("All")}
-                className="dorm-button"
+                className="left-panel-buttons"
               >
                 Click here to see results for all Dorm buildings
               </button>}
               {filteredDorms.map((dorm) => (
                 <button
                   onClick={() => handleButtonClick(dorm)}
-                  className="dorm-button"
+                  className="left-panel-buttons"
                 >
                   {dorm}
                 </button>
-              ))}</div>}
+
+              ))}
+            </div>}
           </div>
           {(clickedDorm == "") &&
             <div className="panel center">

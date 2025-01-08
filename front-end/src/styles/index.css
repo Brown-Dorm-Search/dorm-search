@@ -111,7 +111,7 @@ button:focus-visible {
   padding: 0;
   /* Adjust this is below for thin bar height */
   background-color: #603f26;
-  min-height: 5vh;
+  min-height: 35px;
   /* Adjust this is above for thin bar height */
   max-height: 5vh;
 }
@@ -126,6 +126,7 @@ button:focus-visible {
   color: #ffeac5;
 }
 
+/* here fix top buttons below */
 .header-top nav {
   background-color: #603f26;
   padding: 2px 8px;
@@ -140,6 +141,8 @@ button:focus-visible {
   /* Make navbar thinner */
   max-height: 3vh;
   /* Keep navbar height small */
+  margin: auto;
+  padding-right: 12%;
 }
 
 /* NavBar CSS */
@@ -150,6 +153,7 @@ nav {
   top: 0;
   right: 0;
   background-color: #333;
+  justify-content: center;
   padding: 4px 15px;
   /* Reduce for size */
   border-radius: 5px 0 0 5px;

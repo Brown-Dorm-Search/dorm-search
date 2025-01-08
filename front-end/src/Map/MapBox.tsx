@@ -62,7 +62,6 @@ interface MapboxProps {
 }
 
 export default function Mapbox(props: MapboxProps) {
-    const [width, setWidth] = useState<number>(window.innerWidth * 2 / 3);
     /**
      * viewState is significant for zoom and moving aroudn the map
      */
@@ -113,9 +112,6 @@ export default function Mapbox(props: MapboxProps) {
     */
     useEffect(() => {
         setDormOverlay(geojson);
-        if (props.clickedDorm == "All") {
-            setWidth(window.innerWidth * 31 / 100);
-        }
     }, []);
 
     /**
@@ -172,13 +168,13 @@ export default function Mapbox(props: MapboxProps) {
 
 
     return (
-        <div>
+        <div style={{ width: '100%', height: '100%' }}>
             {MAPBOX_KEY ? (
                 <Map
                     mapboxAccessToken={MAPBOX_KEY}
                     {...viewState}
-
-                    style={{ width: width, height: window.innerHeight * 2 / 3 }}
+                    style={{ width: '100%', height: '100%' }}
+                    className="mapbox"
                     mapStyle={"mapbox://styles/knewlin713/cm43jrtsp002g01rz80qfdre0"}
 
                     onMove={(ev: ViewStateChangeEvent) => {

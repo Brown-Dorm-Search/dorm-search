@@ -84,12 +84,12 @@
 }
 
 .pfp {
-padding: 20px;
-height: 28px;
-transition: all 0.3s ease-in-out;
+  padding: 20px;
+  height: 28px;
+  transition: all 0.3s ease-in-out;
 }
 
 .pfp:hover {
   transform: translateY(-2px);
-  
+
 }
