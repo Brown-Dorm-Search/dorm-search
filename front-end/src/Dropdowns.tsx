@@ -247,7 +247,7 @@ in order to get the requested information */
       <div>
         <DropdownFilter
           title="Has Bathroom"
-          options={options}
+          options={optionsBathroom}
           selectedValues={hasBathroom}
           onChange={setHasBathroom}
         />
