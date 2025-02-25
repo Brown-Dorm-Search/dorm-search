@@ -2,6 +2,9 @@ import React, { Dispatch, SetStateAction, useState } from "react";
 import Select from "react-select";
 import "./styles/App.css";
 import MultiRangeSlider from "multi-range-slider-react";
+import { ChevronUp, DollarSign } from "lucide-react";
+import DropdownFilter from "./multi-select";
+
 
 /*
 Dropdowns provides the dropdown multiselect, the scroll bar, and 
@@ -27,17 +30,6 @@ export interface DropdownsProps {
 }
 
 export default function Dropdowns(props: DropdownsProps) {
-  /*The below constants are set by the dropdowns,
-  and their value is put in the fetch request to the backend
-  in order to get the requested information */
-  const [campusLocation, setCampusLocation] = useState<Array<string>>(["All"]);
-  const [floor, setFloor] = useState<Array<string>>(["All"]);
-  const [partOfSuite, setPartOfSuite] = useState<Array<string>>(["All"]);
-  const [roomCapacity, setRoomCapacity] = useState<Array<string>>(["All"]);
-  const [hasBathroom, setHasBathroom] = useState<Array<string>>(["All"]);
-  const [hasKitchen, setHasKitchen] = useState<Array<string>>(["All"]);
-  const [minRoomSize, setMinRoomSize] = useState<string>("0");
-  const [maxRoomSize, setMaxRoomSize] = useState<string>("1000");
 
   /* option values for hasKitchen and isSuite dropdowns */
   const options = [
@@ -91,6 +83,19 @@ export default function Dropdowns(props: DropdownsProps) {
     { value: "EastCampus", label: "East Campus" },
     { value: "Machado", label: "Machado House" },
   ];
+
+  /*The below constants are set by the dropdowns,
+and their value is put in the fetch request to the backend
+in order to get the requested information */
+  const [campusLocation, setCampusLocation] = useState<Array<string>>(["All"]);
+  const [floor, setFloor] = useState<Array<string>>(["All"]);
+  const [partOfSuite, setPartOfSuite] = useState<Array<string>>(["All"]);
+  const [roomCapacity, setRoomCapacity] = useState<Array<string>>(["All"]);
+  const [hasBathroom, setHasBathroom] = useState<Array<string>>(["All"]);
+  const [hasKitchen, setHasKitchen] = useState<Array<string>>(["All"]);
+  const [minRoomSize, setMinRoomSize] = useState<string>("0");
+  const [maxRoomSize, setMaxRoomSize] = useState<string>("1000");
+
 
   /* filteringNames takes the json from the backend, and creates a list of
   buildings names that are matches for the search request.
@@ -200,201 +205,59 @@ export default function Dropdowns(props: DropdownsProps) {
     fetchSearch();
   };
 
+
   return (
     <div className="dropdown-container">
       {/* the below ui includes dropdowns and a button 
       which fetches from the backend using the requests made by
       the selected dropdown options */}
-      <div className="multi-select">
-        <label htmlFor="CampusLocation">Campus Location</label>
-        <Select
-          id="CampusLocation"
+
+      <div>
+        <DropdownFilter
+          title="Campus Location"
           options={optionsLoc}
-          isMulti
-          value={campusLocation.map((value) =>
-            optionsLoc.find((option) => option.value === value)
-          )}
-          getOptionLabel={(e: { label: any }) => e.label}
-          getOptionValue={(e: { value: any }) => e.value}
-          onChange={(newSelectedOptions: any) => {
-            const allClicked =
-              newSelectedOptions[newSelectedOptions.length - 1]?.value ===
-              "All";
-            const hasAllOption = newSelectedOptions[0]?.value === "All";
-            if (allClicked || newSelectedOptions.length == 0) {
-              setCampusLocation(["All"]);
-            } else if (hasAllOption) {
-              setCampusLocation([newSelectedOptions[1]?.value]);
-            } else {
-              const selectedValues = newSelectedOptions.map(
-                (option: any) => option.value
-              );
-              setCampusLocation(selectedValues);
-            }
-          }}
-          className="basic-multi-select"
-          classNamePrefix="select"
+          selectedValues={campusLocation}
+          onChange={setCampusLocation}
         />
       </div>
-
-      <div className="multi-select">
-        <label htmlFor="FloorNumber">Floors</label>
-        <Select
-          id="FloorNumber"
-          color={'brown'}
+      <div>
+        <DropdownFilter
+          title="Floors"
           options={optionsFloor}
-          isMulti
-          value={floor.map((value) =>
-            optionsFloor.find((option) => option.value === value)
-          )}
-          getOptionLabel={(e: { label: any }) => e.label}
-          getOptionValue={(e: { value: any }) => e.value}
-          onChange={(newSelectedOptions: any) => {
-            const allClicked =
-              newSelectedOptions[newSelectedOptions.length - 1]?.value ===
-              "All";
-            const hasAllOption = newSelectedOptions[0]?.value === "All";
-            if (allClicked || newSelectedOptions.length == 0) {
-              setFloor(["All"]);
-            } else if (hasAllOption) {
-              setFloor([newSelectedOptions[1]?.value]);
-            } else {
-              const selectedValues = newSelectedOptions.map(
-                (option: any) => option.value
-              );
-              setFloor(selectedValues);
-            }
-          }}
-          className="basic-multi-select"
-          classNamePrefix="select"
+          selectedValues={floor}
+          onChange={setFloor}
         />
       </div>
-
-      <div className="multi-select">
-        <label htmlFor="PartOfSuite">Part of Suite</label>
-        <Select
-          id="PartOfSuite"
+      <div>
+        <DropdownFilter
+          title="Part of Suite"
           options={options}
-          isMulti
-          value={partOfSuite.map((value) =>
-            options.find((option) => option.value === value)
-          )}
-          getOptionLabel={(e: { label: any }) => e.label}
-          getOptionValue={(e: { value: any }) => e.value}
-          onChange={(newSelectedOptions: any) => {
-            const allClicked =
-              newSelectedOptions[newSelectedOptions.length - 1]?.value ===
-              "All";
-            const hasAllOption = newSelectedOptions[0]?.value === "All";
-            if (allClicked || newSelectedOptions.length == 0) {
-              setPartOfSuite(["All"]);
-            } else if (hasAllOption) {
-              setPartOfSuite([newSelectedOptions[1]?.value]);
-            } else {
-              const selectedValues = newSelectedOptions.map(
-                (option: any) => option.value
-              );
-              setPartOfSuite(selectedValues);
-            }
-          }}
-          className="basic-multi-select"
-          classNamePrefix="select"
+          selectedValues={partOfSuite}
+          onChange={setPartOfSuite}
         />
       </div>
-
-      <div className="multi-select">
-        <label htmlFor="RoomCapacity">Capacity / Room Type</label>
-        <Select
-          id="RoomCapacity"
+      <div>
+        <DropdownFilter
+          title="Capacity / Room Type"
           options={optionsRoomCap}
-          isMulti
-          value={roomCapacity.map((value) =>
-            optionsRoomCap.find((option) => option.value === value)
-          )}
-          getOptionLabel={(e: { label: any }) => e.label}
-          getOptionValue={(e: { value: any }) => e.value}
-          onChange={(newSelectedOptions: any) => {
-            const allClicked =
-              newSelectedOptions[newSelectedOptions.length - 1]?.value ===
-              "All";
-            const hasAllOption = newSelectedOptions[0]?.value === "All";
-            if (allClicked || newSelectedOptions.length == 0) {
-              setRoomCapacity(["All"]);
-            } else if (hasAllOption) {
-              setRoomCapacity([newSelectedOptions[1]?.value]);
-            } else {
-              const selectedValues = newSelectedOptions.map(
-                (option: any) => option.value
-              );
-              setRoomCapacity(selectedValues);
-            }
-          }}
-          className="basic-multi-select"
-          classNamePrefix="select"
+          selectedValues={roomCapacity}
+          onChange={setRoomCapacity}
         />
       </div>
-
-      <div className="multi-select">
-        <label htmlFor="hasBathroom">Has Bathroom</label>
-        <Select
-          id="hasBathroom"
-          options={optionsBathroom}
-          isMulti
-          value={hasBathroom.map((value) =>
-            optionsBathroom.find((option) => option.value === value)
-          )}
-          getOptionLabel={(e: { label: any }) => e.label}
-          getOptionValue={(e: { value: any }) => e.value}
-          onChange={(newSelectedOptions: any) => {
-            const allClicked =
-              newSelectedOptions[newSelectedOptions.length - 1]?.value ===
-              "All";
-            const hasAllOption = newSelectedOptions[0]?.value === "All";
-            if (allClicked || newSelectedOptions.length == 0) {
-              setHasBathroom(["All"]);
-            } else if (hasAllOption) {
-              setHasBathroom([newSelectedOptions[1]?.value]);
-            } else {
-              const selectedValues = newSelectedOptions.map(
-                (option: any) => option.value
-              );
-              setHasBathroom(selectedValues);
-            }
-          }}
-          className="basic-multi-select"
-          classNamePrefix="select"
-        />
-      </div>
-
-      <div className="multi-select">
-        <label htmlFor="HasKitchen">Has Kitchen</label>
-        <Select
-          id="HasKitchen"
+      <div>
+        <DropdownFilter
+          title="Has Bathroom"
           options={options}
-          isMulti
-          value={hasKitchen.map((value) =>
-            options.find((option) => option.value === value)
-          )}
-          getOptionLabel={(e: { label: any }) => e.label}
-          getOptionValue={(e: { value: any }) => e.value}
-          onChange={(newSelectedOptions: any) => {
-            const allClicked =
-              newSelectedOptions[newSelectedOptions.length - 1]?.value ===
-              "All";
-            const hasAllOption = newSelectedOptions[0]?.value === "All";
-            if (allClicked || newSelectedOptions.length == 0) {
-              setHasKitchen(["All"]);
-            } else if (hasAllOption) {
-              setHasKitchen([newSelectedOptions[1]?.value]);
-            } else {
-              const selectedValues = newSelectedOptions.map(
-                (option: any) => option.value
-              );
-              setHasKitchen(selectedValues);
-            }
-          }}
-          className="basic-multi-select"
-          classNamePrefix="select"
+          selectedValues={hasBathroom}
+          onChange={setHasBathroom}
+        />
+      </div>
+      <div>
+        <DropdownFilter
+          title="Has Kitchen"
+          options={options}
+          selectedValues={hasKitchen}
+          onChange={setHasKitchen}
         />
       </div>
 

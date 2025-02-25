@@ -49,6 +49,23 @@ button:hover {
   border-color: #f49690;
 }
 
+.alt-button {
+  border: 1px solid transparent;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #ffffff;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  line-height: 50%;
+}
+
+.alt-button:hover {
+  background-color: lightgrey;
+  border-color: lightgrey;
+}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -208,4 +225,45 @@ nav ul li a:hover {
   position: fixed;
   left: 0;
   top: 0;
+}
+
+.back-multi {
+  width: 10vw;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 16px;
+  position: fixed;
+  z-index: 1;
+}
+
+.options-multi {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 16%;
+}
+
+.title-multi {
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.title_text {
+  padding-top: 5%;
+}
+
+.bottom_buttons {
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
